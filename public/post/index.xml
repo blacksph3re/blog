@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Nico Westerbeck</title>
+    <link>http://nico-westerbeck.de/post/</link>
+    <description>Recent content in Posts on Nico Westerbeck</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2016 Nico Westerbeck</copyright>
+    <lastBuildDate>Sat, 24 Sep 2016 17:00:00 +0000</lastBuildDate>
+    <atom:link href="http://nico-westerbeck.de/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Setting up this webspace</title>
+      <link>http://nico-westerbeck.de/post/setting-up-website/</link>
+      <pubDate>Sat, 24 Sep 2016 17:00:00 +0000</pubDate>
+      
+      <guid>http://nico-westerbeck.de/post/setting-up-website/</guid>
+      <description>
+
+&lt;p&gt;As this was my today&amp;rsquo;s project, I will lose some words about how I set up this site.&lt;/p&gt;
+
+&lt;h2 id=&#34;hosting&#34;&gt;Hosting&lt;/h2&gt;
+
+&lt;p&gt;I am hosting at &lt;a href=&#34;https://uberspace.de/&#34;&gt;uberspace&lt;/a&gt;, a very hipster shared hoster, which let&amp;rsquo;s you choose your price yourself. Their hosting principle is a multi-user linux environment, where you automatically get a user assigned and some stuff provisioned. It relies on linux unprivileged users as the only isolation from other users on the same machine, so I would not recommend using the space for anything critical. However, I like the setup and how everything is documented, so I chose it as a hoster. I will just hope no other user on my machine uses a privilege escalation to modify my site. &lt;code&gt;#securitythroughprayer&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;But everything was up to date, so I would rate the risk as pretty low.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
