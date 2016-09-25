@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Food on Nico Westerbeck</title>
-    <link>http://nico-westerbeck.de/tags/food/</link>
+    <link>nico-westerbeck.de/tags/food/</link>
     <description>Recent content in Food on Nico Westerbeck</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2016 Nico Westerbeck</copyright>
     <lastBuildDate>Tue, 27 Oct 2015 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://nico-westerbeck.de/tags/food/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="nico-westerbeck.de/tags/food/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Alastair</title>
-      <link>http://nico-westerbeck.de/project/alastair/</link>
+      <link>/nico-westerbeck.de/project/alastair/</link>
       <pubDate>Tue, 27 Oct 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://nico-westerbeck.de/project/alastair/</guid>
+      <guid>/nico-westerbeck.de/project/alastair/</guid>
       <description>&lt;p&gt;Alastair is a webapp to plan food for bigger events, calculating a shopping list and estimated costs based on the number of people you want to feed.&lt;/p&gt;
 </description>
     </item>

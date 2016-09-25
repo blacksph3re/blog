@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Nico Westerbeck</title>
-    <link>http://nico-westerbeck.de/post/</link>
+    <link>nico-westerbeck.de/post/</link>
     <description>Recent content in Posts on Nico Westerbeck</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2016 Nico Westerbeck</copyright>
     <lastBuildDate>Sun, 25 Sep 2016 17:00:00 +0000</lastBuildDate>
-    <atom:link href="http://nico-westerbeck.de/post/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="nico-westerbeck.de/post/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Microservice testing with Apiary</title>
-      <link>http://nico-westerbeck.de/post/microservice-testing/</link>
+      <link>/nico-westerbeck.de/post/microservice-testing/</link>
       <pubDate>Sun, 25 Sep 2016 17:00:00 +0000</pubDate>
       
-      <guid>http://nico-westerbeck.de/post/microservice-testing/</guid>
+      <guid>/nico-westerbeck.de/post/microservice-testing/</guid>
       <description>
 
 &lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
@@ -80,10 +80,10 @@ module.exports = exp;
     
     <item>
       <title>Setting up this webspace</title>
-      <link>http://nico-westerbeck.de/post/setting-up-website/</link>
+      <link>/nico-westerbeck.de/post/setting-up-website/</link>
       <pubDate>Sat, 24 Sep 2016 17:00:00 +0000</pubDate>
       
-      <guid>http://nico-westerbeck.de/post/setting-up-website/</guid>
+      <guid>/nico-westerbeck.de/post/setting-up-website/</guid>
       <description>
 
 &lt;p&gt;As this was my today&amp;rsquo;s project, I will lose some words about how I set up this site.&lt;/p&gt;
