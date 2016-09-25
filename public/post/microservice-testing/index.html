@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="theme" content="hugo-academic">
+    <meta name="generator" content="Hugo 0.16" />
+    <meta name="author" content="Nico Westerbeck">
+    
+
+    <link rel="stylesheet" href="http://nico-westerbeck.de/css/highlight.min.css">
+    <link rel="stylesheet" href="http://nico-westerbeck.de/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://nico-westerbeck.de/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://nico-westerbeck.de/css/academicons.min.css">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:400,700|Merriweather|Roboto+Mono">
+    <link rel="stylesheet" href="http://nico-westerbeck.de/css/hugo-academic.css">
+    
+
+    
+    <link rel="shortcut icon" href="http://nico-westerbeck.de/img/favicon.ico" type="image/x-icon">
+    <link rel="canonical" href="http://nico-westerbeck.de/post/microservice-testing/">
+
+    <title>Microservice testing with Apiary | Nico Westerbeck</title>
+
+</head>
+<body id="top">
+
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navbar-main">
+    <div class="container">
+
+        
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://nico-westerbeck.de/">Nico Westerbeck</a>
+        </div>
+
+        
+        <div class="collapse navbar-collapse" id="#navbar-collapse-1">
+
+            
+            <ul class="nav navbar-nav navbar-right">
+                
+                <li class="nav-item"><a href="http://nico-westerbeck.de/#top">Home</a></li>
+                
+                <li class="nav-item"><a href="http://nico-westerbeck.de/#posts">Posts</a></li>
+                
+                <li class="nav-item"><a href="http://nico-westerbeck.de/#projects">Projects</a></li>
+                
+            </ul>
+
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+
+    <article class="article" itemscope itemtype="http://schema.org/Article">
+
+        
+
+        <h1 itemprop="name">Microservice testing with Apiary</h1>
+
+        
+
+<div class="article-metadata">
+
+    <span class="article-date">
+        <time datetime="2016-09-25 17:00:00 &#43;0000 UTC" itemprop="datePublished">09.25.2016</time>
+    </span>
+
+    
+    
+    
+    <span class="article-tags">
+        <i class="fa fa-tags"></i>
+        
+        <a class="article-tag-link" href="http://nico-westerbeck.de/tags/microservice">microservice</a>, 
+        
+        <a class="article-tag-link" href="http://nico-westerbeck.de/tags/testing">testing</a>, 
+        
+        <a class="article-tag-link" href="http://nico-westerbeck.de/tags/apiary">apiary</a>
+        
+    </span>
+    
+    
+
+    
+        
+<div class="share-box">
+    <ul class="share">
+        <li>
+            <a class="facebook" href="https://www.facebook.com/sharer.php?u=http%3a%2f%2fnico-westerbeck.de%2fpost%2fmicroservice-testing%2f" target="_blank">
+                <i class="fa fa-facebook"></i>
+            </a>
+        </li>
+        <li>
+            <a class="twitter" href="https://twitter.com/intent/tweet?text=Microservice%20testing%20with%20Apiary&amp;url=http%3a%2f%2fnico-westerbeck.de%2fpost%2fmicroservice-testing%2f" target="_blank">
+                <i class="fa fa-twitter"></i>
+            </a>
+        </li>
+        <li>
+            <a class="linkedin" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2fnico-westerbeck.de%2fpost%2fmicroservice-testing%2f&amp;title=Microservice%20testing%20with%20Apiary" target="_blank">
+                <i class="fa fa-linkedin"></i>
+            </a>
+        </li>
+        <li>
+            <a class="weibo" href="http://service.weibo.com/share/share.php?url=http%3a%2f%2fnico-westerbeck.de%2fpost%2fmicroservice-testing%2f&amp;title=Microservice%20testing%20with%20Apiary" target="_blank">
+                <i class="fa fa-weibo"></i>
+            </a>
+        </li>
+        <li>
+            <a class="email" href="mailto:?subject=Microservice%20testing%20with%20Apiary&amp;body=http%3a%2f%2fnico-westerbeck.de%2fpost%2fmicroservice-testing%2f">
+                <i class="fa fa-envelope"></i>
+            </a>
+        </li>
+    </ul>
+</div>
+
+
+    
+
+</div>
+
+
+        <div class="article-style" itemprop="articleBody">
+            
+
+<h2 id="introduction">Introduction</h2>
+
+<p>I assume you are generally familiar with microservices, otherwise I can recommend <a href="http://martinfowler.com/articles/microservices.html">this</a> article for further reading. Lets also assume we have a basic microservice architecture set up. So, why and how do we test it? Why: I won&rsquo;t even start preaching about tests, just write a bigger project without testing. I guess every programmer has to do that at some point of his life. How: Most of the tests, and for some services all of the tests will be very straight-forward. On method-level we can apply unit-tests and for API-routes we can use Behavior-Tests. If you are using node.js, I can recommend <a href="https://mochajs.org/">mocha</a> in combination with <a href="http://chaijs.com/">chai</a> (I am more of the tea person&hellip;). The problem are integration tests.</p>
+
+<h2 id="depending-microservices">Depending microservices</h2>
+
+<p>In a normal web-app, there is at max one microservice which can be tested standalone and that&rsquo;s the user management. Even at that point you will typically depend on some kind of database, and other microservices will have other dependencies within the application. So, what are ideas to test a dependant service</p>
+
+<ul>
+<li><p><strong>Ignore dependencies</strong> Without having other microservices available, you will still be able to test quite a big portion of your code. Especially all the unit-tests will run, and there might aswell be a couple of requests that you can blackbox-test without having other services interfer. Typically public GETs are a good example of requests, that you can test without the need of other services. If you can run stuff without dependencies, don&rsquo;t pull in further dependencies and stick to the barebones version. This will also enforce more separation and independence of your service, allowing for better failure tolerance and easier scaling. (That&rsquo;s why we&rsquo;re building microservices, right?)</p></li>
+
+<li><p><strong>Full testing-environment</strong> The optimal case is if you can provide a full system, with all services running in a testing environment, to get &ldquo;real&rdquo; replies to your requests. This will allow for most realistic testings, but has the major drawback of feasibility. It&rsquo;s not easily possible to set up a full architecture, possibly consisting of dozens of different service tiers, just to test basic requests. This setup will be necessary to run integration tests on the whole system, but for lower-level tests it would be nice to have something lightweigt, which might aswell integrate into common CI-frameworks</p></li>
+
+<li><p><strong>Mock services</strong> What I found would be the best way to test is using a mock-server. We anyways drafted out APIs with <a href="https://apiary.io">Apiary</a>, so why not using this? Apiary offers the nice feature of an automatically set up mock-server, which will respond to requests with the data you have defined in the API-blueprint-markdown. Though that interface will of course not behave as the original service, it is at least a nice intermediate step towards a full testing environment.</p></li>
+</ul>
+
+<h2 id="injecting-new-configs-in-js">Injecting new configs in JS</h2>
+
+<p>This example uses node.js and a configuration read from a config.json. I assume you are doing <a href="https://www.nginx.com/blog/service-discovery-in-a-microservices-architecture/">service discovery</a> by DNS, it doesn&rsquo;t matter if you plug a loadbalancer to the dns address or if you just write the other service&rsquo;s ip to your /etc/hosts-file. The idea is to overwrite this address in case we are in a testing environment</p>
+
+<pre><code class="language-javascript">{
+	&quot;dev&quot;: {
+		&quot;user-management&quot;: &quot;http://some-dns-name&quot;,
+		...
+	},
+
+	&quot;test&quot;: {
+		&quot;user-management&quot;: &quot;http://yourproject.apiary-mock.com&quot;,
+		...
+	}
+}
+</code></pre>
+
+<p>Now you will have to read this out, just, wherever you used to include config.json switch to a parseconfig.js including this snippet:</p>
+
+<pre><code class="language-javascrpit">var exp = config.dev;
+if(process.env.NODE_ENV == 'test') {
+	for (var attr in config.test) {
+		exp[attr] = config.test[attr];
+	}
+}
+
+module.exports = exp;
+</code></pre>
+
+<p>Now, if your service was started with the environment-variable test set, you will load the test configuration, otherwise you will go for the usual dev-configuration. You can even extend this to switch between development and production configuration. Setting that environment-variable is easily possible by using</p>
+
+<pre><code class="language-javascript">process.env.NODE_ENV = 'test';
+</code></pre>
+
+<p>in the first line of every test.</p>
+
+<p>Now you can test against a simplified mock of the other services. The good thing is that this mock will always reply with the same data, so you can hardcode these assumptions into your code (and e.g. assume the logged-in user is always named Günther, and thus check if the post you just created in the test holds the author Günther (I recommend to always go for Günther as a testing-user, he is very experienced))</p>
+
+<h2 id="dynamic-behavior">Dynamic behavior</h2>
+
+<p>The problem with this approach is of course the flexibility of the mock-server. It is possible to draft different responses based on different requests in Apiary-blueprint, however it gets difficult if you want to differentiate based on headers. One Cookie/Auth-Token/Whatever-you-use-for-auth may be valid, for the other one you get a 403. I must admit that I also didn&rsquo;t yet find the holy grail of almost-integration-testing here, but I will update this post as soon as I find something. If you really need it, just set up a full testing-environment.</p>
+
+        </div>
+
+    </article>
+
+    <nav>
+    <ul class="pager">
+        
+        <li class="previous"><a href="http://nico-westerbeck.de/post/setting-up-website/"><span aria-hidden="true">&larr;</span> Setting up this webspace</a></li>
+        
+
+        
+    </ul>
+</nav>
+
+    
+
+
+</div>
+<footer class="site-footer">
+    <div class="container">
+        <p class="powered-by">
+
+            &copy; 2016 Nico Westerbeck &middot; 
+
+            Powered by the <a href="https://github.com/gcushen/hugo-academic" target="_blank">Academic theme</a> for <a href="http://gohugo.io" target="_blank">Hugo</a>.
+
+            <span class="pull-right"><a href="#" id="back_to_top"><span class="button_icon"><i class="fa fa-chevron-up fa-2x" aria-hidden="true"></i></span></a></span>
+
+        </p>
+    </div>
+</footer>
+
+        <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.18.4/TweenMax.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js"></script>
+        <script src="http://nico-westerbeck.de/js/jquery-1.12.3.min.js"></script>
+        <script src="http://nico-westerbeck.de/js/bootstrap.min.js"></script>
+        <script src="http://nico-westerbeck.de/js/hugo-academic.js"></script>
+        
+
+        
+
+        
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+
+        
+        
+
+    </body>
+</html>
+

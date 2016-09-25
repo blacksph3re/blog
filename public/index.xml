@@ -7,8 +7,76 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2016 Nico Westerbeck</copyright>
-    <lastBuildDate>Sat, 24 Sep 2016 17:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 25 Sep 2016 17:00:00 +0000</lastBuildDate>
     <atom:link href="http://nico-westerbeck.de/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Microservice testing with Apiary</title>
+      <link>http://nico-westerbeck.de/post/microservice-testing/</link>
+      <pubDate>Sun, 25 Sep 2016 17:00:00 +0000</pubDate>
+      
+      <guid>http://nico-westerbeck.de/post/microservice-testing/</guid>
+      <description>
+
+&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+
+&lt;p&gt;I assume you are generally familiar with microservices, otherwise I can recommend &lt;a href=&#34;http://martinfowler.com/articles/microservices.html&#34;&gt;this&lt;/a&gt; article for further reading. Lets also assume we have a basic microservice architecture set up. So, why and how do we test it? Why: I won&amp;rsquo;t even start preaching about tests, just write a bigger project without testing. I guess every programmer has to do that at some point of his life. How: Most of the tests, and for some services all of the tests will be very straight-forward. On method-level we can apply unit-tests and for API-routes we can use Behavior-Tests. If you are using node.js, I can recommend &lt;a href=&#34;https://mochajs.org/&#34;&gt;mocha&lt;/a&gt; in combination with &lt;a href=&#34;http://chaijs.com/&#34;&gt;chai&lt;/a&gt; (I am more of the tea person&amp;hellip;). The problem are integration tests.&lt;/p&gt;
+
+&lt;h2 id=&#34;depending-microservices&#34;&gt;Depending microservices&lt;/h2&gt;
+
+&lt;p&gt;In a normal web-app, there is at max one microservice which can be tested standalone and that&amp;rsquo;s the user management. Even at that point you will typically depend on some kind of database, and other microservices will have other dependencies within the application. So, what are ideas to test a dependant service&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Ignore dependencies&lt;/strong&gt; Without having other microservices available, you will still be able to test quite a big portion of your code. Especially all the unit-tests will run, and there might aswell be a couple of requests that you can blackbox-test without having other services interfer. Typically public GETs are a good example of requests, that you can test without the need of other services. If you can run stuff without dependencies, don&amp;rsquo;t pull in further dependencies and stick to the barebones version. This will also enforce more separation and independence of your service, allowing for better failure tolerance and easier scaling. (That&amp;rsquo;s why we&amp;rsquo;re building microservices, right?)&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Full testing-environment&lt;/strong&gt; The optimal case is if you can provide a full system, with all services running in a testing environment, to get &amp;ldquo;real&amp;rdquo; replies to your requests. This will allow for most realistic testings, but has the major drawback of feasibility. It&amp;rsquo;s not easily possible to set up a full architecture, possibly consisting of dozens of different service tiers, just to test basic requests. This setup will be necessary to run integration tests on the whole system, but for lower-level tests it would be nice to have something lightweigt, which might aswell integrate into common CI-frameworks&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Mock services&lt;/strong&gt; What I found would be the best way to test is using a mock-server. We anyways drafted out APIs with &lt;a href=&#34;https://apiary.io&#34;&gt;Apiary&lt;/a&gt;, so why not using this? Apiary offers the nice feature of an automatically set up mock-server, which will respond to requests with the data you have defined in the API-blueprint-markdown. Though that interface will of course not behave as the original service, it is at least a nice intermediate step towards a full testing environment.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;injecting-new-configs-in-js&#34;&gt;Injecting new configs in JS&lt;/h2&gt;
+
+&lt;p&gt;This example uses node.js and a configuration read from a config.json. I assume you are doing &lt;a href=&#34;https://www.nginx.com/blog/service-discovery-in-a-microservices-architecture/&#34;&gt;service discovery&lt;/a&gt; by DNS, it doesn&amp;rsquo;t matter if you plug a loadbalancer to the dns address or if you just write the other service&amp;rsquo;s ip to your /etc/hosts-file. The idea is to overwrite this address in case we are in a testing environment&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;{
+	&amp;quot;dev&amp;quot;: {
+		&amp;quot;user-management&amp;quot;: &amp;quot;http://some-dns-name&amp;quot;,
+		...
+	},
+
+	&amp;quot;test&amp;quot;: {
+		&amp;quot;user-management&amp;quot;: &amp;quot;http://yourproject.apiary-mock.com&amp;quot;,
+		...
+	}
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Now you will have to read this out, just, wherever you used to include config.json switch to a parseconfig.js including this snippet:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-javascrpit&#34;&gt;var exp = config.dev;
+if(process.env.NODE_ENV == &#39;test&#39;) {
+	for (var attr in config.test) {
+		exp[attr] = config.test[attr];
+	}
+}
+
+module.exports = exp;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Now, if your service was started with the environment-variable test set, you will load the test configuration, otherwise you will go for the usual dev-configuration. You can even extend this to switch between development and production configuration. Setting that environment-variable is easily possible by using&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;process.env.NODE_ENV = &#39;test&#39;;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;in the first line of every test.&lt;/p&gt;
+
+&lt;p&gt;Now you can test against a simplified mock of the other services. The good thing is that this mock will always reply with the same data, so you can hardcode these assumptions into your code (and e.g. assume the logged-in user is always named Günther, and thus check if the post you just created in the test holds the author Günther (I recommend to always go for Günther as a testing-user, he is very experienced))&lt;/p&gt;
+
+&lt;h2 id=&#34;dynamic-behavior&#34;&gt;Dynamic behavior&lt;/h2&gt;
+
+&lt;p&gt;The problem with this approach is of course the flexibility of the mock-server. It is possible to draft different responses based on different requests in Apiary-blueprint, however it gets difficult if you want to differentiate based on headers. One Cookie/Auth-Token/Whatever-you-use-for-auth may be valid, for the other one you get a 403. I must admit that I also didn&amp;rsquo;t yet find the holy grail of almost-integration-testing here, but I will update this post as soon as I find something. If you really need it, just set up a full testing-environment.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Setting up this webspace</title>
@@ -25,6 +93,14 @@
 &lt;p&gt;I am hosting at &lt;a href=&#34;https://uberspace.de/&#34;&gt;uberspace&lt;/a&gt;, a very hipster shared hoster, which let&amp;rsquo;s you choose your price yourself. Their hosting principle is a multi-user linux environment, where you automatically get a user assigned and some stuff provisioned. It relies on linux unprivileged users as the only isolation from other users on the same machine, so I would not recommend using the space for anything critical. However, I like the setup and how everything is documented, so I chose it as a hoster. I will just hope no other user on my machine uses a privilege escalation to modify my site. &lt;code&gt;#securitythroughprayer&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;But everything was up to date, so I would rate the risk as pretty low.&lt;/p&gt;
+
+&lt;h2 id=&#34;website-generation&#34;&gt;Website generation&lt;/h2&gt;
+
+&lt;p&gt;This website is generated by &lt;a href=&#34;https://gohugo.io/&#34;&gt;hugo&lt;/a&gt;, a really easy to dive in static-website generator. It creates your site by using Markdown and predefined (or self-modified) themes, putting out a ready-to-use website. It took me ca 30 minutes to get into it, and I am really considering to use this for my next website-projects aswell. I don&amp;rsquo;t really like wordpress and other, full-blown competitors. Also it features a nice way to locally host a draft of the site (with live-codereloading and millisecond build times)&lt;/p&gt;
+
+&lt;h2 id=&#34;deployment&#34;&gt;Deployment&lt;/h2&gt;
+
+&lt;p&gt;I build the files locally with &lt;code&gt;hugo&lt;/code&gt; and transfer them, including the /public folder, to my webserver via git. I found that would be the easiest way to keep my local instance and the remote git up to date&lt;/p&gt;
 </description>
     </item>
     
