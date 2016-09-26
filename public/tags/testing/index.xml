@@ -53,7 +53,7 @@
 
 &lt;p&gt;Now you will have to read this out, just, wherever you used to include config.json switch to a parseconfig.js including this snippet:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-javascrpit&#34;&gt;var exp = config.dev;
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;var exp = config.dev;
 if(process.env.NODE_ENV == &#39;test&#39;) {
 	for (var attr in config.test) {
 		exp[attr] = config.test[attr];

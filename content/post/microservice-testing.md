@@ -35,7 +35,7 @@ This example uses node.js and a configuration read from a config.json. I assume 
 ```
 
 Now you will have to read this out, just, wherever you used to include config.json switch to a parseconfig.js including this snippet:
-```javascrpit
+```javascript
 var exp = config.dev;
 if(process.env.NODE_ENV == 'test') {
 	for (var attr in config.test) {

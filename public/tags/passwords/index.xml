@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Passwords on Nico Westerbeck</title>
+    <link>https://nico-westerbeck.de/tags/passwords/</link>
+    <description>Recent content in Passwords on Nico Westerbeck</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2016 Nico Westerbeck</copyright>
+    <lastBuildDate>Sun, 25 Sep 2016 23:00:00 +0000</lastBuildDate>
+    <atom:link href="https://nico-westerbeck.de/tags/passwords/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Memorizing strong passwords</title>
+      <link>https://nico-westerbeck.de/post/easy-passwords/</link>
+      <pubDate>Sun, 25 Sep 2016 23:00:00 +0000</pubDate>
+      
+      <guid>https://nico-westerbeck.de/post/easy-passwords/</guid>
+      <description>
+
+&lt;p&gt;Though this is not really a too groundbreaking article, I noticed that quite a lot of my friends didn&amp;rsquo;t know the trick, so I thought I could share it.&lt;/p&gt;
+
+&lt;h2 id=&#34;intro&#34;&gt;Intro&lt;/h2&gt;
+
+&lt;p&gt;Nowadays there are some requirements to a good password, most people know them&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Entropy&lt;/strong&gt; - Mixed case, special characters, no natural language words&amp;hellip; I personally think this is not too important and makes passwords &lt;a href=&#34;https://xkcd.com/936/&#34;&gt;harder to remember&lt;/a&gt; while not increasing strength too much.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Length&lt;/strong&gt; &lt;a href=&#34;http://imgur.com/gallery/zFyBtyA&#34;&gt;Size matters&lt;/a&gt;! With every additional letter you theoretically multiply the effort needed to crack your password by 256 (practically maybe factor 60).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Uniqueness&lt;/strong&gt; From time to time, companies screw up &lt;a href=&#34;http://zed0.co.uk/crossword/&#34;&gt;badly&lt;/a&gt;, so you should use a different password on each site and a password other users are unlikely to choose aswell. No &amp;ldquo;qwerty&amp;rdquo; is not innovative, you should go for &lt;a href=&#34;http://www.der-postillon.com/2014/04/it-experten-kuren-mb2r5ohf-0t-zum.html&#34;&gt;Mb2.r5oHf-0t&lt;/a&gt; ;-).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Lifetime&lt;/strong&gt; You should change your password from time to time, as all passwords can be cracked with just enough patience&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Yes, nice dude, who can remember those? I mean I just went to the basement and forgot on the way there why I went there, how should I remember like 20 passwords, each 16 characters long? One way, maybe the most secure one, to achieve these goals is &lt;a href=&#34;https://www.random.org/passwords/&#34;&gt;randomly generate&lt;/a&gt; passwords and store them in a &lt;a href=&#34;http://keepass.info/&#34;&gt;password manager&lt;/a&gt;. However, there are few easy-to-use implementations out there and it gets difficult if you need your passwords at a place where you can&amp;rsquo;t access the keyfile (like if you try to log into your mail from an internet-cafe on holidays (which you should try to avoid for so many reasons, only one of them being the better weather outside (I like nested brackets))).&lt;/p&gt;
+
+&lt;h2 id=&#34;idea&#34;&gt;Idea&lt;/h2&gt;
+
+&lt;p&gt;However, there is a simple trick to have a different, strong password for each site/account you hold, yet still just having to remember one. So, what about this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;mypassword&amp;gt;-google
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;You generate the &lt;code&gt;mypassword&lt;/code&gt;-fraction yourself and memorize it, then you append the name of the website wherever you use it. This has some nice advantages&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;You will have a &lt;strong&gt;different password&lt;/strong&gt; for each site. Simple password crack bots won&amp;rsquo;t recognize the similarity and you have a fairly low chance to get your password guessed by a bruteforce attack.&lt;/li&gt;
+&lt;li&gt;Your password will be even longer through the additional website name (remember, size matters!)&lt;/li&gt;
+&lt;li&gt;You just need to &lt;strong&gt;remember one&lt;/strong&gt; password! Even if you struggle with your mom&amp;rsquo;s birthday, I believe in you!&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;em&gt;Please, as this is the only password you have to remember, choose something more sophisticated than &amp;ldquo;asdfgh&amp;rdquo;!&lt;/em&gt; Doing that would also make it easier to use the password on sites that require your password to fulfill ceratin criterias, like &amp;ldquo;at least one uppercase letter&amp;rdquo; or &amp;ldquo;at least 8 letters&amp;rdquo;. It is a pain when there is one single site using a password policy which doesn&amp;rsquo;t match and you have to think of something new (and forget that seconds after (I could nest another pair of brackets here)).&lt;/p&gt;
+
+&lt;h2 id=&#34;critics&#34;&gt;Critics&lt;/h2&gt;
+
+&lt;p&gt;There are still two drawbacks to this.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;If you just append the name, a slighly more sohpisticated passwort-bot could still guess the password and crack it. Especially if more people are starting to do this, it will eventually end up being a standard-method to crack passwords. To overcome this, you could obfuscate the website name a little. Be creative!&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;mypassword&amp;gt;-elgoog
+go&amp;lt;mypassword&amp;gt;le
+&amp;lt;my&amp;gt;go&amp;lt;pass&amp;gt;og&amp;lt;word&amp;gt;le
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;If a human sees some of your passwords, it might figure out the algorithm you build them with and instantly crack all your passwords. This approach does not protect against that. Though it is unlikely someone will manually read through all the passwords in a password leak, you could still be disclosed when typing it. I personally decided to take the risk and have the comfort of not using a password manager, but you may decide differently. In case of a disclosure I will have to change a lot of passwords in contrast to one single one with the password manager.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;And finally, if you still, after being warned this whole article long, choose asd-google, you will not gain much.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;But all in all I think of this as a nice way to memorize passwords, and you could think of switching your password policy to this. Also try to use two-factor authentication if the website offers that.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
