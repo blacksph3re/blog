@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Microservices on Nico Westerbeck</title>
-    <link>https://nico-westerbeck.de/tags/microservices/</link>
-    <description>Recent content in Microservices on Nico Westerbeck</description>
+    <title>Docker Compose on Nico Westerbeck</title>
+    <link>https://nico-westerbeck.de/tags/docker-compose/</link>
+    <description>Recent content in Docker Compose on Nico Westerbeck</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2016 Nico Westerbeck</copyright>
     <lastBuildDate>Tue, 15 Nov 2016 17:00:00 +0000</lastBuildDate>
-    <atom:link href="https://nico-westerbeck.de/tags/microservices/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://nico-westerbeck.de/tags/docker-compose/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Setting up a docker-compose environment for the OMS</title>
@@ -115,42 +115,6 @@ RUN npm install
 &lt;/ol&gt;
 
 &lt;p&gt;1 and 2 are obviously flawed, also because in our setup the omscore generates the token itself, so I found that 3 could be a good option. I don&amp;rsquo;t yet have experience with vault or other secure key/value stores, but maybe I will try to implement that in the future. The rest then was pretty straight forward. Create a named volume, mount it read-only into the omsevents module (and have the service read from the file) and mount it into the omscore-nginx (and have the service write to it). Well, actually both things in bracket meant code changes, so this took a while, but the idea is straight forward. Remember you don&amp;rsquo;t even need to specify a host folder for this, a named volume should be enough as it is written by omscore during runtime. Like this, only the necessary containers have access to the api-key, so the chance of it getting leaked is pretty low. One could also think of introducing a data-container for persistence.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Notification pipelines</title>
-      <link>https://nico-westerbeck.de/post/notification-pipeline/</link>
-      <pubDate>Mon, 10 Oct 2016 20:00:00 +0000</pubDate>
-      
-      <guid>https://nico-westerbeck.de/post/notification-pipeline/</guid>
-      <description>
-
-&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
-
-&lt;p&gt;In this post I will share some thoughts upon implementing a notification pipeline in a microservice architecture. It should be said though that I don&amp;rsquo;t yet have much practical experiences, this post is rather designed as a discussion about the topic. While working on the OMS for AEGEE, I found that this topic is actually quite a tough point when developing a distributed application.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;A lot of microservices will want to generate notifications for different things, resulting in a high number of notifications and a high diversity&lt;/li&gt;
-&lt;li&gt;Users want to control how and which notifications they want&lt;/li&gt;
-&lt;li&gt;Notifications need to be managed centrally, as it would get inconsistend having the notification settings everywhere&lt;/li&gt;
-&lt;li&gt;Certain events could potentially trigger a high notification throughput (a huge event gets canceled, popular news post)&lt;/li&gt;
-&lt;li&gt;There are several channels how notifications can be distributed: Mail, Pop-up notification, Push-notifications, Chat integration, &amp;hellip;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;The good thing is that this topic is not necessarily time-critical. Noone will notice if the notification for an event creation is fired 30 seconds late, so it would be a good candidate for async execution and we don&amp;rsquo;t need to be too careful on how long the job takes as soon as it is dispatched to a background task. Also, the notification object is quite simple, often just consisting of a recipient, message text, title, category and some information about the importance. The latter could be used to implement smart notifications like facebook, outputting a relatively constant number of pop-up notifications as long as the user is on the site but lowering the output when he leaves.&lt;/p&gt;
-
-&lt;h2 id=&#34;design-ideas&#34;&gt;Design ideas&lt;/h2&gt;
-
-&lt;p&gt;The first idea that came up when we discussed the topic &lt;strong&gt;just an endpoint&lt;/strong&gt; on the service which also deals with user data. Just an API call that would immediately send an email to the user. It would be super-easy to implement and could potentially accept a big number of recipients. However we quickly noticed some drawbacks with this approach. It would be difficult adding or removing channels (mail/push/etc), as everything is concentrated in one endpoint. Also this could put some quite high load on the machine managing that endpoint - especially if the service is not replicable this could be problematic. However it would make it easy setting preferences, as the central management requirement would be fulfilled.&lt;/p&gt;
-
-&lt;p&gt;So we went on from this approach to a pub-sub idea, some kind of &lt;strong&gt;observer-pattern&lt;/strong&gt;. We would still have the endpoint to send notifications, however we would also offer a hook for services to register with the core to get a copy of each notification sent by anyone. Those hooked microservices could be responsible for spreading the messages about one specific channel. This is a fairly easy to implement service and would keep the codebase small, ideal for newcomers in the project. However we still encountered a problem. We could not possibly maintain a centralized list of all possible notification categories. The services would grow constantly and would rapidly develop new classes of notifications, updating them into a centralized database would be a pain.&lt;/p&gt;
-
-&lt;p&gt;We came up with the idea of &lt;strong&gt;tree-based categories&lt;/strong&gt;. There is a limited, predefined set of toplevel notifications, like &amp;ldquo;eventrelated&amp;rdquo;, &amp;ldquo;userrelated&amp;rdquo;, etc. This level is managed centrally and only updated rarely. Whenever a service wants to dispatch a notification, it has to fit it in one of the toplevel categories. However it also has the possibility to set an arbitrary amount of subtrees. This would allow us to firstly have very course-grained controls int he development process, but as the more finegrained category information is not lost, it would be easily possible to set up more finegrained controls later.&lt;/p&gt;
-
-&lt;h2 id=&#34;implementation&#34;&gt;Implementation&lt;/h2&gt;
-
-&lt;p&gt;Well, right now there is no implementation, as this post is about ideas. I will update this as soon as we brought our ideas into practice.&lt;/p&gt;
 </description>
     </item>
     

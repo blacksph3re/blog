@@ -71,7 +71,49 @@
     
     <div>
         
-        <h2><a href="https://nico-westerbeck.de/post/message-pipeline/">Notification pipelines</a></h2>
+        <h2><a href="https://nico-westerbeck.de/post/docker-compose/">Setting up a docker-compose environment for the OMS</a></h2>
+        
+
+<div class="article-metadata">
+
+    <span class="article-date">
+        <time datetime="2016-11-15 17:00:00 &#43;0000 UTC" itemprop="datePublished">15.11.2016</time>
+    </span>
+
+    
+    
+    
+    <span class="article-tags">
+        <i class="fa fa-tags"></i>
+        
+        <a class="article-tag-link" href="https://nico-westerbeck.de/tags/docker">docker</a>, 
+        
+        <a class="article-tag-link" href="https://nico-westerbeck.de/tags/docker-compose">docker-compose</a>, 
+        
+        <a class="article-tag-link" href="https://nico-westerbeck.de/tags/git">git</a>, 
+        
+        <a class="article-tag-link" href="https://nico-westerbeck.de/tags/microservices">microservices</a>, 
+        
+        <a class="article-tag-link" href="https://nico-westerbeck.de/tags/oms">oms</a>
+        
+    </span>
+    
+    
+
+    
+
+</div>
+
+        <div class="article-style"><p>
+            
+                Introduction At first I used this file only as a help for myself, but I thought I could also share my thoughts. The project was to set up a docker environment for a microservice architecture consisting of the following parts. This was specifically done for the OMS OMS-Core, consisting of nginx php-fpm A workspace container with php artisan, composer, etc postgres A data container for the whole repo OMS-Events, consisting of node.js backend nginx frontend for static serving and reverse proxy mongodb (Not yet) A data container for media files Design decisions I had to do some design decisions in setting this up, most importantly How to get the code into the container How to get the configuration into the container How to link up the containers How far can/should I split everything Sharing API-Keys How to get the code into the container This seemed to be my first real task.
+            
+        </p></div>
+    </div>
+    
+    <div>
+        
+        <h2><a href="https://nico-westerbeck.de/post/notification-pipeline/">Notification pipelines</a></h2>
         
 
 <div class="article-metadata">
@@ -115,7 +157,7 @@
 <div class="article-metadata">
 
     <span class="article-date">
-        <time datetime="2016-09-25 23:00:00 &#43;0000 UTC" itemprop="datePublished">09.25.2016</time>
+        <time datetime="2016-09-25 23:00:00 &#43;0000 UTC" itemprop="datePublished">25.09.2016</time>
     </span>
 
     
@@ -149,7 +191,7 @@
 <div class="article-metadata">
 
     <span class="article-date">
-        <time datetime="2016-09-25 17:00:00 &#43;0000 UTC" itemprop="datePublished">09.25.2016</time>
+        <time datetime="2016-09-25 17:00:00 &#43;0000 UTC" itemprop="datePublished">25.09.2016</time>
     </span>
 
     
@@ -187,7 +229,7 @@
 <div class="article-metadata">
 
     <span class="article-date">
-        <time datetime="2016-09-24 17:00:00 &#43;0000 UTC" itemprop="datePublished">09.24.2016</time>
+        <time datetime="2016-09-24 17:00:00 &#43;0000 UTC" itemprop="datePublished">24.09.2016</time>
     </span>
 
     

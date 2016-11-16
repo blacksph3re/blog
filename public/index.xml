@@ -7,15 +7,123 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2016 Nico Westerbeck</copyright>
-    <lastBuildDate>Mon, 10 Oct 2016 20:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 15 Nov 2016 17:00:00 +0000</lastBuildDate>
     <atom:link href="https://nico-westerbeck.de/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Setting up a docker-compose environment for the OMS</title>
+      <link>https://nico-westerbeck.de/post/docker-compose/</link>
+      <pubDate>Tue, 15 Nov 2016 17:00:00 +0000</pubDate>
+      
+      <guid>https://nico-westerbeck.de/post/docker-compose/</guid>
+      <description>
+
+&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
+
+&lt;p&gt;At first I used this file only as a help for myself, but I thought I could also share my thoughts. The project was to set up a docker environment for a microservice architecture consisting of the following parts. This was specifically done for the &lt;a href=&#34;https://oms-project.atlassian.net/wiki/display/GENERAL/Project+description&#34;&gt;OMS&lt;/a&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;OMS-Core, consisting of
+
+&lt;ul&gt;
+&lt;li&gt;nginx&lt;/li&gt;
+&lt;li&gt;php-fpm&lt;/li&gt;
+&lt;li&gt;A workspace container with php artisan, composer, etc&lt;/li&gt;
+&lt;li&gt;postgres&lt;/li&gt;
+&lt;li&gt;A data container for the whole repo&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;OMS-Events, consisting of
+
+&lt;ul&gt;
+&lt;li&gt;node.js backend&lt;/li&gt;
+&lt;li&gt;nginx frontend for static serving and reverse proxy&lt;/li&gt;
+&lt;li&gt;mongodb&lt;/li&gt;
+&lt;li&gt;(Not yet) A data container for media files&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h1 id=&#34;design-decisions&#34;&gt;Design decisions&lt;/h1&gt;
+
+&lt;p&gt;I had to do some design decisions in setting this up, most importantly&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;How to get the code into the container&lt;/li&gt;
+&lt;li&gt;How to get the configuration into the container&lt;/li&gt;
+&lt;li&gt;How to link up the containers&lt;/li&gt;
+&lt;li&gt;How far can/should I split everything&lt;/li&gt;
+&lt;li&gt;Sharing API-Keys&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&#34;how-to-get-the-code-into-the-container&#34;&gt;How to get the code into the container&lt;/h2&gt;
+
+&lt;p&gt;This seemed to be my first real task. I wanted to have it set up in a way that you ideally just run docker-compose up and everything is set up, AND the code from each of the modules is linked via a volume mapping to the host so you can just edit the files on the host with a text editor and it will end up iin the container right away. However, now is the question on when the code for oms-core and oms-events will be pulled and how it can be moved into the container. There were basically 3 possibilities&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Create a git repo with the docker-compose.yml (and some other files) and add oms-neo-core and oms-events as submodules, then COPY the files into the containers.&lt;/li&gt;
+&lt;li&gt;Create a git repo with the docker-compose.yml (and some other files) and add oms-neo-core and oms-events as submodules, then mount the files as volumes into the containers.&lt;/li&gt;
+&lt;li&gt;Git clone inside the Dockerfiles, but still mount the volumes to harddisk during run.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;At first I read &lt;a href=&#34;https://forums.docker.com/t/best-practices-for-getting-code-into-a-container-git-clone-vs-copy-vs-data-container/4077&#34;&gt;this&lt;/a&gt; article, which basically has the same 3 options, and where the majority pledged for option 2. The advantages which were described there were better CI integration and more lightweight containers. Especially the last argument is strong, as replicating the container wouldn&amp;rsquo;t really work, as the code would be cloned twice. However, I also had some points for option 3. It would make setting up everything a lot more transparent, as the configuration files (which definetely needed to be changed) could have been added in the docker build process. However, I trusted that forum post and went for number 2 - number 1 was never really an option.&lt;/p&gt;
+
+&lt;p&gt;The file-system now looks like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;.
+├── docker
+├── oms-core
+├── oms-events
+└── oms-events-frontend
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Whereas the docker folder holds the docker-compose.yml and some dockerfiles.&lt;/p&gt;
+
+&lt;h2 id=&#34;how-to-get-the-configuration-into-the-container&#34;&gt;How to get the configuration into the container&lt;/h2&gt;
+
+&lt;p&gt;As I decided for number 2 in the above question, I was expecting some new problems with this one. The common way to mount configuration files into a docker container is to just use the -v switch (or on docker-compose the volumes: list). However, I already have a volume mount to the whole codebase, including the configuration file and that would mean intersecting mounts. I personnally had no idea if that actually was something bad, so I tried it aaaand it worked! =) It actually left the file in &lt;code&gt;oms-events/lib/config/configFile.json&lt;/code&gt; intact but to the container the contents of &lt;code&gt;docker/omsevents/configFile.json&lt;/code&gt; (which I added via volume mounts) were visible. Great!&lt;/p&gt;
+
+&lt;p&gt;However, not so easy. The configuration might be in there, but what about bootstrapping the apps? The problem is that the volume mounts are not there during docker build, and there is no way to get them there.&lt;/p&gt;
+
+&lt;p&gt;For &lt;strong&gt;oms-events&lt;/strong&gt; I would have to run &lt;code&gt;npm install&lt;/code&gt; at some point in time, as it&amp;rsquo;s based on nodejs. This would have been nice to run in the docker build process, so I checked on how this &lt;a href=&#34;https://nodejs.org/en/docs/guides/nodejs-docker-webapp/&#34;&gt;should be done&lt;/a&gt; - copying the package.json file in advance enables npm install to run and it doesn&amp;rsquo;t need any app code for that. However currently the package.json file lives outside of the build context, in the git repo with the other code and docker doesn&amp;rsquo;t allow copying that. My fix for this was putting the raw url from github for that specific file into the container:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;ADD https://raw.githubusercontent.com/AEGEE/oms-events/dev/package.json /usr/app/package.json
+RUN npm install
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Great, node works. However the &lt;strong&gt;omscore&lt;/strong&gt; seemed to have far more heavy dependencies and I personally didn&amp;rsquo;t know so much about how the bootstrapping works and if it could actually do something before having the codebase present. The laradock image also didn&amp;rsquo;t give many hints on this, as they seem to leave this as something the user can do by hand. I thought it might be neat to have a configuration container, which starts, does the configuration work and then exits again. I believe that this also was the concept behind the workspace container, that laradock introduced. However, that container would have to be designed in a way that it can be run every time on a startup, as having optional containers is &lt;a href=&#34;https://github.com/docker/compose/issues/1896&#34;&gt;not yet&lt;/a&gt; implemented in docker-compose. I decided to use the workspace for just that purpose and tried to set something up which can be run any time without breaking app. However, in the middle of the process I noticed that I need a working db connection, which made it impossible to set this up during the docker build process. Resultingly, I decided to place a small bootstrap script inside the workspace container and tell the user to manually run it when he runs the app the first time. Not beautiful, but for omsevents I need the same, see &lt;a href=&#34;#sharing-api-keys&#34;&gt;Sharing API-Keys&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;how-to-link-up-the-containers&#34;&gt;How to link up the containers&lt;/h2&gt;
+
+&lt;p&gt;&amp;ldquo;Linking up&amp;rdquo; actually is a pretty vague term, we need to differentiate between linking in &lt;strong&gt;network&lt;/strong&gt; terms and linking in &lt;strong&gt;volume&lt;/strong&gt; terms.&lt;/p&gt;
+
+&lt;p&gt;Regarding the &lt;strong&gt;volumes&lt;/strong&gt;, there basically only was the design decision to have a data container or not. Some services, like the nginx and the workspace of omscore need the same data, so we need to distribute that somehow. A dirty version which could be thinkable would be to copy all the data into all the containers, but that would go against our requirement of having a volume mount for live code-reloading. The &lt;a href=&#34;https://docs.docker.com/engine/tutorials/dockervolumes/&#34;&gt;docker tutorial&lt;/a&gt; recommends to insert data containers, meaning images like the &lt;code&gt;tianon/true&lt;/code&gt; image on dockerhub with a volume mount linked up to them. Another possibility would be to link the folders with a volume switch everywhere and not put up a data container. That would also be thinkable and actually work, just with the problem that the services might spam up our development folders, which we want to keep as clean as possible. In the end I actually went this way with the omsevents module, however planning to change that in the future. For the omscore it was already set up with the laradock configuration, so I kept it.&lt;/p&gt;
+
+&lt;p&gt;The &lt;strong&gt;network&lt;/strong&gt;-linking can be pretty straightforward, but might still be worth a thought. Docker supports multiple networks between the containers, which would in this case be a really good idea as the omsevents and omscore service are relatively independent and could be linked up with just a proxy. However, docker also supports mashing all of them into the same network. Let&amp;rsquo;s not do this in production, but for development I think this is fine, and I decided I&amp;rsquo;d rather spend that time making dinner than trying to seperate the networks.&lt;/p&gt;
+
+&lt;h2 id=&#34;how-far-should-can-i-split-everything&#34;&gt;How far should/can I split everything&lt;/h2&gt;
+
+&lt;p&gt;If you read any article about microservices, you will find the word &amp;ldquo;split&amp;rdquo; or a synonym in every second sentence. Splitting things is good, as it provides isolation so faults or exploits can&amp;rsquo;t propagate too easy, allows easier scaling, better fault tolerance and much more. The major reason why we actually need it in this size is splitting the teams working on different parts of the application. The core can be developed completely independent of the events module, and the events module frontend is almost independent of the backend, and so on. This is just pretty flexible. When I started setting up the docker for oms-events, I found that I would have to create a container with both node and nginx, as that module uses node for the backend and nginx for statically serving the frontend. At the beginning of the development, I had the node backend also serving the frontend files, but I discarted that solution for any production use, as serving frontend files would put unnecessary load on the backend. So at this point, I decided to fully split the two, and have two different containers for frontend and backend. That also meant introducing a new github repo for the frontend, as it felt just wrong having them in the same. Fancy extra: it looks super cool starting up 9 containers and seeing them appear after another :D&lt;/p&gt;
+
+&lt;h2 id=&#34;sharing-api-keys&#34;&gt;Sharing API-Keys&lt;/h2&gt;
+
+&lt;p&gt;This is actually a difficult question, as the API-Keys should not get leaked but need to be distributed to the containers. In development this might be of less danger, but we should get this one straight from the beginning on, so we don&amp;rsquo;t mess up in production. The talk &lt;a href=&#34;https://www.youtube.com/watch?v=A32Yjizt2_s&#34;&gt;Docker Security&lt;/a&gt; by Adrian Mouat addressed that issue, and pointed out 4 possibilities how to solve it.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Hardwire the secret into the images&lt;/li&gt;
+&lt;li&gt;Pass it via command-line parameters/environment variables&lt;/li&gt;
+&lt;li&gt;Create a file containing the secret and mount it everywhere needed&lt;/li&gt;
+&lt;li&gt;Use a secret key/value store like &lt;a href=&#34;https://www.hashicorp.com/blog/vault.html&#34;&gt;vault&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;1 and 2 are obviously flawed, also because in our setup the omscore generates the token itself, so I found that 3 could be a good option. I don&amp;rsquo;t yet have experience with vault or other secure key/value stores, but maybe I will try to implement that in the future. The rest then was pretty straight forward. Create a named volume, mount it read-only into the omsevents module (and have the service read from the file) and mount it into the omscore-nginx (and have the service write to it). Well, actually both things in bracket meant code changes, so this took a while, but the idea is straight forward. Remember you don&amp;rsquo;t even need to specify a host folder for this, a named volume should be enough as it is written by omscore during runtime. Like this, only the necessary containers have access to the api-key, so the chance of it getting leaked is pretty low. One could also think of introducing a data-container for persistence.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Notification pipelines</title>
-      <link>https://nico-westerbeck.de/post/message-pipeline/</link>
+      <link>https://nico-westerbeck.de/post/notification-pipeline/</link>
       <pubDate>Mon, 10 Oct 2016 20:00:00 +0000</pubDate>
       
-      <guid>https://nico-westerbeck.de/post/message-pipeline/</guid>
+      <guid>https://nico-westerbeck.de/post/notification-pipeline/</guid>
       <description>
 
 &lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;

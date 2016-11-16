@@ -19,13 +19,13 @@
     
 
     
-    <link rel="alternate" href="https://nico-westerbeck.de/tags/notifications/index.xml" type="application/rss+xml" title="Nico Westerbeck">
-    <link rel="feed" href="https://nico-westerbeck.de/tags/notifications/index.xml" type="application/rss+xml" title="Nico Westerbeck">
+    <link rel="alternate" href="https://nico-westerbeck.de/tags/docker-compose/index.xml" type="application/rss+xml" title="Nico Westerbeck">
+    <link rel="feed" href="https://nico-westerbeck.de/tags/docker-compose/index.xml" type="application/rss+xml" title="Nico Westerbeck">
     
     <link rel="shortcut icon" href="https://nico-westerbeck.de/img/favicon.ico" type="image/x-icon">
-    <link rel="canonical" href="https://nico-westerbeck.de/tags/notifications/">
+    <link rel="canonical" href="https://nico-westerbeck.de/tags/docker-compose/">
 
-    <title>Notifications | Nico Westerbeck</title>
+    <title>Docker Compose | Nico Westerbeck</title>
 
 </head>
 <body id="top">
@@ -68,8 +68,8 @@
     
     
     <div>
-        <h2><a href="https://nico-westerbeck.de/post/notification-pipeline/">Notification pipelines</a></h2>
-        <div class="article-style"><p>Introduction In this post I will share some thoughts upon implementing a notification pipeline in a microservice architecture. It should be said though that I don&rsquo;t yet have much practical experiences, this post is rather designed as a discussion about the topic. While working on the OMS for AEGEE, I found that this topic is actually quite a tough point when developing a distributed application. A lot of microservices will want to generate notifications for different things, resulting in a high number of notifications and a high diversity Users want to control how and which notifications they want Notifications need to be managed centrally, as it would get inconsistend having the notification settings everywhere Certain events could potentially trigger a high notification throughput (a huge event gets canceled, popular news post) There are several channels how notifications can be distributed: Mail, Pop-up notification, Push-notifications, Chat integration, &hellip; The good thing is that this topic is not necessarily time-critical.</p></div>
+        <h2><a href="https://nico-westerbeck.de/post/docker-compose/">Setting up a docker-compose environment for the OMS</a></h2>
+        <div class="article-style"><p>Introduction At first I used this file only as a help for myself, but I thought I could also share my thoughts. The project was to set up a docker environment for a microservice architecture consisting of the following parts. This was specifically done for the OMS OMS-Core, consisting of nginx php-fpm A workspace container with php artisan, composer, etc postgres A data container for the whole repo OMS-Events, consisting of node.js backend nginx frontend for static serving and reverse proxy mongodb (Not yet) A data container for media files Design decisions I had to do some design decisions in setting this up, most importantly How to get the code into the container How to get the configuration into the container How to link up the containers How far can/should I split everything Sharing API-Keys How to get the code into the container This seemed to be my first real task.</p></div>
     </div>
     
 

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="theme" content="hugo-academic">
+    <meta name="generator" content="Hugo 0.16" />
+    <meta name="author" content="Nico Westerbeck">
+    
+
+    <link rel="stylesheet" href="https://nico-westerbeck.de/css/highlight.min.css">
+    <link rel="stylesheet" href="https://nico-westerbeck.de/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://nico-westerbeck.de/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://nico-westerbeck.de/css/academicons.min.css">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:400,700|Merriweather|Roboto+Mono">
+    <link rel="stylesheet" href="https://nico-westerbeck.de/css/hugo-academic.css">
+    
+
+    
+    <link rel="shortcut icon" href="https://nico-westerbeck.de/img/favicon.ico" type="image/x-icon">
+    <link rel="canonical" href="https://nico-westerbeck.de/post/docker-compose/">
+
+    <title>Setting up a docker-compose environment for the OMS | Nico Westerbeck</title>
+
+</head>
+<body id="top">
+
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navbar-main">
+    <div class="container">
+
+        
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="https://nico-westerbeck.de/">Nico Westerbeck</a>
+        </div>
+
+        
+        <div class="collapse navbar-collapse" id="#navbar-collapse-1">
+
+            
+            <ul class="nav navbar-nav navbar-right">
+                
+                <li class="nav-item"><a href="https://nico-westerbeck.de/#top">Home</a></li>
+                
+                <li class="nav-item"><a href="https://nico-westerbeck.de/#posts">Posts</a></li>
+                
+                <li class="nav-item"><a href="https://nico-westerbeck.de/#projects">Projects</a></li>
+                
+            </ul>
+
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+
+    <article class="article" itemscope itemtype="http://schema.org/Article">
+
+        
+
+        <h1 itemprop="name">Setting up a docker-compose environment for the OMS</h1>
+
+        
+
+<div class="article-metadata">
+
+    <span class="article-date">
+        <time datetime="2016-11-15 17:00:00 &#43;0000 UTC" itemprop="datePublished">15.11.2016</time>
+    </span>
+
+    
+    
+    
+    <span class="article-tags">
+        <i class="fa fa-tags"></i>
+        
+        <a class="article-tag-link" href="https://nico-westerbeck.de/tags/docker">docker</a>, 
+        
+        <a class="article-tag-link" href="https://nico-westerbeck.de/tags/docker-compose">docker-compose</a>, 
+        
+        <a class="article-tag-link" href="https://nico-westerbeck.de/tags/git">git</a>, 
+        
+        <a class="article-tag-link" href="https://nico-westerbeck.de/tags/microservices">microservices</a>, 
+        
+        <a class="article-tag-link" href="https://nico-westerbeck.de/tags/oms">oms</a>
+        
+    </span>
+    
+    
+
+    
+        
+<div class="share-box">
+    <ul class="share">
+        <li>
+            <a class="facebook" href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fnico-westerbeck.de%2fpost%2fdocker-compose%2f" target="_blank">
+                <i class="fa fa-facebook"></i>
+            </a>
+        </li>
+        <li>
+            <a class="twitter" href="https://twitter.com/intent/tweet?text=Setting%20up%20a%20docker-compose%20environment%20for%20the%20OMS&amp;url=https%3a%2f%2fnico-westerbeck.de%2fpost%2fdocker-compose%2f" target="_blank">
+                <i class="fa fa-twitter"></i>
+            </a>
+        </li>
+        <li>
+            <a class="linkedin" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fnico-westerbeck.de%2fpost%2fdocker-compose%2f&amp;title=Setting%20up%20a%20docker-compose%20environment%20for%20the%20OMS" target="_blank">
+                <i class="fa fa-linkedin"></i>
+            </a>
+        </li>
+        <li>
+            <a class="weibo" href="http://service.weibo.com/share/share.php?url=https%3a%2f%2fnico-westerbeck.de%2fpost%2fdocker-compose%2f&amp;title=Setting%20up%20a%20docker-compose%20environment%20for%20the%20OMS" target="_blank">
+                <i class="fa fa-weibo"></i>
+            </a>
+        </li>
+        <li>
+            <a class="email" href="mailto:?subject=Setting%20up%20a%20docker-compose%20environment%20for%20the%20OMS&amp;body=https%3a%2f%2fnico-westerbeck.de%2fpost%2fdocker-compose%2f">
+                <i class="fa fa-envelope"></i>
+            </a>
+        </li>
+    </ul>
+</div>
+
+
+    
+
+</div>
+
+
+        <div class="article-style" itemprop="articleBody">
+            
+
+<h1 id="introduction">Introduction</h1>
+
+<p>At first I used this file only as a help for myself, but I thought I could also share my thoughts. The project was to set up a docker environment for a microservice architecture consisting of the following parts. This was specifically done for the <a href="https://oms-project.atlassian.net/wiki/display/GENERAL/Project+description">OMS</a></p>
+
+<ol>
+<li>OMS-Core, consisting of
+
+<ul>
+<li>nginx</li>
+<li>php-fpm</li>
+<li>A workspace container with php artisan, composer, etc</li>
+<li>postgres</li>
+<li>A data container for the whole repo</li>
+</ul></li>
+<li>OMS-Events, consisting of
+
+<ul>
+<li>node.js backend</li>
+<li>nginx frontend for static serving and reverse proxy</li>
+<li>mongodb</li>
+<li>(Not yet) A data container for media files</li>
+</ul></li>
+</ol>
+
+<h1 id="design-decisions">Design decisions</h1>
+
+<p>I had to do some design decisions in setting this up, most importantly</p>
+
+<ol>
+<li>How to get the code into the container</li>
+<li>How to get the configuration into the container</li>
+<li>How to link up the containers</li>
+<li>How far can/should I split everything</li>
+<li>Sharing API-Keys</li>
+</ol>
+
+<h2 id="how-to-get-the-code-into-the-container">How to get the code into the container</h2>
+
+<p>This seemed to be my first real task. I wanted to have it set up in a way that you ideally just run docker-compose up and everything is set up, AND the code from each of the modules is linked via a volume mapping to the host so you can just edit the files on the host with a text editor and it will end up iin the container right away. However, now is the question on when the code for oms-core and oms-events will be pulled and how it can be moved into the container. There were basically 3 possibilities</p>
+
+<ol>
+<li>Create a git repo with the docker-compose.yml (and some other files) and add oms-neo-core and oms-events as submodules, then COPY the files into the containers.</li>
+<li>Create a git repo with the docker-compose.yml (and some other files) and add oms-neo-core and oms-events as submodules, then mount the files as volumes into the containers.</li>
+<li>Git clone inside the Dockerfiles, but still mount the volumes to harddisk during run.</li>
+</ol>
+
+<p>At first I read <a href="https://forums.docker.com/t/best-practices-for-getting-code-into-a-container-git-clone-vs-copy-vs-data-container/4077">this</a> article, which basically has the same 3 options, and where the majority pledged for option 2. The advantages which were described there were better CI integration and more lightweight containers. Especially the last argument is strong, as replicating the container wouldn&rsquo;t really work, as the code would be cloned twice. However, I also had some points for option 3. It would make setting up everything a lot more transparent, as the configuration files (which definetely needed to be changed) could have been added in the docker build process. However, I trusted that forum post and went for number 2 - number 1 was never really an option.</p>
+
+<p>The file-system now looks like this:</p>
+
+<pre><code>.
+├── docker
+├── oms-core
+├── oms-events
+└── oms-events-frontend
+</code></pre>
+
+<p>Whereas the docker folder holds the docker-compose.yml and some dockerfiles.</p>
+
+<h2 id="how-to-get-the-configuration-into-the-container">How to get the configuration into the container</h2>
+
+<p>As I decided for number 2 in the above question, I was expecting some new problems with this one. The common way to mount configuration files into a docker container is to just use the -v switch (or on docker-compose the volumes: list). However, I already have a volume mount to the whole codebase, including the configuration file and that would mean intersecting mounts. I personnally had no idea if that actually was something bad, so I tried it aaaand it worked! =) It actually left the file in <code>oms-events/lib/config/configFile.json</code> intact but to the container the contents of <code>docker/omsevents/configFile.json</code> (which I added via volume mounts) were visible. Great!</p>
+
+<p>However, not so easy. The configuration might be in there, but what about bootstrapping the apps? The problem is that the volume mounts are not there during docker build, and there is no way to get them there.</p>
+
+<p>For <strong>oms-events</strong> I would have to run <code>npm install</code> at some point in time, as it&rsquo;s based on nodejs. This would have been nice to run in the docker build process, so I checked on how this <a href="https://nodejs.org/en/docs/guides/nodejs-docker-webapp/">should be done</a> - copying the package.json file in advance enables npm install to run and it doesn&rsquo;t need any app code for that. However currently the package.json file lives outside of the build context, in the git repo with the other code and docker doesn&rsquo;t allow copying that. My fix for this was putting the raw url from github for that specific file into the container:</p>
+
+<pre><code>ADD https://raw.githubusercontent.com/AEGEE/oms-events/dev/package.json /usr/app/package.json
+RUN npm install
+</code></pre>
+
+<p>Great, node works. However the <strong>omscore</strong> seemed to have far more heavy dependencies and I personally didn&rsquo;t know so much about how the bootstrapping works and if it could actually do something before having the codebase present. The laradock image also didn&rsquo;t give many hints on this, as they seem to leave this as something the user can do by hand. I thought it might be neat to have a configuration container, which starts, does the configuration work and then exits again. I believe that this also was the concept behind the workspace container, that laradock introduced. However, that container would have to be designed in a way that it can be run every time on a startup, as having optional containers is <a href="https://github.com/docker/compose/issues/1896">not yet</a> implemented in docker-compose. I decided to use the workspace for just that purpose and tried to set something up which can be run any time without breaking app. However, in the middle of the process I noticed that I need a working db connection, which made it impossible to set this up during the docker build process. Resultingly, I decided to place a small bootstrap script inside the workspace container and tell the user to manually run it when he runs the app the first time. Not beautiful, but for omsevents I need the same, see <a href="#sharing-api-keys">Sharing API-Keys</a></p>
+
+<h2 id="how-to-link-up-the-containers">How to link up the containers</h2>
+
+<p>&ldquo;Linking up&rdquo; actually is a pretty vague term, we need to differentiate between linking in <strong>network</strong> terms and linking in <strong>volume</strong> terms.</p>
+
+<p>Regarding the <strong>volumes</strong>, there basically only was the design decision to have a data container or not. Some services, like the nginx and the workspace of omscore need the same data, so we need to distribute that somehow. A dirty version which could be thinkable would be to copy all the data into all the containers, but that would go against our requirement of having a volume mount for live code-reloading. The <a href="https://docs.docker.com/engine/tutorials/dockervolumes/">docker tutorial</a> recommends to insert data containers, meaning images like the <code>tianon/true</code> image on dockerhub with a volume mount linked up to them. Another possibility would be to link the folders with a volume switch everywhere and not put up a data container. That would also be thinkable and actually work, just with the problem that the services might spam up our development folders, which we want to keep as clean as possible. In the end I actually went this way with the omsevents module, however planning to change that in the future. For the omscore it was already set up with the laradock configuration, so I kept it.</p>
+
+<p>The <strong>network</strong>-linking can be pretty straightforward, but might still be worth a thought. Docker supports multiple networks between the containers, which would in this case be a really good idea as the omsevents and omscore service are relatively independent and could be linked up with just a proxy. However, docker also supports mashing all of them into the same network. Let&rsquo;s not do this in production, but for development I think this is fine, and I decided I&rsquo;d rather spend that time making dinner than trying to seperate the networks.</p>
+
+<h2 id="how-far-should-can-i-split-everything">How far should/can I split everything</h2>
+
+<p>If you read any article about microservices, you will find the word &ldquo;split&rdquo; or a synonym in every second sentence. Splitting things is good, as it provides isolation so faults or exploits can&rsquo;t propagate too easy, allows easier scaling, better fault tolerance and much more. The major reason why we actually need it in this size is splitting the teams working on different parts of the application. The core can be developed completely independent of the events module, and the events module frontend is almost independent of the backend, and so on. This is just pretty flexible. When I started setting up the docker for oms-events, I found that I would have to create a container with both node and nginx, as that module uses node for the backend and nginx for statically serving the frontend. At the beginning of the development, I had the node backend also serving the frontend files, but I discarted that solution for any production use, as serving frontend files would put unnecessary load on the backend. So at this point, I decided to fully split the two, and have two different containers for frontend and backend. That also meant introducing a new github repo for the frontend, as it felt just wrong having them in the same. Fancy extra: it looks super cool starting up 9 containers and seeing them appear after another :D</p>
+
+<h2 id="sharing-api-keys">Sharing API-Keys</h2>
+
+<p>This is actually a difficult question, as the API-Keys should not get leaked but need to be distributed to the containers. In development this might be of less danger, but we should get this one straight from the beginning on, so we don&rsquo;t mess up in production. The talk <a href="https://www.youtube.com/watch?v=A32Yjizt2_s">Docker Security</a> by Adrian Mouat addressed that issue, and pointed out 4 possibilities how to solve it.</p>
+
+<ol>
+<li>Hardwire the secret into the images</li>
+<li>Pass it via command-line parameters/environment variables</li>
+<li>Create a file containing the secret and mount it everywhere needed</li>
+<li>Use a secret key/value store like <a href="https://www.hashicorp.com/blog/vault.html">vault</a></li>
+</ol>
+
+<p>1 and 2 are obviously flawed, also because in our setup the omscore generates the token itself, so I found that 3 could be a good option. I don&rsquo;t yet have experience with vault or other secure key/value stores, but maybe I will try to implement that in the future. The rest then was pretty straight forward. Create a named volume, mount it read-only into the omsevents module (and have the service read from the file) and mount it into the omscore-nginx (and have the service write to it). Well, actually both things in bracket meant code changes, so this took a while, but the idea is straight forward. Remember you don&rsquo;t even need to specify a host folder for this, a named volume should be enough as it is written by omscore during runtime. Like this, only the necessary containers have access to the api-key, so the chance of it getting leaked is pretty low. One could also think of introducing a data-container for persistence.</p>
+
+        </div>
+
+    </article>
+
+    <nav>
+    <ul class="pager">
+        
+        <li class="previous"><a href="https://nico-westerbeck.de/post/notification-pipeline/"><span aria-hidden="true">&larr;</span> Notification pipelines</a></li>
+        
+
+        
+    </ul>
+</nav>
+
+    
+
+
+</div>
+
+
+<footer class="site-footer">
+    <div class="container">
+        <p class="powered-by">
+
+            &copy; 2016 Nico Westerbeck &middot;  
+
+            <a href="https://nico-westerbeck.de//impressum.html">Impressum</a> &middot;
+
+            Powered by the <a href="https://github.com/gcushen/hugo-academic" target="_blank">Academic theme</a> for <a href="http://gohugo.io" target="_blank">Hugo</a>.
+
+            <span class="pull-right"><a href="#" id="back_to_top"><span class="button_icon"><i class="fa fa-chevron-up fa-2x" aria-hidden="true"></i></span></a></span>
+
+        </p>
+    </div>
+</footer>
+
+        <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.18.4/TweenMax.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js"></script>
+        <script src="https://nico-westerbeck.de/js/jquery-1.12.3.min.js"></script>
+        <script src="https://nico-westerbeck.de/js/bootstrap.min.js"></script>
+        <script src="https://nico-westerbeck.de/js/hugo-academic.js"></script>
+        
+
+        
+
+        
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+
+        
+        
+
+    </body>
+</html>
+

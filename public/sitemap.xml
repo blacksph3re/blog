@@ -3,11 +3,16 @@
   
   <url>
     <loc>https://nico-westerbeck.de/</loc>
-    <lastmod>2016-10-10T20:00:00+00:00</lastmod>
+    <lastmod>2016-11-15T17:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://nico-westerbeck.de/post/message-pipeline/</loc>
+    <loc>https://nico-westerbeck.de/post/docker-compose/</loc>
+    <lastmod>2016-11-15T17:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nico-westerbeck.de/post/notification-pipeline/</loc>
     <lastmod>2016-10-10T20:00:00+00:00</lastmod>
   </url>
   
