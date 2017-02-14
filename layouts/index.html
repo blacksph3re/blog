@@ -1,0 +1,24 @@
+{{ partial "head" . }}
+  <body>
+    <div id="wrap">
+      {{ partial "header" . }}
+      <section id="about">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+                <img class="img-circle img-responsive avatar" src="{{ .Site.BaseURL }}img/{{ .Site.Params.avatar }}" alt="Title">
+            </div>
+            <div class="col-lg-6">
+              <h3>Welcome!</h3>
+              <h3>I'm Nico Westerbeck, and you have just landed on my <a href="/blog">blog</a>. Here, I write about things that come into my mind while working on my <a href="/projects">projects</a>. My interests range in the IT-area around <b>microservices</b>, <b>security</b> and everything <b>cloud</b>-related. </h3>
+              <h3>I also have a blog about my volunteering work and travels, but as I share things only for a circle of friends there, I'd ask you to ask me about a login to that section </h3>
+
+              {{ partial "social.html" . }}
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    {{ partial "footer" . }}
+  </body>
+</html>
