@@ -1,4 +1,4 @@
-baseurl = "https://nico-westerbeck.de"
+baseurl = "https://nico-westerbeck.de/"
 #baseurl = "localhost"
 languageCode = "en-US"
 title = "Nico Westerbeck"
