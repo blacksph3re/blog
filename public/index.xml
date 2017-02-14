@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Nico Westerbeck</title>
-    <link>/localhost/index.xml</link>
+    <link>https://nico-westerbeck.de/index.xml</link>
     <description>Recent content on Nico Westerbeck</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <lastBuildDate>Tue, 14 Feb 2017 14:38:35 +0100</lastBuildDate>
-    <atom:link href="/localhost/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://nico-westerbeck.de/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>I am leaving</title>
-      <link>/localhost/travel/departure/</link>
+      <link>https://nico-westerbeck.de/travel/departure/</link>
       <pubDate>Tue, 14 Feb 2017 14:38:35 +0100</pubDate>
       
-      <guid>/localhost/travel/departure/</guid>
+      <guid>https://nico-westerbeck.de/travel/departure/</guid>
       <description>
 
 &lt;p&gt;I successfully registered for an ERASMUS-Semester in Cluj-Napoca, Romania. I want to describe a little bit of how I decided to go, how the registration process worked for me and what I already experienced, before even leaving Germany.&lt;/p&gt;
@@ -29,10 +29,10 @@
     
     <item>
       <title>Setting up a docker-compose environment for the OMS</title>
-      <link>/localhost/blog/docker-compose/</link>
+      <link>https://nico-westerbeck.de/blog/docker-compose/</link>
       <pubDate>Tue, 15 Nov 2016 17:00:00 +0000</pubDate>
       
-      <guid>/localhost/blog/docker-compose/</guid>
+      <guid>https://nico-westerbeck.de/blog/docker-compose/</guid>
       <description>
 
 &lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
@@ -137,10 +137,10 @@ RUN npm install
     
     <item>
       <title>Notification pipelines</title>
-      <link>/localhost/blog/notification-pipeline/</link>
+      <link>https://nico-westerbeck.de/blog/notification-pipeline/</link>
       <pubDate>Mon, 10 Oct 2016 20:00:00 +0000</pubDate>
       
-      <guid>/localhost/blog/notification-pipeline/</guid>
+      <guid>https://nico-westerbeck.de/blog/notification-pipeline/</guid>
       <description>
 
 &lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
@@ -173,10 +173,10 @@ RUN npm install
     
     <item>
       <title>Memorizing strong passwords</title>
-      <link>/localhost/blog/easy-passwords/</link>
+      <link>https://nico-westerbeck.de/blog/easy-passwords/</link>
       <pubDate>Sun, 25 Sep 2016 23:00:00 +0000</pubDate>
       
-      <guid>/localhost/blog/easy-passwords/</guid>
+      <guid>https://nico-westerbeck.de/blog/easy-passwords/</guid>
       <description>
 
 &lt;p&gt;Though this is not really a too groundbreaking article, I noticed that quite a lot of my friends didn&amp;rsquo;t know the trick, so I thought I could share it.&lt;/p&gt;
@@ -234,10 +234,10 @@ go&amp;lt;mypassword&amp;gt;le
     
     <item>
       <title>Microservice testing with Apiary</title>
-      <link>/localhost/blog/microservice-testing/</link>
+      <link>https://nico-westerbeck.de/blog/microservice-testing/</link>
       <pubDate>Sun, 25 Sep 2016 17:00:00 +0000</pubDate>
       
-      <guid>/localhost/blog/microservice-testing/</guid>
+      <guid>https://nico-westerbeck.de/blog/microservice-testing/</guid>
       <description>
 
 &lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
@@ -302,10 +302,10 @@ module.exports = exp;
     
     <item>
       <title>Setting up this webspace</title>
-      <link>/localhost/blog/setting-up-website/</link>
+      <link>https://nico-westerbeck.de/blog/setting-up-website/</link>
       <pubDate>Sat, 24 Sep 2016 17:00:00 +0000</pubDate>
       
-      <guid>/localhost/blog/setting-up-website/</guid>
+      <guid>https://nico-westerbeck.de/blog/setting-up-website/</guid>
       <description>
 
 &lt;p&gt;As this was my today&amp;rsquo;s project, I will lose some words about how I set up this site.&lt;/p&gt;
@@ -332,30 +332,30 @@ module.exports = exp;
     
     <item>
       <title>OMS-Events</title>
-      <link>/localhost/projects/oms-events/</link>
+      <link>https://nico-westerbeck.de/projects/oms-events/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>/localhost/projects/oms-events/</guid>
+      <guid>https://nico-westerbeck.de/projects/oms-events/</guid>
       <description>&lt;p&gt;I&amp;rsquo;ve recently started working on a events-managing platform that can be used in the new Intranet of AEGEE, the OMS.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Alastair</title>
-      <link>/localhost/projects/alastair/</link>
+      <link>https://nico-westerbeck.de/projects/alastair/</link>
       <pubDate>Tue, 27 Oct 2015 00:00:00 +0000</pubDate>
       
-      <guid>/localhost/projects/alastair/</guid>
+      <guid>https://nico-westerbeck.de/projects/alastair/</guid>
       <description>&lt;p&gt;Alastair is a webapp to plan food for bigger events, calculating a shopping list and estimated costs based on the number of people you want to feed.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title></title>
-      <link>/localhost/about/</link>
+      <link>https://nico-westerbeck.de/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/localhost/about/</guid>
+      <guid>https://nico-westerbeck.de/about/</guid>
       <description>
 
 &lt;h1 id=&#34;hey-there&#34;&gt;Hey there!&lt;/h1&gt;

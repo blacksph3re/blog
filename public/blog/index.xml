@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blogs on Nico Westerbeck</title>
-    <link>/localhost/blog/index.xml</link>
+    <link>https://nico-westerbeck.de/blog/index.xml</link>
     <description>Recent content in Blogs on Nico Westerbeck</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <lastBuildDate>Tue, 15 Nov 2016 17:00:00 +0000</lastBuildDate>
-    <atom:link href="/localhost/blog/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://nico-westerbeck.de/blog/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Setting up a docker-compose environment for the OMS</title>
-      <link>/localhost/blog/docker-compose/</link>
+      <link>https://nico-westerbeck.de/blog/docker-compose/</link>
       <pubDate>Tue, 15 Nov 2016 17:00:00 +0000</pubDate>
       
-      <guid>/localhost/blog/docker-compose/</guid>
+      <guid>https://nico-westerbeck.de/blog/docker-compose/</guid>
       <description>
 
 &lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
@@ -119,10 +119,10 @@ RUN npm install
     
     <item>
       <title>Notification pipelines</title>
-      <link>/localhost/blog/notification-pipeline/</link>
+      <link>https://nico-westerbeck.de/blog/notification-pipeline/</link>
       <pubDate>Mon, 10 Oct 2016 20:00:00 +0000</pubDate>
       
-      <guid>/localhost/blog/notification-pipeline/</guid>
+      <guid>https://nico-westerbeck.de/blog/notification-pipeline/</guid>
       <description>
 
 &lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
@@ -155,10 +155,10 @@ RUN npm install
     
     <item>
       <title>Memorizing strong passwords</title>
-      <link>/localhost/blog/easy-passwords/</link>
+      <link>https://nico-westerbeck.de/blog/easy-passwords/</link>
       <pubDate>Sun, 25 Sep 2016 23:00:00 +0000</pubDate>
       
-      <guid>/localhost/blog/easy-passwords/</guid>
+      <guid>https://nico-westerbeck.de/blog/easy-passwords/</guid>
       <description>
 
 &lt;p&gt;Though this is not really a too groundbreaking article, I noticed that quite a lot of my friends didn&amp;rsquo;t know the trick, so I thought I could share it.&lt;/p&gt;
@@ -216,10 +216,10 @@ go&amp;lt;mypassword&amp;gt;le
     
     <item>
       <title>Microservice testing with Apiary</title>
-      <link>/localhost/blog/microservice-testing/</link>
+      <link>https://nico-westerbeck.de/blog/microservice-testing/</link>
       <pubDate>Sun, 25 Sep 2016 17:00:00 +0000</pubDate>
       
-      <guid>/localhost/blog/microservice-testing/</guid>
+      <guid>https://nico-westerbeck.de/blog/microservice-testing/</guid>
       <description>
 
 &lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
@@ -284,10 +284,10 @@ module.exports = exp;
     
     <item>
       <title>Setting up this webspace</title>
-      <link>/localhost/blog/setting-up-website/</link>
+      <link>https://nico-westerbeck.de/blog/setting-up-website/</link>
       <pubDate>Sat, 24 Sep 2016 17:00:00 +0000</pubDate>
       
-      <guid>/localhost/blog/setting-up-website/</guid>
+      <guid>https://nico-westerbeck.de/blog/setting-up-website/</guid>
       <description>
 
 &lt;p&gt;As this was my today&amp;rsquo;s project, I will lose some words about how I set up this site.&lt;/p&gt;

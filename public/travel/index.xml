@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Travels on Nico Westerbeck</title>
-    <link>/localhost/travel/index.xml</link>
+    <link>https://nico-westerbeck.de/travel/index.xml</link>
     <description>Recent content in Travels on Nico Westerbeck</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <lastBuildDate>Tue, 14 Feb 2017 14:38:35 +0100</lastBuildDate>
-    <atom:link href="/localhost/travel/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://nico-westerbeck.de/travel/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>I am leaving</title>
-      <link>/localhost/travel/departure/</link>
+      <link>https://nico-westerbeck.de/travel/departure/</link>
       <pubDate>Tue, 14 Feb 2017 14:38:35 +0100</pubDate>
       
-      <guid>/localhost/travel/departure/</guid>
+      <guid>https://nico-westerbeck.de/travel/departure/</guid>
       <description>
 
 &lt;p&gt;I successfully registered for an ERASMUS-Semester in Cluj-Napoca, Romania. I want to describe a little bit of how I decided to go, how the registration process worked for me and what I already experienced, before even leaving Germany.&lt;/p&gt;

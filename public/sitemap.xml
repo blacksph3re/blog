@@ -6,7 +6,7 @@
   
 	  
 	  <url>
-	    <loc>/localhost/blog/docker-compose/</loc>
+	    <loc>https://nico-westerbeck.de/blog/docker-compose/</loc>
 	    <lastmod>2016-11-15T17:00:00&#43;00:00</lastmod>
 	    
 	    
@@ -15,7 +15,7 @@
   
 	  
 	  <url>
-	    <loc>/localhost/blog/notification-pipeline/</loc>
+	    <loc>https://nico-westerbeck.de/blog/notification-pipeline/</loc>
 	    <lastmod>2016-10-10T20:00:00&#43;00:00</lastmod>
 	    
 	    
@@ -24,7 +24,7 @@
   
 	  
 	  <url>
-	    <loc>/localhost/blog/easy-passwords/</loc>
+	    <loc>https://nico-westerbeck.de/blog/easy-passwords/</loc>
 	    <lastmod>2016-09-25T23:00:00&#43;00:00</lastmod>
 	    
 	    
@@ -33,7 +33,7 @@
   
 	  
 	  <url>
-	    <loc>/localhost/blog/microservice-testing/</loc>
+	    <loc>https://nico-westerbeck.de/blog/microservice-testing/</loc>
 	    <lastmod>2016-09-25T17:00:00&#43;00:00</lastmod>
 	    
 	    
@@ -42,7 +42,7 @@
   
 	  
 	  <url>
-	    <loc>/localhost/blog/setting-up-website/</loc>
+	    <loc>https://nico-westerbeck.de/blog/setting-up-website/</loc>
 	    <lastmod>2016-09-24T17:00:00&#43;00:00</lastmod>
 	    
 	    
@@ -51,7 +51,7 @@
   
 	  
 	  <url>
-	    <loc>/localhost/projects/oms-events/</loc>
+	    <loc>https://nico-westerbeck.de/projects/oms-events/</loc>
 	    <lastmod>2016-04-27T00:00:00&#43;00:00</lastmod>
 	    
 	    
@@ -60,7 +60,7 @@
   
 	  
 	  <url>
-	    <loc>/localhost/projects/alastair/</loc>
+	    <loc>https://nico-westerbeck.de/projects/alastair/</loc>
 	    <lastmod>2015-10-27T00:00:00&#43;00:00</lastmod>
 	    
 	    
@@ -69,7 +69,7 @@
   
 	  
 	  <url>
-	    <loc>/localhost/about/</loc>
+	    <loc>https://nico-westerbeck.de/about/</loc>
 	    <lastmod>0001-01-01T00:00:00&#43;00:00</lastmod>
 	    
 	    
@@ -78,7 +78,7 @@
   
 	  
 	  <url>
-	    <loc>/localhost/tags/apiary/</loc>
+	    <loc>https://nico-westerbeck.de/tags/apiary/</loc>
 	    <lastmod>2016-09-25T17:00:00&#43;00:00</lastmod>
 	    
 	    <priority>0</priority>
@@ -87,7 +87,7 @@
   
 	  
 	  <url>
-	    <loc>/localhost/blog/</loc>
+	    <loc>https://nico-westerbeck.de/blog/</loc>
 	    <lastmod>2016-11-15T17:00:00&#43;00:00</lastmod>
 	    
 	    <priority>0</priority>
@@ -96,7 +96,7 @@
   
 	  
 	  <url>
-	    <loc>/localhost/tags/django/</loc>
+	    <loc>https://nico-westerbeck.de/tags/django/</loc>
 	    <lastmod>2015-10-27T00:00:00&#43;00:00</lastmod>
 	    
 	    <priority>0</priority>
@@ -105,7 +105,7 @@
   
 	  
 	  <url>
-	    <loc>/localhost/tags/docker/</loc>
+	    <loc>https://nico-westerbeck.de/tags/docker/</loc>
 	    <lastmod>2016-11-15T17:00:00&#43;00:00</lastmod>
 	    
 	    <priority>0</priority>
@@ -114,7 +114,7 @@
   
 	  
 	  <url>
-	    <loc>/localhost/tags/docker-compose/</loc>
+	    <loc>https://nico-westerbeck.de/tags/docker-compose/</loc>
 	    <lastmod>2016-11-15T17:00:00&#43;00:00</lastmod>
 	    
 	    <priority>0</priority>
@@ -123,7 +123,7 @@
   
 	  
 	  <url>
-	    <loc>/localhost/tags/event-management/</loc>
+	    <loc>https://nico-westerbeck.de/tags/event-management/</loc>
 	    <lastmod>2015-10-27T00:00:00&#43;00:00</lastmod>
 	    
 	    <priority>0</priority>
@@ -132,7 +132,7 @@
   
 	  
 	  <url>
-	    <loc>/localhost/tags/food/</loc>
+	    <loc>https://nico-westerbeck.de/tags/food/</loc>
 	    <lastmod>2015-10-27T00:00:00&#43;00:00</lastmod>
 	    
 	    <priority>0</priority>
@@ -141,7 +141,7 @@
   
 	  
 	  <url>
-	    <loc>/localhost/tags/git/</loc>
+	    <loc>https://nico-westerbeck.de/tags/git/</loc>
 	    <lastmod>2016-11-15T17:00:00&#43;00:00</lastmod>
 	    
 	    <priority>0</priority>
@@ -150,7 +150,7 @@
   
 	  
 	  <url>
-	    <loc>/localhost/tags/hosting/</loc>
+	    <loc>https://nico-westerbeck.de/tags/hosting/</loc>
 	    <lastmod>2016-09-24T17:00:00&#43;00:00</lastmod>
 	    
 	    <priority>0</priority>
@@ -159,7 +159,7 @@
   
 	  
 	  <url>
-	    <loc>/localhost/tags/hugo/</loc>
+	    <loc>https://nico-westerbeck.de/tags/hugo/</loc>
 	    <lastmod>2016-09-24T17:00:00&#43;00:00</lastmod>
 	    
 	    <priority>0</priority>
@@ -168,7 +168,7 @@
   
 	  
 	  <url>
-	    <loc>/localhost/tags/messages/</loc>
+	    <loc>https://nico-westerbeck.de/tags/messages/</loc>
 	    <lastmod>2016-10-10T20:00:00&#43;00:00</lastmod>
 	    
 	    <priority>0</priority>
@@ -177,7 +177,7 @@
   
 	  
 	  <url>
-	    <loc>/localhost/tags/microservice/</loc>
+	    <loc>https://nico-westerbeck.de/tags/microservice/</loc>
 	    <lastmod>2016-09-25T17:00:00&#43;00:00</lastmod>
 	    
 	    <priority>0</priority>
@@ -186,7 +186,7 @@
   
 	  
 	  <url>
-	    <loc>/localhost/tags/microservices/</loc>
+	    <loc>https://nico-westerbeck.de/tags/microservices/</loc>
 	    <lastmod>2016-11-15T17:00:00&#43;00:00</lastmod>
 	    
 	    <priority>0</priority>
@@ -195,7 +195,7 @@
   
 	  
 	  <url>
-	    <loc>/localhost/</loc>
+	    <loc>https://nico-westerbeck.de/</loc>
 	    <lastmod>2017-02-14T14:38:35&#43;01:00</lastmod>
 	    
 	    <priority>0</priority>
@@ -204,7 +204,7 @@
   
 	  
 	  <url>
-	    <loc>/localhost/tags/notifications/</loc>
+	    <loc>https://nico-westerbeck.de/tags/notifications/</loc>
 	    <lastmod>2016-10-10T20:00:00&#43;00:00</lastmod>
 	    
 	    <priority>0</priority>
@@ -213,7 +213,7 @@
   
 	  
 	  <url>
-	    <loc>/localhost/tags/oms/</loc>
+	    <loc>https://nico-westerbeck.de/tags/oms/</loc>
 	    <lastmod>2016-11-15T17:00:00&#43;00:00</lastmod>
 	    
 	    <priority>0</priority>
@@ -222,7 +222,7 @@
   
 	  
 	  <url>
-	    <loc>/localhost/tags/passwords/</loc>
+	    <loc>https://nico-westerbeck.de/tags/passwords/</loc>
 	    <lastmod>2016-09-25T23:00:00&#43;00:00</lastmod>
 	    
 	    <priority>0</priority>
@@ -231,7 +231,7 @@
   
 	  
 	  <url>
-	    <loc>/localhost/projects/</loc>
+	    <loc>https://nico-westerbeck.de/projects/</loc>
 	    <lastmod>2016-04-27T00:00:00&#43;00:00</lastmod>
 	    
 	    <priority>0</priority>
@@ -240,7 +240,7 @@
   
 	  
 	  <url>
-	    <loc>/localhost/tags/</loc>
+	    <loc>https://nico-westerbeck.de/tags/</loc>
 	    <lastmod>0001-01-01T00:00:00&#43;00:00</lastmod>
 	    
 	    <priority>0</priority>
@@ -249,7 +249,7 @@
   
 	  
 	  <url>
-	    <loc>/localhost/tags/testing/</loc>
+	    <loc>https://nico-westerbeck.de/tags/testing/</loc>
 	    <lastmod>2016-09-25T17:00:00&#43;00:00</lastmod>
 	    
 	    <priority>0</priority>
@@ -258,7 +258,7 @@
   
 	  
 	  <url>
-	    <loc>/localhost/travel/</loc>
+	    <loc>https://nico-westerbeck.de/travel/</loc>
 	    <lastmod>2017-02-14T14:38:35&#43;01:00</lastmod>
 	    
 	    <priority>0</priority>
@@ -267,7 +267,7 @@
   
 	  
 	  <url>
-	    <loc>/localhost/tags/web/</loc>
+	    <loc>https://nico-westerbeck.de/tags/web/</loc>
 	    <lastmod>2016-09-24T17:00:00&#43;00:00</lastmod>
 	    
 	    <priority>0</priority>

@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Notifications on Nico Westerbeck</title>
-    <link>/localhost/tags/notifications/index.xml</link>
+    <link>https://nico-westerbeck.de/tags/notifications/index.xml</link>
     <description>Recent content in Notifications on Nico Westerbeck</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <atom:link href="/localhost/tags/notifications/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://nico-westerbeck.de/tags/notifications/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Notification pipelines</title>
-      <link>/localhost/blog/notification-pipeline/</link>
+      <link>https://nico-westerbeck.de/blog/notification-pipeline/</link>
       <pubDate>Mon, 10 Oct 2016 20:00:00 +0000</pubDate>
       
-      <guid>/localhost/blog/notification-pipeline/</guid>
+      <guid>https://nico-westerbeck.de/blog/notification-pipeline/</guid>
       <description>
 
 &lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;

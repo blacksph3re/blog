@@ -1,5 +1,5 @@
-#baseurl = "https://nico-westerbeck.de"
-baseurl = "localhost"
+baseurl = "https://nico-westerbeck.de"
+#baseurl = "localhost"
 languageCode = "en-US"
 title = "Nico Westerbeck"
 # Enable comments by entering your Disqus shortname
