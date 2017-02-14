@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="map[]" />
+    <meta name="description" content="A technical and personal blog">
+    <link rel="shortcut icon" type="image/x-icon" href="/localhostimg/favicon.ico">
+    <title>Microservice testing with Apiary</title>
+    <meta name="generator" content="Hugo 0.18.1" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/localhostcss/main.css" />
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,200bold,400old" />
+    
+    <!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+
+    
+  </head>
+
+  <body>
+    <div id="wrap">
+
+      
+      <nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="/localhost"><i class="fa fa-home"></i></a>
+    </div>
+    <div id="navbar">
+      <ul class="nav navbar-nav navbar-right">
+      
+        
+        <li><a href="/localhost/blog/">BLOG</a></li>
+        
+        <li><a href="/localhost/projects/">PROJECTS</a></li>
+        
+        <li><a href="/localhost/about/">ABOUT</a></li>
+        
+      
+      </ul>
+    </div>
+  </div>
+</nav>
+
+      
+      <div class="container">
+        <div class="blog-post">
+          <h3>
+            <strong><a href="/localhost/blog/microservice-testing/">Microservice testing with Apiary</a></strong>
+          </h3>
+        </div>
+        <div class="blog-title">
+          <h4>
+          September 25, 2016
+            &nbsp;&nbsp;
+            
+              <span class="label"><a href="/localhost/tags/microservice">microservice</a></span>
+            
+              <span class="label"><a href="/localhost/tags/testing">testing</a></span>
+            
+              <span class="label"><a href="/localhost/tags/apiary">apiary</a></span>
+            
+          </h4>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <div class="blogpost">
+              
+
+<h2 id="introduction">Introduction</h2>
+
+<p>I assume you are generally familiar with microservices, otherwise I can recommend <a href="http://martinfowler.com/articles/microservices.html">this</a> article for further reading. Lets also assume we have a basic microservice architecture set up. So, why and how do we test it? Why: I won&rsquo;t even start preaching about tests, just write a bigger project without testing. I guess every programmer has to do that at some point of his life. How: Most of the tests, and for some services all of the tests will be very straight-forward. On method-level we can apply unit-tests and for API-routes we can use Behavior-Tests. If you are using node.js, I can recommend <a href="https://mochajs.org/">mocha</a> in combination with <a href="http://chaijs.com/">chai</a> (I am more of the tea person&hellip;). The problem are integration tests.</p>
+
+<h2 id="depending-microservices">Depending microservices</h2>
+
+<p>In a normal web-app, there is at max one microservice which can be tested standalone and that&rsquo;s the user management. Even at that point you will typically depend on some kind of database, and other microservices will have other dependencies within the application. So, what are ideas to test a dependant service</p>
+
+<ul>
+<li><p><strong>Ignore dependencies</strong> Without having other microservices available, you will still be able to test quite a big portion of your code. Especially all the unit-tests will run, and there might aswell be a couple of requests that you can blackbox-test without having other services interfer. Typically public GETs are a good example of requests, that you can test without the need of other services. If you can run stuff without dependencies, don&rsquo;t pull in further dependencies and stick to the barebones version. This will also enforce more separation and independence of your service, allowing for better failure tolerance and easier scaling. (That&rsquo;s why we&rsquo;re building microservices, right?)</p></li>
+
+<li><p><strong>Full testing-environment</strong> The optimal case is if you can provide a full system, with all services running in a testing environment, to get &ldquo;real&rdquo; replies to your requests. This will allow for most realistic testings, but has the major drawback of feasibility. It&rsquo;s not easily possible to set up a full architecture, possibly consisting of dozens of different service tiers, just to test basic requests. This setup will be necessary to run integration tests on the whole system, but for lower-level tests it would be nice to have something lightweigt, which might aswell integrate into common CI-frameworks</p></li>
+
+<li><p><strong>Mock services</strong> What I found would be the best way to test is using a mock-server. We anyways drafted out APIs with <a href="https://apiary.io">Apiary</a>, so why not using this? Apiary offers the nice feature of an automatically set up mock-server, which will respond to requests with the data you have defined in the API-blueprint-markdown. Though that interface will of course not behave as the original service, it is at least a nice intermediate step towards a full testing environment.</p></li>
+</ul>
+
+<h2 id="injecting-new-configs-in-js">Injecting new configs in JS</h2>
+
+<p>This example uses node.js and a configuration read from a config.json. I assume you are doing <a href="https://www.nginx.com/blog/service-discovery-in-a-microservices-architecture/">service discovery</a> by DNS, it doesn&rsquo;t matter if you plug a loadbalancer to the dns address or if you just write the other service&rsquo;s ip to your /etc/hosts-file. The idea is to overwrite this address in case we are in a testing environment</p>
+
+<pre><code class="language-javascript">{
+	&quot;dev&quot;: {
+		&quot;user-management&quot;: &quot;http://some-dns-name&quot;,
+		...
+	},
+
+	&quot;test&quot;: {
+		&quot;user-management&quot;: &quot;http://yourproject.apiary-mock.com&quot;,
+		...
+	}
+}
+</code></pre>
+
+<p>Now you will have to read this out, just, wherever you used to include config.json switch to a parseconfig.js including this snippet:</p>
+
+<pre><code class="language-javascript">var exp = config.dev;
+if(process.env.NODE_ENV == 'test') {
+	for (var attr in config.test) {
+		exp[attr] = config.test[attr];
+	}
+}
+
+module.exports = exp;
+</code></pre>
+
+<p>Now, if your service was started with the environment-variable test set, you will load the test configuration, otherwise you will go for the usual dev-configuration. You can even extend this to switch between development and production configuration. Setting that environment-variable is easily possible by using</p>
+
+<pre><code class="language-javascript">process.env.NODE_ENV = 'test';
+</code></pre>
+
+<p>in the first line of every test.</p>
+
+<p>Now you can test against a simplified mock of the other services. The good thing is that this mock will always reply with the same data, so you can hardcode these assumptions into your code (and e.g. assume the logged-in user is always named Günther, and thus check if the post you just created in the test holds the author Günther (I recommend to always go for Günther as a testing-user, he is very experienced))</p>
+
+<h2 id="dynamic-behavior">Dynamic behavior</h2>
+
+<p>The problem with this approach is of course the flexibility of the mock-server. It is possible to draft different responses based on different requests in Apiary-blueprint, however it gets difficult if you want to differentiate based on headers. One Cookie/Auth-Token/Whatever-you-use-for-auth may be valid, for the other one you get a 403. I must admit that I also didn&rsquo;t yet find the holy grail of almost-integration-testing here, but I will update this post as soon as I find something. If you really need it, just set up a full testing-environment.</p>
+
+              <hr>
+              <div class="related-posts">
+                <h5>Related Posts</h5>
+                
+              </div>
+            </div>
+          </div>
+          <hr>
+        
+        </div>
+      
+      </div>
+    </div>
+
+    
+    <footer>
+  <div id="footer">
+    <div class="container">
+      <p class="text-muted">&copy; All rights reserved. Powered by <a href="https://gohugo.io/">Hugo</a>, <a href="https://uberspace.de/">Uberspace</a> and ♥, layout based on
+      <a href="http://www.github.com/nurlansu/hugo-sustain/">sustain</a></p>
+    </div>
+  </div>
+</footer>
+<div class="footer"></div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="/localhostjs/docs.min.js"></script>
+<script src="/localhostjs/main.js"></script>
+
+<script src="/localhostjs/ie10-viewport-bug-workaround.js"></script>
+
+
+    
+  </body>
+</html>

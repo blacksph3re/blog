@@ -2,20 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Docker Compose on Nico Westerbeck</title>
-    <link>https://nico-westerbeck.de/tags/docker-compose/</link>
+    <link>/localhost/tags/docker-compose/index.xml</link>
     <description>Recent content in Docker Compose on Nico Westerbeck</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>&amp;copy; 2016 Nico Westerbeck</copyright>
-    <lastBuildDate>Tue, 15 Nov 2016 17:00:00 +0000</lastBuildDate>
-    <atom:link href="https://nico-westerbeck.de/tags/docker-compose/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-US</language>
+    <atom:link href="/localhost/tags/docker-compose/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Setting up a docker-compose environment for the OMS</title>
-      <link>https://nico-westerbeck.de/post/docker-compose/</link>
+      <link>/localhost/blog/docker-compose/</link>
       <pubDate>Tue, 15 Nov 2016 17:00:00 +0000</pubDate>
       
-      <guid>https://nico-westerbeck.de/post/docker-compose/</guid>
+      <guid>/localhost/blog/docker-compose/</guid>
       <description>
 
 &lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="map[]" />
+    <meta name="description" content="A technical and personal blog">
+    <link rel="shortcut icon" type="image/x-icon" href="/localhostimg/favicon.ico">
+    <title>Memorizing strong passwords</title>
+    <meta name="generator" content="Hugo 0.18.1" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/localhostcss/main.css" />
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,200bold,400old" />
+    
+    <!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+
+    
+  </head>
+
+  <body>
+    <div id="wrap">
+
+      
+      <nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="/localhost"><i class="fa fa-home"></i></a>
+    </div>
+    <div id="navbar">
+      <ul class="nav navbar-nav navbar-right">
+      
+        
+        <li><a href="/localhost/blog/">BLOG</a></li>
+        
+        <li><a href="/localhost/projects/">PROJECTS</a></li>
+        
+        <li><a href="/localhost/about/">ABOUT</a></li>
+        
+      
+      </ul>
+    </div>
+  </div>
+</nav>
+
+      
+      <div class="container">
+        <div class="blog-post">
+          <h3>
+            <strong><a href="/localhost/blog/easy-passwords/">Memorizing strong passwords</a></strong>
+          </h3>
+        </div>
+        <div class="blog-title">
+          <h4>
+          September 25, 2016
+            &nbsp;&nbsp;
+            
+              <span class="label"><a href="/localhost/tags/passwords">passwords</a></span>
+            
+          </h4>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <div class="blogpost">
+              
+
+<p>Though this is not really a too groundbreaking article, I noticed that quite a lot of my friends didn&rsquo;t know the trick, so I thought I could share it.</p>
+
+<h2 id="intro">Intro</h2>
+
+<p>Nowadays there are some requirements to a good password, most people know them</p>
+
+<ul>
+<li><strong>Entropy</strong> - Mixed case, special characters, no natural language words&hellip; I personally think this is not too important and makes passwords <a href="https://xkcd.com/936/">harder to remember</a> while not increasing strength too much.</li>
+<li><strong>Length</strong> <a href="http://imgur.com/gallery/zFyBtyA">Size matters</a>! With every additional letter you theoretically multiply the effort needed to crack your password by 256 (practically maybe factor 60).</li>
+<li><strong>Uniqueness</strong> From time to time, companies screw up <a href="http://zed0.co.uk/crossword/">badly</a>, so you should use a different password on each site and a password other users are unlikely to choose aswell. No &ldquo;qwerty&rdquo; is not innovative, you should go for <a href="http://www.der-postillon.com/2014/04/it-experten-kuren-mb2r5ohf-0t-zum.html">Mb2.r5oHf-0t</a> ;-).</li>
+<li><strong>Lifetime</strong> You should change your password from time to time, as all passwords can be cracked with just enough patience</li>
+</ul>
+
+<p>Yes, nice dude, who can remember those? I mean I just went to the basement and forgot on the way there why I went there, how should I remember like 20 passwords, each 16 characters long? One way, maybe the most secure one, to achieve these goals is <a href="https://www.random.org/passwords/">randomly generate</a> passwords and store them in a <a href="http://keepass.info/">password manager</a>. However, there are few easy-to-use implementations out there and it gets difficult if you need your passwords at a place where you can&rsquo;t access the keyfile (like if you try to log into your mail from an internet-cafe on holidays (which you should try to avoid for so many reasons, only one of them being the better weather outside (I like nested brackets))).</p>
+
+<h2 id="idea">Idea</h2>
+
+<p>However, there is a simple trick to have a different, strong password for each site/account you hold, yet still just having to remember one. So, what about this:</p>
+
+<pre><code>&lt;mypassword&gt;-google
+</code></pre>
+
+<p>You generate the <code>mypassword</code>-fraction yourself and memorize it, then you append the name of the website wherever you use it. This has some nice advantages</p>
+
+<ol>
+<li>You will have a <strong>different password</strong> for each site. Simple password crack bots won&rsquo;t recognize the similarity and you have a fairly low chance to get your password guessed by a bruteforce attack.</li>
+<li>Your password will be even longer through the additional website name (remember, size matters!)</li>
+<li>You just need to <strong>remember one</strong> password! Even if you struggle with your mom&rsquo;s birthday, I believe in you!</li>
+</ol>
+
+<p><em>Please, as this is the only password you have to remember, choose something more sophisticated than &ldquo;asdfgh&rdquo;!</em> Doing that would also make it easier to use the password on sites that require your password to fulfill ceratin criterias, like &ldquo;at least one uppercase letter&rdquo; or &ldquo;at least 8 letters&rdquo;. It is a pain when there is one single site using a password policy which doesn&rsquo;t match and you have to think of something new (and forget that seconds after (I could nest another pair of brackets here)).</p>
+
+<h2 id="critics">Critics</h2>
+
+<p>There are still two drawbacks to this.</p>
+
+<ul>
+<li><p>If you just append the name, a slighly more sohpisticated passwort-bot could still guess the password and crack it. Especially if more people are starting to do this, it will eventually end up being a standard-method to crack passwords. To overcome this, you could obfuscate the website name a little. Be creative!</p>
+
+<pre><code>&lt;mypassword&gt;-elgoog
+go&lt;mypassword&gt;le
+&lt;my&gt;go&lt;pass&gt;og&lt;word&gt;le
+</code></pre></li>
+
+<li><p>If a human sees some of your passwords, it might figure out the algorithm you build them with and instantly crack all your passwords. This approach does not protect against that. Though it is unlikely someone will manually read through all the passwords in a password leak, you could still be disclosed when typing it. I personally decided to take the risk and have the comfort of not using a password manager, but you may decide differently. In case of a disclosure I will have to change a lot of passwords in contrast to one single one with the password manager.</p></li>
+
+<li><p>And finally, if you still, after being warned this whole article long, choose asd-google, you will not gain much.</p></li>
+</ul>
+
+<p>But all in all I think of this as a nice way to memorize passwords, and you could think of switching your password policy to this. Also try to use two-factor authentication if the website offers that.</p>
+
+              <hr>
+              <div class="related-posts">
+                <h5>Related Posts</h5>
+                
+              </div>
+            </div>
+          </div>
+          <hr>
+        
+        </div>
+      
+      </div>
+    </div>
+
+    
+    <footer>
+  <div id="footer">
+    <div class="container">
+      <p class="text-muted">&copy; All rights reserved. Powered by <a href="https://gohugo.io/">Hugo</a>, <a href="https://uberspace.de/">Uberspace</a> and ♥, layout based on
+      <a href="http://www.github.com/nurlansu/hugo-sustain/">sustain</a></p>
+    </div>
+  </div>
+</footer>
+<div class="footer"></div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="/localhostjs/docs.min.js"></script>
+<script src="/localhostjs/main.js"></script>
+
+<script src="/localhostjs/ie10-viewport-bug-workaround.js"></script>
+
+
+    
+  </body>
+</html>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Travels on Nico Westerbeck</title>
+    <link>/localhost/travel/index.xml</link>
+    <description>Recent content in Travels on Nico Westerbeck</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Tue, 14 Feb 2017 14:38:35 +0100</lastBuildDate>
+    <atom:link href="/localhost/travel/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>I am leaving</title>
+      <link>/localhost/travel/departure/</link>
+      <pubDate>Tue, 14 Feb 2017 14:38:35 +0100</pubDate>
+      
+      <guid>/localhost/travel/departure/</guid>
+      <description>
+
+&lt;p&gt;I successfully registered for an ERASMUS-Semester in Cluj-Napoca, Romania. I want to describe a little bit of how I decided to go, how the registration process worked for me and what I already experienced, before even leaving Germany.&lt;/p&gt;
+
+&lt;p&gt;At first, all the time I am talking to friends I found through my volunteering organisation AEGEE, they recommend me to do an ERASMUS semester. I am deeply in love with travelling.&lt;/p&gt;
+
+&lt;h1 id=&#34;how-it-began&#34;&gt;How it began&lt;/h1&gt;
+
+&lt;p&gt;Summer 2016 I participated on a summer university by AEGEE-Cluj Napoca, where we spent a couple of days in 8 different transylvanian cities - Cluj Napoca being one of them. It took me 4 days to fall in love with it. The culture of welcoming by both the municipality and the people on the streets impressed me deeply. It was such a nice contrast to the rejection I experienced during my volunteering in Dresden. The mere welcoming foreigners, the municipality offering rooms for projects with internationals - unthinkable in Dresden. I am an international spirit and I don&amp;rsquo;t feel like that part is wanted here.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

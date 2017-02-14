@@ -2,20 +2,37 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Nico Westerbeck</title>
-    <link>https://nico-westerbeck.de/</link>
+    <link>/localhost/index.xml</link>
     <description>Recent content on Nico Westerbeck</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>&amp;copy; 2016 Nico Westerbeck</copyright>
-    <lastBuildDate>Tue, 15 Nov 2016 17:00:00 +0000</lastBuildDate>
-    <atom:link href="https://nico-westerbeck.de/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-US</language>
+    <lastBuildDate>Tue, 14 Feb 2017 14:38:35 +0100</lastBuildDate>
+    <atom:link href="/localhost/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>I am leaving</title>
+      <link>/localhost/travel/departure/</link>
+      <pubDate>Tue, 14 Feb 2017 14:38:35 +0100</pubDate>
+      
+      <guid>/localhost/travel/departure/</guid>
+      <description>
+
+&lt;p&gt;I successfully registered for an ERASMUS-Semester in Cluj-Napoca, Romania. I want to describe a little bit of how I decided to go, how the registration process worked for me and what I already experienced, before even leaving Germany.&lt;/p&gt;
+
+&lt;p&gt;At first, all the time I am talking to friends I found through my volunteering organisation AEGEE, they recommend me to do an ERASMUS semester. I am deeply in love with travelling.&lt;/p&gt;
+
+&lt;h1 id=&#34;how-it-began&#34;&gt;How it began&lt;/h1&gt;
+
+&lt;p&gt;Summer 2016 I participated on a summer university by AEGEE-Cluj Napoca, where we spent a couple of days in 8 different transylvanian cities - Cluj Napoca being one of them. It took me 4 days to fall in love with it. The culture of welcoming by both the municipality and the people on the streets impressed me deeply. It was such a nice contrast to the rejection I experienced during my volunteering in Dresden. The mere welcoming foreigners, the municipality offering rooms for projects with internationals - unthinkable in Dresden. I am an international spirit and I don&amp;rsquo;t feel like that part is wanted here.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Setting up a docker-compose environment for the OMS</title>
-      <link>https://nico-westerbeck.de/post/docker-compose/</link>
+      <link>/localhost/blog/docker-compose/</link>
       <pubDate>Tue, 15 Nov 2016 17:00:00 +0000</pubDate>
       
-      <guid>https://nico-westerbeck.de/post/docker-compose/</guid>
+      <guid>/localhost/blog/docker-compose/</guid>
       <description>
 
 &lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
@@ -120,10 +137,10 @@ RUN npm install
     
     <item>
       <title>Notification pipelines</title>
-      <link>https://nico-westerbeck.de/post/notification-pipeline/</link>
+      <link>/localhost/blog/notification-pipeline/</link>
       <pubDate>Mon, 10 Oct 2016 20:00:00 +0000</pubDate>
       
-      <guid>https://nico-westerbeck.de/post/notification-pipeline/</guid>
+      <guid>/localhost/blog/notification-pipeline/</guid>
       <description>
 
 &lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
@@ -156,10 +173,10 @@ RUN npm install
     
     <item>
       <title>Memorizing strong passwords</title>
-      <link>https://nico-westerbeck.de/post/easy-passwords/</link>
+      <link>/localhost/blog/easy-passwords/</link>
       <pubDate>Sun, 25 Sep 2016 23:00:00 +0000</pubDate>
       
-      <guid>https://nico-westerbeck.de/post/easy-passwords/</guid>
+      <guid>/localhost/blog/easy-passwords/</guid>
       <description>
 
 &lt;p&gt;Though this is not really a too groundbreaking article, I noticed that quite a lot of my friends didn&amp;rsquo;t know the trick, so I thought I could share it.&lt;/p&gt;
@@ -217,10 +234,10 @@ go&amp;lt;mypassword&amp;gt;le
     
     <item>
       <title>Microservice testing with Apiary</title>
-      <link>https://nico-westerbeck.de/post/microservice-testing/</link>
+      <link>/localhost/blog/microservice-testing/</link>
       <pubDate>Sun, 25 Sep 2016 17:00:00 +0000</pubDate>
       
-      <guid>https://nico-westerbeck.de/post/microservice-testing/</guid>
+      <guid>/localhost/blog/microservice-testing/</guid>
       <description>
 
 &lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
@@ -285,10 +302,10 @@ module.exports = exp;
     
     <item>
       <title>Setting up this webspace</title>
-      <link>https://nico-westerbeck.de/post/setting-up-website/</link>
+      <link>/localhost/blog/setting-up-website/</link>
       <pubDate>Sat, 24 Sep 2016 17:00:00 +0000</pubDate>
       
-      <guid>https://nico-westerbeck.de/post/setting-up-website/</guid>
+      <guid>/localhost/blog/setting-up-website/</guid>
       <description>
 
 &lt;p&gt;As this was my today&amp;rsquo;s project, I will lose some words about how I set up this site.&lt;/p&gt;
@@ -315,21 +332,42 @@ module.exports = exp;
     
     <item>
       <title>OMS-Events</title>
-      <link>https://nico-westerbeck.de/project/oms-events/</link>
+      <link>/localhost/projects/oms-events/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://nico-westerbeck.de/project/oms-events/</guid>
+      <guid>/localhost/projects/oms-events/</guid>
       <description>&lt;p&gt;I&amp;rsquo;ve recently started working on a events-managing platform that can be used in the new Intranet of AEGEE, the OMS.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Alastair</title>
-      <link>https://nico-westerbeck.de/project/alastair/</link>
+      <link>/localhost/projects/alastair/</link>
       <pubDate>Tue, 27 Oct 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://nico-westerbeck.de/project/alastair/</guid>
+      <guid>/localhost/projects/alastair/</guid>
       <description>&lt;p&gt;Alastair is a webapp to plan food for bigger events, calculating a shopping list and estimated costs based on the number of people you want to feed.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/localhost/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/localhost/about/</guid>
+      <description>
+
+&lt;h1 id=&#34;hey-there&#34;&gt;Hey there!&lt;/h1&gt;
+
+&lt;p&gt;Nice you made it to my page! I am a student of computer sciences on the TU-Dresden (in Dresden), interested in these topics:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Cloud Computing&lt;/strong&gt; My favourite. Basically everything involving more than one computer: Microservices, Big Data, Fault-tolerance, Distributed (insert anything). I know C++, Rust, Go, Elixir&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Backend Development&lt;/strong&gt; I have worked with the MEAN-Stack and python-django but am willing to learn something new&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Websites&lt;/strong&gt; Have been creating websites for 6 years now, am familiar with several CMS and modern frontend frameworks (Angular, Bootstrap, JQuery).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Software development&lt;/strong&gt; If I should get very desperate, maybe also classical non-web monolithic year 2000 Java standalones. But actually&amp;hellip; no.&lt;/li&gt;
+&lt;/ul&gt;
 </description>
     </item>
     

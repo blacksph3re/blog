@@ -1,49 +1,277 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
-  <url>
-    <loc>https://nico-westerbeck.de/</loc>
-    <lastmod>2016-11-15T17:00:00+00:00</lastmod>
-  </url>
+	  
   
-  <url>
-    <loc>https://nico-westerbeck.de/post/docker-compose/</loc>
-    <lastmod>2016-11-15T17:00:00+00:00</lastmod>
-  </url>
+	  
+	  <url>
+	    <loc>/localhost/blog/docker-compose/</loc>
+	    <lastmod>2016-11-15T17:00:00&#43;00:00</lastmod>
+	    
+	    
+	  </url>
+	  
   
-  <url>
-    <loc>https://nico-westerbeck.de/post/notification-pipeline/</loc>
-    <lastmod>2016-10-10T20:00:00+00:00</lastmod>
-  </url>
+	  
+	  <url>
+	    <loc>/localhost/blog/notification-pipeline/</loc>
+	    <lastmod>2016-10-10T20:00:00&#43;00:00</lastmod>
+	    
+	    
+	  </url>
+	  
   
-  <url>
-    <loc>https://nico-westerbeck.de/post/easy-passwords/</loc>
-    <lastmod>2016-09-25T23:00:00+00:00</lastmod>
-  </url>
+	  
+	  <url>
+	    <loc>/localhost/blog/easy-passwords/</loc>
+	    <lastmod>2016-09-25T23:00:00&#43;00:00</lastmod>
+	    
+	    
+	  </url>
+	  
   
-  <url>
-    <loc>https://nico-westerbeck.de/post/microservice-testing/</loc>
-    <lastmod>2016-09-25T17:00:00+00:00</lastmod>
-  </url>
+	  
+	  <url>
+	    <loc>/localhost/blog/microservice-testing/</loc>
+	    <lastmod>2016-09-25T17:00:00&#43;00:00</lastmod>
+	    
+	    
+	  </url>
+	  
   
-  <url>
-    <loc>https://nico-westerbeck.de/post/setting-up-website/</loc>
-    <lastmod>2016-09-24T17:00:00+00:00</lastmod>
-  </url>
+	  
+	  <url>
+	    <loc>/localhost/blog/setting-up-website/</loc>
+	    <lastmod>2016-09-24T17:00:00&#43;00:00</lastmod>
+	    
+	    
+	  </url>
+	  
   
-  <url>
-    <loc>https://nico-westerbeck.de/project/oms-events/</loc>
-    <lastmod>2016-04-27T00:00:00+00:00</lastmod>
-  </url>
+	  
+	  <url>
+	    <loc>/localhost/projects/oms-events/</loc>
+	    <lastmod>2016-04-27T00:00:00&#43;00:00</lastmod>
+	    
+	    
+	  </url>
+	  
   
-  <url>
-    <loc>https://nico-westerbeck.de/home/about/</loc>
-    <lastmod>2016-04-20T00:00:00+00:00</lastmod>
-  </url>
+	  
+	  <url>
+	    <loc>/localhost/projects/alastair/</loc>
+	    <lastmod>2015-10-27T00:00:00&#43;00:00</lastmod>
+	    
+	    
+	  </url>
+	  
   
-  <url>
-    <loc>https://nico-westerbeck.de/project/alastair/</loc>
-    <lastmod>2015-10-27T00:00:00+00:00</lastmod>
-  </url>
+	  
+	  <url>
+	    <loc>/localhost/about/</loc>
+	    <lastmod>0001-01-01T00:00:00&#43;00:00</lastmod>
+	    
+	    
+	  </url>
+	  
+  
+	  
+	  <url>
+	    <loc>/localhost/tags/apiary/</loc>
+	    <lastmod>2016-09-25T17:00:00&#43;00:00</lastmod>
+	    
+	    <priority>0</priority>
+	  </url>
+	  
+  
+	  
+	  <url>
+	    <loc>/localhost/blog/</loc>
+	    <lastmod>2016-11-15T17:00:00&#43;00:00</lastmod>
+	    
+	    <priority>0</priority>
+	  </url>
+	  
+  
+	  
+	  <url>
+	    <loc>/localhost/tags/django/</loc>
+	    <lastmod>2015-10-27T00:00:00&#43;00:00</lastmod>
+	    
+	    <priority>0</priority>
+	  </url>
+	  
+  
+	  
+	  <url>
+	    <loc>/localhost/tags/docker/</loc>
+	    <lastmod>2016-11-15T17:00:00&#43;00:00</lastmod>
+	    
+	    <priority>0</priority>
+	  </url>
+	  
+  
+	  
+	  <url>
+	    <loc>/localhost/tags/docker-compose/</loc>
+	    <lastmod>2016-11-15T17:00:00&#43;00:00</lastmod>
+	    
+	    <priority>0</priority>
+	  </url>
+	  
+  
+	  
+	  <url>
+	    <loc>/localhost/tags/event-management/</loc>
+	    <lastmod>2015-10-27T00:00:00&#43;00:00</lastmod>
+	    
+	    <priority>0</priority>
+	  </url>
+	  
+  
+	  
+	  <url>
+	    <loc>/localhost/tags/food/</loc>
+	    <lastmod>2015-10-27T00:00:00&#43;00:00</lastmod>
+	    
+	    <priority>0</priority>
+	  </url>
+	  
+  
+	  
+	  <url>
+	    <loc>/localhost/tags/git/</loc>
+	    <lastmod>2016-11-15T17:00:00&#43;00:00</lastmod>
+	    
+	    <priority>0</priority>
+	  </url>
+	  
+  
+	  
+	  <url>
+	    <loc>/localhost/tags/hosting/</loc>
+	    <lastmod>2016-09-24T17:00:00&#43;00:00</lastmod>
+	    
+	    <priority>0</priority>
+	  </url>
+	  
+  
+	  
+	  <url>
+	    <loc>/localhost/tags/hugo/</loc>
+	    <lastmod>2016-09-24T17:00:00&#43;00:00</lastmod>
+	    
+	    <priority>0</priority>
+	  </url>
+	  
+  
+	  
+	  <url>
+	    <loc>/localhost/tags/messages/</loc>
+	    <lastmod>2016-10-10T20:00:00&#43;00:00</lastmod>
+	    
+	    <priority>0</priority>
+	  </url>
+	  
+  
+	  
+	  <url>
+	    <loc>/localhost/tags/microservice/</loc>
+	    <lastmod>2016-09-25T17:00:00&#43;00:00</lastmod>
+	    
+	    <priority>0</priority>
+	  </url>
+	  
+  
+	  
+	  <url>
+	    <loc>/localhost/tags/microservices/</loc>
+	    <lastmod>2016-11-15T17:00:00&#43;00:00</lastmod>
+	    
+	    <priority>0</priority>
+	  </url>
+	  
+  
+	  
+	  <url>
+	    <loc>/localhost/</loc>
+	    <lastmod>2017-02-14T14:38:35&#43;01:00</lastmod>
+	    
+	    <priority>0</priority>
+	  </url>
+	  
+  
+	  
+	  <url>
+	    <loc>/localhost/tags/notifications/</loc>
+	    <lastmod>2016-10-10T20:00:00&#43;00:00</lastmod>
+	    
+	    <priority>0</priority>
+	  </url>
+	  
+  
+	  
+	  <url>
+	    <loc>/localhost/tags/oms/</loc>
+	    <lastmod>2016-11-15T17:00:00&#43;00:00</lastmod>
+	    
+	    <priority>0</priority>
+	  </url>
+	  
+  
+	  
+	  <url>
+	    <loc>/localhost/tags/passwords/</loc>
+	    <lastmod>2016-09-25T23:00:00&#43;00:00</lastmod>
+	    
+	    <priority>0</priority>
+	  </url>
+	  
+  
+	  
+	  <url>
+	    <loc>/localhost/projects/</loc>
+	    <lastmod>2016-04-27T00:00:00&#43;00:00</lastmod>
+	    
+	    <priority>0</priority>
+	  </url>
+	  
+  
+	  
+	  <url>
+	    <loc>/localhost/tags/</loc>
+	    <lastmod>0001-01-01T00:00:00&#43;00:00</lastmod>
+	    
+	    <priority>0</priority>
+	  </url>
+	  
+  
+	  
+	  <url>
+	    <loc>/localhost/tags/testing/</loc>
+	    <lastmod>2016-09-25T17:00:00&#43;00:00</lastmod>
+	    
+	    <priority>0</priority>
+	  </url>
+	  
+  
+	  
+	  <url>
+	    <loc>/localhost/travel/</loc>
+	    <lastmod>2017-02-14T14:38:35&#43;01:00</lastmod>
+	    
+	    <priority>0</priority>
+	  </url>
+	  
+  
+	  
+	  <url>
+	    <loc>/localhost/tags/web/</loc>
+	    <lastmod>2016-09-24T17:00:00&#43;00:00</lastmod>
+	    
+	    <priority>0</priority>
+	  </url>
+	  
   
 </urlset>
