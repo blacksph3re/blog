@@ -29,7 +29,7 @@ In Cluj wartet auch eine WG auf mich, bestehend aus einem Erasmus-Studenten aus 
 # Ganz viel Musik
 
 Wenn ich so auf die letzten Wochen Dresden zurückgucke, dann war da erst eine Klausurenphase mit vollständiger Isolation und dann ganz viel Musik. Meine Klausuren sind gut gelaufen, das Lernen hat sich ausgezahlt, aber war sehr anstrengend. Und dann folgte eine Jamsession auf die nächste. 
-[Sehr sehr geil.](/static/travels/devil_is_dead.aac)
+[Sehr sehr geil.](/travels/devil_is_dead.aac)
 Ich möchte mich bei allen Menschen, die mir in diesen letzten Tagen begegnet sind für die tollen Eindrücke, Klänge und Gedanken bedanken, ganz besonders bei Filine (du weißt warum). Das war echt ein schöner Abschied aus dieser Stadt, und ich freue mich dass es nicht die Nazis sind, an die ich mich erinnern muss!
 
 # Vorfreude, Pläne
