@@ -1,5 +1,5 @@
 +++
-date = "2017-03-06T18:11:50+02:00"
+date = "2017-03-07T18:11:50+02:00"
 title = "First week"
 private = true
 description = ""
@@ -49,7 +49,7 @@ Dazu noch eine kleine Story - letzte Woche Donnerstag wollte ich Spaghetti Carbo
 
 # Cool Garlic Kids
 
-Erasmus ist Freunde finden, bei mir sind das Freunde die aus irgendeinem Grunde jeder eine Knoblauchpresse besitzen und diese auch liebend gerne nutzen. Anders formuliert identifizieren wir uns also dadurch miteinander, dass wir allesamt Mundgeruch haben. Eine Garlic Kids bestehenen aus 7 Leuten die sich irgendwie so zusammen gefunden haben und von denen ich jeden einzelnen total gern hab! Wir haben ein ähnliches Party-Verhalten (eher Konzerte oder anspruchsvollere Musik als mit den anderen Erasmusmenschen zu Popmusik und billigen Cocktails abzustürzen) und helfen uns bei organisatorischem Zeugs total viel gegenseitig. Letzten Samstag waren wir auf einem Flohmarkt, oder wenn man das in deutsche Kategorien umrechnet auf circa 22 Flohmärkten. Ein riesen Areal volgestellt mit Decken auf denen alles liegt was man sich vorstellen kann. Dieser Flohmarkt ist aber leider nur räumlich größer, nicht zeitlich - aber sollte ich irgendwann dieses Jahr einen Freitag haben, bei dem ich vor 2 ins Bett gehe werde ich definitiv am Samstag richtig früh dort hin gehen und mich einmal durch die ersten hundert Stände durchstöbern. Der Rest der Garlic-Crew hat sich dort Fahrräder gekauft, ich hab aber leider verpeilt dass ich kein Bargeld dabei hatte, also hab ich mir einen Gemüsespieß geleistet.
+Erasmus ist Freunde finden, bei mir sind das Freunde die aus irgendeinem Grunde jeder eine Knoblauchpresse besitzen und diese auch liebend gerne nutzen. Anders formuliert identifizieren wir uns also dadurch miteinander, dass wir allesamt Mundgeruch haben. Eine Garlic Kids bestehenen aus 7 Leuten die sich irgendwie so zusammen gefunden haben und von denen ich jeden einzelnen total gern hab! Wir haben ein ähnliches Party-Verhalten (eher Konzerte oder anspruchsvollere Musik als mit den anderen Erasmusmenschen zu Popmusik und billigen Cocktails abzustürzen) und helfen uns bei organisatorischem Zeugs total viel gegenseitig. Letzten Samstag waren wir auf einem Flohmarkt, oder wenn man das in deutsche Kategorien umrechnet auf circa 22 Flohmärkten. Ein riesen Areal vollgestellt mit Decken auf denen alles liegt was man sich vorstellen kann. Dieser Flohmarkt ist aber leider nur räumlich größer, nicht zeitlich - aber sollte ich irgendwann dieses Jahr einen Freitag haben, bei dem ich vor 2 ins Bett gehe werde ich definitiv am Samstag richtig früh dort hin gehen und mich einmal durch die ersten hundert Stände durchstöbern. Der Rest der Garlic-Crew hat sich dort Fahrräder gekauft, ich hab aber leider verpeilt dass ich kein Bargeld dabei hatte, also hab ich mir einen Gemüsespieß geleistet.
 Um die Konstellation kurz vorzustellen:
 
 * Anja ist ein total selbsterfahrener Mensch und man hat immer das Gefühl sie tut genau das was für sie richtig ist
