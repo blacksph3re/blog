@@ -15,6 +15,10 @@
 	  
   
 	  
+  
+	  
+  
+	  
 	  <url>
 	    <loc>https://nico-westerbeck.de/blog/docker-compose/</loc>
 	    <lastmod>2016-11-15T17:00:00&#43;00:00</lastmod>
@@ -98,7 +102,16 @@
 	  
 	  <url>
 	    <loc>https://nico-westerbeck.de/blog/</loc>
-	    <lastmod>2016-11-15T17:00:00&#43;00:00</lastmod>
+	    <lastmod>2017-04-26T11:54:59&#43;03:00</lastmod>
+	    
+	    <priority>0</priority>
+	  </url>
+	  
+  
+	  
+	  <url>
+	    <loc>https://nico-westerbeck.de/categories/</loc>
+	    <lastmod>0001-01-01T00:00:00&#43;00:00</lastmod>
 	    
 	    <priority>0</priority>
 	  </url>
@@ -206,7 +219,7 @@
 	  
 	  <url>
 	    <loc>https://nico-westerbeck.de/</loc>
-	    <lastmod>2017-04-24T11:40:27&#43;03:00</lastmod>
+	    <lastmod>2017-06-27T15:31:21&#43;03:00</lastmod>
 	    
 	    <priority>0</priority>
 	  </url>
@@ -251,7 +264,7 @@
 	  
 	  <url>
 	    <loc>https://nico-westerbeck.de/tags/</loc>
-	    <lastmod>0001-01-01T00:00:00&#43;00:00</lastmod>
+	    <lastmod>2016-09-25T17:00:00&#43;00:00</lastmod>
 	    
 	    <priority>0</priority>
 	  </url>
@@ -269,7 +282,7 @@
 	  
 	  <url>
 	    <loc>https://nico-westerbeck.de/travel/</loc>
-	    <lastmod>2017-04-24T11:40:27&#43;03:00</lastmod>
+	    <lastmod>2017-06-27T15:31:21&#43;03:00</lastmod>
 	    
 	    <priority>0</priority>
 	  </url>

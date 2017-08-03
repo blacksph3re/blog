@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Nico Westerbeck</title>
+    <link>https://nico-westerbeck.de/tags/</link>
+    <description>Recent content in Tags on Nico Westerbeck</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Sun, 25 Sep 2016 17:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://nico-westerbeck.de/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Apiary</title>
+      <link>https://nico-westerbeck.de/tags/apiary/</link>
+      <pubDate>Sun, 25 Sep 2016 17:00:00 +0000</pubDate>
+      
+      <guid>https://nico-westerbeck.de/tags/apiary/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Django</title>
+      <link>https://nico-westerbeck.de/tags/django/</link>
+      <pubDate>Tue, 27 Oct 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://nico-westerbeck.de/tags/django/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Docker</title>
+      <link>https://nico-westerbeck.de/tags/docker/</link>
+      <pubDate>Tue, 15 Nov 2016 17:00:00 +0000</pubDate>
+      
+      <guid>https://nico-westerbeck.de/tags/docker/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Docker Compose</title>
+      <link>https://nico-westerbeck.de/tags/docker-compose/</link>
+      <pubDate>Tue, 15 Nov 2016 17:00:00 +0000</pubDate>
+      
+      <guid>https://nico-westerbeck.de/tags/docker-compose/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Event Management</title>
+      <link>https://nico-westerbeck.de/tags/event-management/</link>
+      <pubDate>Tue, 27 Oct 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://nico-westerbeck.de/tags/event-management/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Food</title>
+      <link>https://nico-westerbeck.de/tags/food/</link>
+      <pubDate>Tue, 27 Oct 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://nico-westerbeck.de/tags/food/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Git</title>
+      <link>https://nico-westerbeck.de/tags/git/</link>
+      <pubDate>Tue, 15 Nov 2016 17:00:00 +0000</pubDate>
+      
+      <guid>https://nico-westerbeck.de/tags/git/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hosting</title>
+      <link>https://nico-westerbeck.de/tags/hosting/</link>
+      <pubDate>Sat, 24 Sep 2016 17:00:00 +0000</pubDate>
+      
+      <guid>https://nico-westerbeck.de/tags/hosting/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hugo</title>
+      <link>https://nico-westerbeck.de/tags/hugo/</link>
+      <pubDate>Sat, 24 Sep 2016 17:00:00 +0000</pubDate>
+      
+      <guid>https://nico-westerbeck.de/tags/hugo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Messages</title>
+      <link>https://nico-westerbeck.de/tags/messages/</link>
+      <pubDate>Mon, 10 Oct 2016 20:00:00 +0000</pubDate>
+      
+      <guid>https://nico-westerbeck.de/tags/messages/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Microservice</title>
+      <link>https://nico-westerbeck.de/tags/microservice/</link>
+      <pubDate>Sun, 25 Sep 2016 17:00:00 +0000</pubDate>
+      
+      <guid>https://nico-westerbeck.de/tags/microservice/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Microservices</title>
+      <link>https://nico-westerbeck.de/tags/microservices/</link>
+      <pubDate>Tue, 15 Nov 2016 17:00:00 +0000</pubDate>
+      
+      <guid>https://nico-westerbeck.de/tags/microservices/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Notifications</title>
+      <link>https://nico-westerbeck.de/tags/notifications/</link>
+      <pubDate>Mon, 10 Oct 2016 20:00:00 +0000</pubDate>
+      
+      <guid>https://nico-westerbeck.de/tags/notifications/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Oms</title>
+      <link>https://nico-westerbeck.de/tags/oms/</link>
+      <pubDate>Tue, 15 Nov 2016 17:00:00 +0000</pubDate>
+      
+      <guid>https://nico-westerbeck.de/tags/oms/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Passwords</title>
+      <link>https://nico-westerbeck.de/tags/passwords/</link>
+      <pubDate>Sun, 25 Sep 2016 23:00:00 +0000</pubDate>
+      
+      <guid>https://nico-westerbeck.de/tags/passwords/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Testing</title>
+      <link>https://nico-westerbeck.de/tags/testing/</link>
+      <pubDate>Sun, 25 Sep 2016 17:00:00 +0000</pubDate>
+      
+      <guid>https://nico-westerbeck.de/tags/testing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Web</title>
+      <link>https://nico-westerbeck.de/tags/web/</link>
+      <pubDate>Sat, 24 Sep 2016 17:00:00 +0000</pubDate>
+      
+      <guid>https://nico-westerbeck.de/tags/web/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

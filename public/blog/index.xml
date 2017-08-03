@@ -2,12 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blogs on Nico Westerbeck</title>
-    <link>https://nico-westerbeck.de/blog/index.xml</link>
+    <link>https://nico-westerbeck.de/blog/</link>
     <description>Recent content in Blogs on Nico Westerbeck</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Tue, 15 Nov 2016 17:00:00 +0000</lastBuildDate>
-    <atom:link href="https://nico-westerbeck.de/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 26 Apr 2017 11:54:59 +0300</lastBuildDate>
+    
+	<atom:link href="https://nico-westerbeck.de/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Functional web programming</title>
+      <link>https://nico-westerbeck.de/blog/functional_web/</link>
+      <pubDate>Wed, 26 Apr 2017 11:54:59 +0300</pubDate>
+      
+      <guid>https://nico-westerbeck.de/blog/functional_web/</guid>
+      <description>Introduction I recently tried to dive into functional programming and the longer I do that, the more I am amazed by how it feels to code functional. Thing is, all those languages provide quite an entrance barrier if you come from one of the common languages like PHP, Python or whatever. Even JS doesn&amp;rsquo;t really feel too functional to me, as things like binding functions is still pretty unhandy and the callback hell is just not very nice to read through.</description>
+    </item>
     
     <item>
       <title>Setting up a docker-compose environment for the OMS</title>
@@ -15,106 +26,8 @@
       <pubDate>Tue, 15 Nov 2016 17:00:00 +0000</pubDate>
       
       <guid>https://nico-westerbeck.de/blog/docker-compose/</guid>
-      <description>
-
-&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
-
-&lt;p&gt;At first I used this file only as a help for myself, but I thought I could also share my thoughts. The project was to set up a docker environment for a microservice architecture consisting of the following parts. This was specifically done for the &lt;a href=&#34;https://oms-project.atlassian.net/wiki/display/GENERAL/Project+description&#34;&gt;OMS&lt;/a&gt;&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;OMS-Core, consisting of
-
-&lt;ul&gt;
-&lt;li&gt;nginx&lt;/li&gt;
-&lt;li&gt;php-fpm&lt;/li&gt;
-&lt;li&gt;A workspace container with php artisan, composer, etc&lt;/li&gt;
-&lt;li&gt;postgres&lt;/li&gt;
-&lt;li&gt;A data container for the whole repo&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;OMS-Events, consisting of
-
-&lt;ul&gt;
-&lt;li&gt;node.js backend&lt;/li&gt;
-&lt;li&gt;nginx frontend for static serving and reverse proxy&lt;/li&gt;
-&lt;li&gt;mongodb&lt;/li&gt;
-&lt;li&gt;(Not yet) A data container for media files&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h1 id=&#34;design-decisions&#34;&gt;Design decisions&lt;/h1&gt;
-
-&lt;p&gt;I had to do some design decisions in setting this up, most importantly&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;How to get the code into the container&lt;/li&gt;
-&lt;li&gt;How to get the configuration into the container&lt;/li&gt;
-&lt;li&gt;How to link up the containers&lt;/li&gt;
-&lt;li&gt;How far can/should I split everything&lt;/li&gt;
-&lt;li&gt;Sharing API-Keys&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&#34;how-to-get-the-code-into-the-container&#34;&gt;How to get the code into the container&lt;/h2&gt;
-
-&lt;p&gt;This seemed to be my first real task. I wanted to have it set up in a way that you ideally just run docker-compose up and everything is set up, AND the code from each of the modules is linked via a volume mapping to the host so you can just edit the files on the host with a text editor and it will end up iin the container right away. However, now is the question on when the code for oms-core and oms-events will be pulled and how it can be moved into the container. There were basically 3 possibilities&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Create a git repo with the docker-compose.yml (and some other files) and add oms-neo-core and oms-events as submodules, then COPY the files into the containers.&lt;/li&gt;
-&lt;li&gt;Create a git repo with the docker-compose.yml (and some other files) and add oms-neo-core and oms-events as submodules, then mount the files as volumes into the containers.&lt;/li&gt;
-&lt;li&gt;Git clone inside the Dockerfiles, but still mount the volumes to harddisk during run.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;At first I read &lt;a href=&#34;https://forums.docker.com/t/best-practices-for-getting-code-into-a-container-git-clone-vs-copy-vs-data-container/4077&#34;&gt;this&lt;/a&gt; article, which basically has the same 3 options, and where the majority pledged for option 2. The advantages which were described there were better CI integration and more lightweight containers. Especially the last argument is strong, as replicating the container wouldn&amp;rsquo;t really work, as the code would be cloned twice. However, I also had some points for option 3. It would make setting up everything a lot more transparent, as the configuration files (which definetely needed to be changed) could have been added in the docker build process. However, I trusted that forum post and went for number 2 - number 1 was never really an option.&lt;/p&gt;
-
-&lt;p&gt;The file-system now looks like this:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;.
-├── docker
-├── oms-core
-├── oms-events
-└── oms-events-frontend
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Whereas the docker folder holds the docker-compose.yml and some dockerfiles.&lt;/p&gt;
-
-&lt;h2 id=&#34;how-to-get-the-configuration-into-the-container&#34;&gt;How to get the configuration into the container&lt;/h2&gt;
-
-&lt;p&gt;As I decided for number 2 in the above question, I was expecting some new problems with this one. The common way to mount configuration files into a docker container is to just use the -v switch (or on docker-compose the volumes: list). However, I already have a volume mount to the whole codebase, including the configuration file and that would mean intersecting mounts. I personnally had no idea if that actually was something bad, so I tried it aaaand it worked! =) It actually left the file in &lt;code&gt;oms-events/lib/config/configFile.json&lt;/code&gt; intact but to the container the contents of &lt;code&gt;docker/omsevents/configFile.json&lt;/code&gt; (which I added via volume mounts) were visible. Great!&lt;/p&gt;
-
-&lt;p&gt;However, not so easy. The configuration might be in there, but what about bootstrapping the apps? The problem is that the volume mounts are not there during docker build, and there is no way to get them there.&lt;/p&gt;
-
-&lt;p&gt;For &lt;strong&gt;oms-events&lt;/strong&gt; I would have to run &lt;code&gt;npm install&lt;/code&gt; at some point in time, as it&amp;rsquo;s based on nodejs. This would have been nice to run in the docker build process, so I checked on how this &lt;a href=&#34;https://nodejs.org/en/docs/guides/nodejs-docker-webapp/&#34;&gt;should be done&lt;/a&gt; - copying the package.json file in advance enables npm install to run and it doesn&amp;rsquo;t need any app code for that. However currently the package.json file lives outside of the build context, in the git repo with the other code and docker doesn&amp;rsquo;t allow copying that. My fix for this was putting the raw url from github for that specific file into the container:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;ADD https://raw.githubusercontent.com/AEGEE/oms-events/dev/package.json /usr/app/package.json
-RUN npm install
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Great, node works. However the &lt;strong&gt;omscore&lt;/strong&gt; seemed to have far more heavy dependencies and I personally didn&amp;rsquo;t know so much about how the bootstrapping works and if it could actually do something before having the codebase present. The laradock image also didn&amp;rsquo;t give many hints on this, as they seem to leave this as something the user can do by hand. I thought it might be neat to have a configuration container, which starts, does the configuration work and then exits again. I believe that this also was the concept behind the workspace container, that laradock introduced. However, that container would have to be designed in a way that it can be run every time on a startup, as having optional containers is &lt;a href=&#34;https://github.com/docker/compose/issues/1896&#34;&gt;not yet&lt;/a&gt; implemented in docker-compose. I decided to use the workspace for just that purpose and tried to set something up which can be run any time without breaking app. However, in the middle of the process I noticed that I need a working db connection, which made it impossible to set this up during the docker build process. Resultingly, I decided to place a small bootstrap script inside the workspace container and tell the user to manually run it when he runs the app the first time. Not beautiful, but for omsevents I need the same, see &lt;a href=&#34;#sharing-api-keys&#34;&gt;Sharing API-Keys&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;how-to-link-up-the-containers&#34;&gt;How to link up the containers&lt;/h2&gt;
-
-&lt;p&gt;&amp;ldquo;Linking up&amp;rdquo; actually is a pretty vague term, we need to differentiate between linking in &lt;strong&gt;network&lt;/strong&gt; terms and linking in &lt;strong&gt;volume&lt;/strong&gt; terms.&lt;/p&gt;
-
-&lt;p&gt;Regarding the &lt;strong&gt;volumes&lt;/strong&gt;, there basically only was the design decision to have a data container or not. Some services, like the nginx and the workspace of omscore need the same data, so we need to distribute that somehow. A dirty version which could be thinkable would be to copy all the data into all the containers, but that would go against our requirement of having a volume mount for live code-reloading. The &lt;a href=&#34;https://docs.docker.com/engine/tutorials/dockervolumes/&#34;&gt;docker tutorial&lt;/a&gt; recommends to insert data containers, meaning images like the &lt;code&gt;tianon/true&lt;/code&gt; image on dockerhub with a volume mount linked up to them. Another possibility would be to link the folders with a volume switch everywhere and not put up a data container. That would also be thinkable and actually work, just with the problem that the services might spam up our development folders, which we want to keep as clean as possible. In the end I actually went this way with the omsevents module, however planning to change that in the future. For the omscore it was already set up with the laradock configuration, so I kept it.&lt;/p&gt;
-
-&lt;p&gt;The &lt;strong&gt;network&lt;/strong&gt;-linking can be pretty straightforward, but might still be worth a thought. Docker supports multiple networks between the containers, which would in this case be a really good idea as the omsevents and omscore service are relatively independent and could be linked up with just a proxy. However, docker also supports mashing all of them into the same network. Let&amp;rsquo;s not do this in production, but for development I think this is fine, and I decided I&amp;rsquo;d rather spend that time making dinner than trying to seperate the networks.&lt;/p&gt;
-
-&lt;h2 id=&#34;how-far-should-can-i-split-everything&#34;&gt;How far should/can I split everything&lt;/h2&gt;
-
-&lt;p&gt;If you read any article about microservices, you will find the word &amp;ldquo;split&amp;rdquo; or a synonym in every second sentence. Splitting things is good, as it provides isolation so faults or exploits can&amp;rsquo;t propagate too easy, allows easier scaling, better fault tolerance and much more. The major reason why we actually need it in this size is splitting the teams working on different parts of the application. The core can be developed completely independent of the events module, and the events module frontend is almost independent of the backend, and so on. This is just pretty flexible. When I started setting up the docker for oms-events, I found that I would have to create a container with both node and nginx, as that module uses node for the backend and nginx for statically serving the frontend. At the beginning of the development, I had the node backend also serving the frontend files, but I discarted that solution for any production use, as serving frontend files would put unnecessary load on the backend. So at this point, I decided to fully split the two, and have two different containers for frontend and backend. That also meant introducing a new github repo for the frontend, as it felt just wrong having them in the same. Fancy extra: it looks super cool starting up 9 containers and seeing them appear after another :D&lt;/p&gt;
-
-&lt;h2 id=&#34;sharing-api-keys&#34;&gt;Sharing API-Keys&lt;/h2&gt;
-
-&lt;p&gt;This is actually a difficult question, as the API-Keys should not get leaked but need to be distributed to the containers. In development this might be of less danger, but we should get this one straight from the beginning on, so we don&amp;rsquo;t mess up in production. The talk &lt;a href=&#34;https://www.youtube.com/watch?v=A32Yjizt2_s&#34;&gt;Docker Security&lt;/a&gt; by Adrian Mouat addressed that issue, and pointed out 4 possibilities how to solve it.&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Hardwire the secret into the images&lt;/li&gt;
-&lt;li&gt;Pass it via command-line parameters/environment variables&lt;/li&gt;
-&lt;li&gt;Create a file containing the secret and mount it everywhere needed&lt;/li&gt;
-&lt;li&gt;Use a secret key/value store like &lt;a href=&#34;https://www.hashicorp.com/blog/vault.html&#34;&gt;vault&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;1 and 2 are obviously flawed, also because in our setup the omscore generates the token itself, so I found that 3 could be a good option. I don&amp;rsquo;t yet have experience with vault or other secure key/value stores, but maybe I will try to implement that in the future. The rest then was pretty straight forward. Create a named volume, mount it read-only into the omsevents module (and have the service read from the file) and mount it into the omscore-nginx (and have the service write to it). Well, actually both things in bracket meant code changes, so this took a while, but the idea is straight forward. Remember you don&amp;rsquo;t even need to specify a host folder for this, a named volume should be enough as it is written by omscore during runtime. Like this, only the necessary containers have access to the api-key, so the chance of it getting leaked is pretty low. One could also think of introducing a data-container for persistence.&lt;/p&gt;
-</description>
+      <description>Introduction At first I used this file only as a help for myself, but I thought I could also share my thoughts. The project was to set up a docker environment for a microservice architecture consisting of the following parts. This was specifically done for the OMS
+ OMS-Core, consisting of  nginx php-fpm A workspace container with php artisan, composer, etc postgres A data container for the whole repo  OMS-Events, consisting of  node.</description>
     </item>
     
     <item>
@@ -123,34 +36,8 @@ RUN npm install
       <pubDate>Mon, 10 Oct 2016 20:00:00 +0000</pubDate>
       
       <guid>https://nico-westerbeck.de/blog/notification-pipeline/</guid>
-      <description>
-
-&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
-
-&lt;p&gt;In this post I will share some thoughts upon implementing a notification pipeline in a microservice architecture. It should be said though that I don&amp;rsquo;t yet have much practical experiences, this post is rather designed as a discussion about the topic. While working on the OMS for AEGEE, I found that this topic is actually quite a tough point when developing a distributed application.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;A lot of microservices will want to generate notifications for different things, resulting in a high number of notifications and a high diversity&lt;/li&gt;
-&lt;li&gt;Users want to control how and which notifications they want&lt;/li&gt;
-&lt;li&gt;Notifications need to be managed centrally, as it would get inconsistend having the notification settings everywhere&lt;/li&gt;
-&lt;li&gt;Certain events could potentially trigger a high notification throughput (a huge event gets canceled, popular news post)&lt;/li&gt;
-&lt;li&gt;There are several channels how notifications can be distributed: Mail, Pop-up notification, Push-notifications, Chat integration, &amp;hellip;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;The good thing is that this topic is not necessarily time-critical. Noone will notice if the notification for an event creation is fired 30 seconds late, so it would be a good candidate for async execution and we don&amp;rsquo;t need to be too careful on how long the job takes as soon as it is dispatched to a background task. Also, the notification object is quite simple, often just consisting of a recipient, message text, title, category and some information about the importance. The latter could be used to implement smart notifications like facebook, outputting a relatively constant number of pop-up notifications as long as the user is on the site but lowering the output when he leaves.&lt;/p&gt;
-
-&lt;h2 id=&#34;design-ideas&#34;&gt;Design ideas&lt;/h2&gt;
-
-&lt;p&gt;The first idea that came up when we discussed the topic &lt;strong&gt;just an endpoint&lt;/strong&gt; on the service which also deals with user data. Just an API call that would immediately send an email to the user. It would be super-easy to implement and could potentially accept a big number of recipients. However we quickly noticed some drawbacks with this approach. It would be difficult adding or removing channels (mail/push/etc), as everything is concentrated in one endpoint. Also this could put some quite high load on the machine managing that endpoint - especially if the service is not replicable this could be problematic. However it would make it easy setting preferences, as the central management requirement would be fulfilled.&lt;/p&gt;
-
-&lt;p&gt;So we went on from this approach to a pub-sub idea, some kind of &lt;strong&gt;observer-pattern&lt;/strong&gt;. We would still have the endpoint to send notifications, however we would also offer a hook for services to register with the core to get a copy of each notification sent by anyone. Those hooked microservices could be responsible for spreading the messages about one specific channel. This is a fairly easy to implement service and would keep the codebase small, ideal for newcomers in the project. However we still encountered a problem. We could not possibly maintain a centralized list of all possible notification categories. The services would grow constantly and would rapidly develop new classes of notifications, updating them into a centralized database would be a pain.&lt;/p&gt;
-
-&lt;p&gt;We came up with the idea of &lt;strong&gt;tree-based categories&lt;/strong&gt;. There is a limited, predefined set of toplevel notifications, like &amp;ldquo;eventrelated&amp;rdquo;, &amp;ldquo;userrelated&amp;rdquo;, etc. This level is managed centrally and only updated rarely. Whenever a service wants to dispatch a notification, it has to fit it in one of the toplevel categories. However it also has the possibility to set an arbitrary amount of subtrees. This would allow us to firstly have very course-grained controls int he development process, but as the more finegrained category information is not lost, it would be easily possible to set up more finegrained controls later.&lt;/p&gt;
-
-&lt;h2 id=&#34;implementation&#34;&gt;Implementation&lt;/h2&gt;
-
-&lt;p&gt;Well, right now there is no implementation, as this post is about ideas. I will update this as soon as we brought our ideas into practice.&lt;/p&gt;
-</description>
+      <description>Introduction In this post I will share some thoughts upon implementing a notification pipeline in a microservice architecture. It should be said though that I don&amp;rsquo;t yet have much practical experiences, this post is rather designed as a discussion about the topic. While working on the OMS for AEGEE, I found that this topic is actually quite a tough point when developing a distributed application.
+ A lot of microservices will want to generate notifications for different things, resulting in a high number of notifications and a high diversity Users want to control how and which notifications they want Notifications need to be managed centrally, as it would get inconsistend having the notification settings everywhere Certain events could potentially trigger a high notification throughput (a huge event gets canceled, popular news post) There are several channels how notifications can be distributed: Mail, Pop-up notification, Push-notifications, Chat integration, &amp;hellip;  The good thing is that this topic is not necessarily time-critical.</description>
     </item>
     
     <item>
@@ -159,59 +46,9 @@ RUN npm install
       <pubDate>Sun, 25 Sep 2016 23:00:00 +0000</pubDate>
       
       <guid>https://nico-westerbeck.de/blog/easy-passwords/</guid>
-      <description>
-
-&lt;p&gt;Though this is not really a too groundbreaking article, I noticed that quite a lot of my friends didn&amp;rsquo;t know the trick, so I thought I could share it.&lt;/p&gt;
-
-&lt;h2 id=&#34;intro&#34;&gt;Intro&lt;/h2&gt;
-
-&lt;p&gt;Nowadays there are some requirements to a good password, most people know them&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Entropy&lt;/strong&gt; - Mixed case, special characters, no natural language words&amp;hellip; I personally think this is not too important and makes passwords &lt;a href=&#34;https://xkcd.com/936/&#34;&gt;harder to remember&lt;/a&gt; while not increasing strength too much.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Length&lt;/strong&gt; &lt;a href=&#34;http://imgur.com/gallery/zFyBtyA&#34;&gt;Size matters&lt;/a&gt;! With every additional letter you theoretically multiply the effort needed to crack your password by 256 (practically maybe factor 60).&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Uniqueness&lt;/strong&gt; From time to time, companies screw up &lt;a href=&#34;http://zed0.co.uk/crossword/&#34;&gt;badly&lt;/a&gt;, so you should use a different password on each site and a password other users are unlikely to choose aswell. No &amp;ldquo;qwerty&amp;rdquo; is not innovative, you should go for &lt;a href=&#34;http://www.der-postillon.com/2014/04/it-experten-kuren-mb2r5ohf-0t-zum.html&#34;&gt;Mb2.r5oHf-0t&lt;/a&gt; ;-).&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Lifetime&lt;/strong&gt; You should change your password from time to time, as all passwords can be cracked with just enough patience&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Yes, nice dude, who can remember those? I mean I just went to the basement and forgot on the way there why I went there, how should I remember like 20 passwords, each 16 characters long? One way, maybe the most secure one, to achieve these goals is &lt;a href=&#34;https://www.random.org/passwords/&#34;&gt;randomly generate&lt;/a&gt; passwords and store them in a &lt;a href=&#34;http://keepass.info/&#34;&gt;password manager&lt;/a&gt;. However, there are few easy-to-use implementations out there and it gets difficult if you need your passwords at a place where you can&amp;rsquo;t access the keyfile (like if you try to log into your mail from an internet-cafe on holidays (which you should try to avoid for so many reasons, only one of them being the better weather outside (I like nested brackets))).&lt;/p&gt;
-
-&lt;h2 id=&#34;idea&#34;&gt;Idea&lt;/h2&gt;
-
-&lt;p&gt;However, there is a simple trick to have a different, strong password for each site/account you hold, yet still just having to remember one. So, what about this:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;&amp;lt;mypassword&amp;gt;-google
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;You generate the &lt;code&gt;mypassword&lt;/code&gt;-fraction yourself and memorize it, then you append the name of the website wherever you use it. This has some nice advantages&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;You will have a &lt;strong&gt;different password&lt;/strong&gt; for each site. Simple password crack bots won&amp;rsquo;t recognize the similarity and you have a fairly low chance to get your password guessed by a bruteforce attack.&lt;/li&gt;
-&lt;li&gt;Your password will be even longer through the additional website name (remember, size matters!)&lt;/li&gt;
-&lt;li&gt;You just need to &lt;strong&gt;remember one&lt;/strong&gt; password! Even if you struggle with your mom&amp;rsquo;s birthday, I believe in you!&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;em&gt;Please, as this is the only password you have to remember, choose something more sophisticated than &amp;ldquo;asdfgh&amp;rdquo;!&lt;/em&gt; Doing that would also make it easier to use the password on sites that require your password to fulfill ceratin criterias, like &amp;ldquo;at least one uppercase letter&amp;rdquo; or &amp;ldquo;at least 8 letters&amp;rdquo;. It is a pain when there is one single site using a password policy which doesn&amp;rsquo;t match and you have to think of something new (and forget that seconds after (I could nest another pair of brackets here)).&lt;/p&gt;
-
-&lt;h2 id=&#34;critics&#34;&gt;Critics&lt;/h2&gt;
-
-&lt;p&gt;There are still two drawbacks to this.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;If you just append the name, a slighly more sohpisticated passwort-bot could still guess the password and crack it. Especially if more people are starting to do this, it will eventually end up being a standard-method to crack passwords. To overcome this, you could obfuscate the website name a little. Be creative!&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;&amp;lt;mypassword&amp;gt;-elgoog
-go&amp;lt;mypassword&amp;gt;le
-&amp;lt;my&amp;gt;go&amp;lt;pass&amp;gt;og&amp;lt;word&amp;gt;le
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;If a human sees some of your passwords, it might figure out the algorithm you build them with and instantly crack all your passwords. This approach does not protect against that. Though it is unlikely someone will manually read through all the passwords in a password leak, you could still be disclosed when typing it. I personally decided to take the risk and have the comfort of not using a password manager, but you may decide differently. In case of a disclosure I will have to change a lot of passwords in contrast to one single one with the password manager.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;And finally, if you still, after being warned this whole article long, choose asd-google, you will not gain much.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;But all in all I think of this as a nice way to memorize passwords, and you could think of switching your password policy to this. Also try to use two-factor authentication if the website offers that.&lt;/p&gt;
-</description>
+      <description>Though this is not really a too groundbreaking article, I noticed that quite a lot of my friends didn&amp;rsquo;t know the trick, so I thought I could share it.
+Intro Nowadays there are some requirements to a good password, most people know them
+ Entropy - Mixed case, special characters, no natural language words&amp;hellip; I personally think this is not too important and makes passwords harder to remember while not increasing strength too much.</description>
     </item>
     
     <item>
@@ -220,66 +57,7 @@ go&amp;lt;mypassword&amp;gt;le
       <pubDate>Sun, 25 Sep 2016 17:00:00 +0000</pubDate>
       
       <guid>https://nico-westerbeck.de/blog/microservice-testing/</guid>
-      <description>
-
-&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
-
-&lt;p&gt;I assume you are generally familiar with microservices, otherwise I can recommend &lt;a href=&#34;http://martinfowler.com/articles/microservices.html&#34;&gt;this&lt;/a&gt; article for further reading. Lets also assume we have a basic microservice architecture set up. So, why and how do we test it? Why: I won&amp;rsquo;t even start preaching about tests, just write a bigger project without testing. I guess every programmer has to do that at some point of his life. How: Most of the tests, and for some services all of the tests will be very straight-forward. On method-level we can apply unit-tests and for API-routes we can use Behavior-Tests. If you are using node.js, I can recommend &lt;a href=&#34;https://mochajs.org/&#34;&gt;mocha&lt;/a&gt; in combination with &lt;a href=&#34;http://chaijs.com/&#34;&gt;chai&lt;/a&gt; (I am more of the tea person&amp;hellip;). The problem are integration tests.&lt;/p&gt;
-
-&lt;h2 id=&#34;depending-microservices&#34;&gt;Depending microservices&lt;/h2&gt;
-
-&lt;p&gt;In a normal web-app, there is at max one microservice which can be tested standalone and that&amp;rsquo;s the user management. Even at that point you will typically depend on some kind of database, and other microservices will have other dependencies within the application. So, what are ideas to test a dependant service&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Ignore dependencies&lt;/strong&gt; Without having other microservices available, you will still be able to test quite a big portion of your code. Especially all the unit-tests will run, and there might aswell be a couple of requests that you can blackbox-test without having other services interfer. Typically public GETs are a good example of requests, that you can test without the need of other services. If you can run stuff without dependencies, don&amp;rsquo;t pull in further dependencies and stick to the barebones version. This will also enforce more separation and independence of your service, allowing for better failure tolerance and easier scaling. (That&amp;rsquo;s why we&amp;rsquo;re building microservices, right?)&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Full testing-environment&lt;/strong&gt; The optimal case is if you can provide a full system, with all services running in a testing environment, to get &amp;ldquo;real&amp;rdquo; replies to your requests. This will allow for most realistic testings, but has the major drawback of feasibility. It&amp;rsquo;s not easily possible to set up a full architecture, possibly consisting of dozens of different service tiers, just to test basic requests. This setup will be necessary to run integration tests on the whole system, but for lower-level tests it would be nice to have something lightweigt, which might aswell integrate into common CI-frameworks&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Mock services&lt;/strong&gt; What I found would be the best way to test is using a mock-server. We anyways drafted out APIs with &lt;a href=&#34;https://apiary.io&#34;&gt;Apiary&lt;/a&gt;, so why not using this? Apiary offers the nice feature of an automatically set up mock-server, which will respond to requests with the data you have defined in the API-blueprint-markdown. Though that interface will of course not behave as the original service, it is at least a nice intermediate step towards a full testing environment.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;injecting-new-configs-in-js&#34;&gt;Injecting new configs in JS&lt;/h2&gt;
-
-&lt;p&gt;This example uses node.js and a configuration read from a config.json. I assume you are doing &lt;a href=&#34;https://www.nginx.com/blog/service-discovery-in-a-microservices-architecture/&#34;&gt;service discovery&lt;/a&gt; by DNS, it doesn&amp;rsquo;t matter if you plug a loadbalancer to the dns address or if you just write the other service&amp;rsquo;s ip to your /etc/hosts-file. The idea is to overwrite this address in case we are in a testing environment&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;{
-	&amp;quot;dev&amp;quot;: {
-		&amp;quot;user-management&amp;quot;: &amp;quot;http://some-dns-name&amp;quot;,
-		...
-	},
-
-	&amp;quot;test&amp;quot;: {
-		&amp;quot;user-management&amp;quot;: &amp;quot;http://yourproject.apiary-mock.com&amp;quot;,
-		...
-	}
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Now you will have to read this out, just, wherever you used to include config.json switch to a parseconfig.js including this snippet:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;var exp = config.dev;
-if(process.env.NODE_ENV == &#39;test&#39;) {
-	for (var attr in config.test) {
-		exp[attr] = config.test[attr];
-	}
-}
-
-module.exports = exp;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Now, if your service was started with the environment-variable test set, you will load the test configuration, otherwise you will go for the usual dev-configuration. You can even extend this to switch between development and production configuration. Setting that environment-variable is easily possible by using&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;process.env.NODE_ENV = &#39;test&#39;;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;in the first line of every test.&lt;/p&gt;
-
-&lt;p&gt;Now you can test against a simplified mock of the other services. The good thing is that this mock will always reply with the same data, so you can hardcode these assumptions into your code (and e.g. assume the logged-in user is always named Günther, and thus check if the post you just created in the test holds the author Günther (I recommend to always go for Günther as a testing-user, he is very experienced))&lt;/p&gt;
-
-&lt;h2 id=&#34;dynamic-behavior&#34;&gt;Dynamic behavior&lt;/h2&gt;
-
-&lt;p&gt;The problem with this approach is of course the flexibility of the mock-server. It is possible to draft different responses based on different requests in Apiary-blueprint, however it gets difficult if you want to differentiate based on headers. One Cookie/Auth-Token/Whatever-you-use-for-auth may be valid, for the other one you get a 403. I must admit that I also didn&amp;rsquo;t yet find the holy grail of almost-integration-testing here, but I will update this post as soon as I find something. If you really need it, just set up a full testing-environment.&lt;/p&gt;
-</description>
+      <description>Introduction I assume you are generally familiar with microservices, otherwise I can recommend this article for further reading. Lets also assume we have a basic microservice architecture set up. So, why and how do we test it? Why: I won&amp;rsquo;t even start preaching about tests, just write a bigger project without testing. I guess every programmer has to do that at some point of his life. How: Most of the tests, and for some services all of the tests will be very straight-forward.</description>
     </item>
     
     <item>
@@ -288,28 +66,8 @@ module.exports = exp;
       <pubDate>Sat, 24 Sep 2016 17:00:00 +0000</pubDate>
       
       <guid>https://nico-westerbeck.de/blog/setting-up-website/</guid>
-      <description>
-
-&lt;p&gt;As this was my today&amp;rsquo;s project, I will lose some words about how I set up this site.&lt;/p&gt;
-
-&lt;h2 id=&#34;hosting&#34;&gt;Hosting&lt;/h2&gt;
-
-&lt;p&gt;I am hosting at &lt;a href=&#34;https://uberspace.de/&#34;&gt;uberspace&lt;/a&gt;, a very hipster shared hoster, which let&amp;rsquo;s you choose your price yourself. Their hosting principle is a multi-user linux environment, where you automatically get a user assigned and some stuff provisioned. It relies on linux unprivileged users as the only isolation from other users on the same machine, so I would not recommend using the space for anything critical. However, I like the setup and how everything is documented, so I chose it as a hoster. I will just hope no other user on my machine uses a privilege escalation to put a dickbutt on my page&amp;hellip;&lt;/p&gt;
-
-&lt;p&gt;But everything was up to date, so I would rate the risk as pretty low.&lt;/p&gt;
-
-&lt;h2 id=&#34;website-generation&#34;&gt;Website generation&lt;/h2&gt;
-
-&lt;p&gt;This website is generated by &lt;a href=&#34;https://gohugo.io/&#34;&gt;hugo&lt;/a&gt;, a really easy to dive in static-website generator. It creates your site by using Markdown and predefined (or self-modified) themes, putting out a ready-to-use website. It took me roughly 30 minutes to get into it, and I am really considering to use this for my next website-projects aswell. I don&amp;rsquo;t really like wordpress and other, full-blown competitors, as hacking down some markdown is just faster and more intuitive to me than using a fully fledged WYSIWYMPG-editor (What You See Is What You Might Possibly Get). Also it features a nice way to locally host a draft of the site (with live-codereloading and millisecond build times)&lt;/p&gt;
-
-&lt;h2 id=&#34;deployment&#34;&gt;Deployment&lt;/h2&gt;
-
-&lt;p&gt;I build the files locally with &lt;code&gt;hugo&lt;/code&gt; and transfer them, including the /public folder, to my webserver via git. I found that would be the easiest way to keep my local instance and the remote git up to date.&lt;/p&gt;
-
-&lt;h2 id=&#34;dns&#34;&gt;DNS&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://namecheap.com&#34;&gt;namecheap&lt;/a&gt;, despite having a dubious name, turned out to be quite a good DNS registrar. So far I am pleased.&lt;/p&gt;
-</description>
+      <description>As this was my today&amp;rsquo;s project, I will lose some words about how I set up this site.
+Hosting I am hosting at uberspace, a very hipster shared hoster, which let&amp;rsquo;s you choose your price yourself. Their hosting principle is a multi-user linux environment, where you automatically get a user assigned and some stuff provisioned. It relies on linux unprivileged users as the only isolation from other users on the same machine, so I would not recommend using the space for anything critical.</description>
     </item>
     
   </channel>

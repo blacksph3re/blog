@@ -2,12 +2,35 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Nico Westerbeck</title>
-    <link>https://nico-westerbeck.de/index.xml</link>
+    <link>https://nico-westerbeck.de/</link>
     <description>Recent content on Nico Westerbeck</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Mon, 24 Apr 2017 11:40:27 +0300</lastBuildDate>
-    <atom:link href="https://nico-westerbeck.de/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 27 Jun 2017 15:31:21 +0300</lastBuildDate>
+    
+	<atom:link href="https://nico-westerbeck.de/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Ende</title>
+      <link>https://nico-westerbeck.de/travel/ending/</link>
+      <pubDate>Tue, 27 Jun 2017 15:31:21 +0300</pubDate>
+      
+      <guid>https://nico-westerbeck.de/travel/ending/</guid>
+      <description>Und schon wieder eine ganze Zeit keinen Post mehr geschrieben. Hier ist echt zu viel los. Ich fasse mal zusammen was in den letzten 2 Monaten so passiert ist
+ Become Project Klausurenphase Agora Enschede Wald Eltern da Chaos  Danke für eure Aufmerksamkeit, bis zum nächsten mal.
+Okay, ausführlicher.
+Become Project Irgendwann kam eine AEGEElerin auf mich zu ob ich nicht bei AIESEC (auch ne internationale NGO, aber weniger cool als AEGEE) in einem Projekt als Trainer mitwirken möchte.</description>
+    </item>
+    
+    <item>
+      <title>Functional web programming</title>
+      <link>https://nico-westerbeck.de/blog/functional_web/</link>
+      <pubDate>Wed, 26 Apr 2017 11:54:59 +0300</pubDate>
+      
+      <guid>https://nico-westerbeck.de/blog/functional_web/</guid>
+      <description>Introduction I recently tried to dive into functional programming and the longer I do that, the more I am amazed by how it feels to code functional. Thing is, all those languages provide quite an entrance barrier if you come from one of the common languages like PHP, Python or whatever. Even JS doesn&amp;rsquo;t really feel too functional to me, as things like binding functions is still pretty unhandy and the callback hell is just not very nice to read through.</description>
+    </item>
     
     <item>
       <title>Reisezeit</title>
@@ -15,81 +38,8 @@
       <pubDate>Mon, 24 Apr 2017 11:40:27 +0300</pubDate>
       
       <guid>https://nico-westerbeck.de/travel/traveltime/</guid>
-      <description>
-
-&lt;p&gt;Ich habe mich jetzt länger nicht gemeldet, es lag an zunehmender Reiselust. Ich war auf mehreren Trips.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Besuch aus Berlin&lt;/li&gt;
-&lt;li&gt;Ausflug nach Moldavien&lt;/li&gt;
-&lt;li&gt;Leadership training in den Apuseni Mountains&lt;/li&gt;
-&lt;li&gt;Städtetrip Budapest, Besuch aus Dresden&lt;/li&gt;
-&lt;li&gt;Wandern in den Apuseni Mountains&lt;/li&gt;
-&lt;li&gt;Rundtrip Schreibtisch - Kühlschrank - Bett&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&#34;lange-ungeordnete-überschrift&#34;&gt;Lange ungeordnete Überschrift&lt;/h1&gt;
-
-&lt;h2 id=&#34;berlin-moldavien&#34;&gt;Berlin, Moldavien&lt;/h2&gt;
-
-&lt;p&gt;Ich versuche mal halbwegs chronologisch vorzugehen. Also ganz am Anfang schuf Gott die Erde, dann kamen ein paar Berliner mit einer tragbaren Box auf der laut Peter Fox spielt und beschlossen, sie wohnen jetzt hier. Die drei Tage waren ganz nett mit den beiden, (für einfachere Referenzierungen, Filip und Marius), aber ich bin nicht wirklich zu irgendwas gekommen in der Zeit. Das sollte sich auch so schnell nicht ändern, denn das darauf folgende Wochenende (um den 1. April rum) sollte nach Moldavien gehen. Moldavien und Republik Moldavien sind übrigens zwei unterschiedliche Dinge, das eine ist ein eigenständiger Staat, das andere ist sowas wie ein Bundesland, hier judeţul. Wobei, so verschieden sind die eigentlich nicht, der Staat ist ein bisschen ärmer und da wohnen mehr Moldavier aber sonst&amp;hellip; :D Naja, jedenfalls Sachen gepackt, Kutsche gespannt und los.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://nico-westerbeck.de/travels/ordnung/kutsche_1.jpg&#34; alt=&#34;Kutsche 1&#34; /&gt;
-&lt;img src=&#34;https://nico-westerbeck.de/travels/ordnung/kutsche_2.jpg&#34; alt=&#34;Kutsche 2&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Mitte April waren wir dann aus Cluj raus, übernächste Woche erwarten wir Iaşi zu erreichen. Hahaha ich bin so ein Scherzkeks&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://nico-westerbeck.de/travels/ordnung/humor.jpg&#34; alt=&#34;Humor&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Der Trip bestand hauptsächlich aus warten, aber das in allen möglichen Kombinationen. Die meiste Zeit haben wir im Bus gewartet, am zweitmeisten auf die Organisatoren. Aber wir hatten auch Programm, die Highlights bestanden aus&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;zwei verschiedenen Klostern. Verschieden ist wichtig zu sagen, weil das vom Äußeren so nicht direkt erkennbar war. Also sie waren etwas anders angemalt, aber der Architekt war etwas faul hier. Trotzdem, eine Klostertour könnte noch richtig spannend sein hier, weil jedes so seine eigene kleine Story hat.&lt;/li&gt;
-&lt;li&gt;Lagerfeuer in einem Kaff namens &lt;a href=&#34;https://www.google.ro/maps/place/Gura+Humorului+725300/@47.5732163,25.8416609,12.54z/data=!4m5!3m4!1s0x4735a9214bf47715:0x4be2de569912575!8m2!3d47.5525146!4d25.8855848?hl=en&#34;&gt;Gura Humorului&lt;/a&gt; und Unterkunft in einem Hotel mit Whirlpool. Von dem übrigens nur recht wenige wussten.&lt;/li&gt;
-&lt;li&gt;Besichtigung der Stadt Iaşi (&amp;ldquo;Iasch&amp;rdquo;) im Osten Rumäniens. War eine echt interessante Stadt, voll von Plattenbauten und einigen historischen Gebäuden. Ist aber ein bisschen zu sehr am Iasch der Welt um häufiger hin zu fahren. Die Fahrzeit mit dem Bus waren 10 Stunden.&lt;/li&gt;
-&lt;li&gt;Und das absolute Highlight. Ein Eiermuseum!&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://nico-westerbeck.de/travels/ordnung/eiermuseum.jpg&#34; alt=&#34;Eiermuseum&#34; /&gt;
-&lt;img src=&#34;https://nico-westerbeck.de/travels/ordnung/iasi.jpg&#34; alt=&#34;Iasi&#34; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;eier&#34;&gt;Eier&lt;/h2&gt;
-
-&lt;p&gt;Generell, Eier und Ostern ist hier voll das Ding. Auch wenn es gerade nicht chronologisch ist - Ostern in Rumänien ist fast so krass wie Weihnachten in Deutschland. Cluj war praktisch tot, alle weg. Oder fast alle weg, in jedem dritten Haus haben sich ganz viele Leute um Tische gedrängt oder sind in Kirchen gegangen. Hier geht man am Ostersamstag um Mitternacht in die Kirche, um möglichst früh die Geburt Jesus Christus zu feiern und um danach, möglichst früh, seine Eier aneinander zu hauen.&lt;/p&gt;
-
-&lt;p&gt;Ja richtig, hier ist es vollkommen normal, zu Ostern seine Eier aneinander zu hauen, das ist ein totales Familienevent. Na gut, um die Fantasie etwas zu entflügeln, Ostereier. Jedes Familienmitglied bekommt ein Ei in die Hand, das ist dann der Champion. Dieses Ei hat zwei Leben, eine Oberseite und eine Unterseite. Dann geht man zu einem anderen Familienmitglied und fordert es heraus. Der Herausforderer haut sein Ei (mit einer Seite die noch nicht kaputt ist) gegen das des herausgeforderten (auch auf eine Seite, die noch nicht kaputt ist) und danach ist typischerweise genau eines der Eier um ein Leben ärmer. Wer zuletzt noch ein Ei mit intakter Schale hat, hat gewonnen und ist irgendeine Art Eierkönig. Man bemerke, in Rumänien ist es nicht so wichtig wer die dicksten Eier hat, es kommt auf die Stärke an!&lt;/p&gt;
-
-&lt;h2 id=&#34;apuseni&#34;&gt;Apuseni&lt;/h2&gt;
-
-&lt;p&gt;Okay, wieder zurück in Cluj werde ich begrüßt von einer schönen &lt;a href=&#34;https://nico-westerbeck.de/travels/ordnung/teapot.aac&#34;&gt;Krankheit&lt;/a&gt; und &lt;a href=&#34;https://nico-westerbeck.de/travels/ordnung/constructionworkers.aac&#34;&gt;morgentlicher Beschallung&lt;/a&gt; begrüßt. Diese Morgenmelodie würde mich in der nächsten Zeit jeden Tag wecken, und während ich diesen Blogpost schreibe werde ich auch von einem lieblichen Schlagbohrer begleitet. Ich hab noch keine wirkliche Möglichkeit gefunden, das musikalisch zu verarbeiten weil die Arbeiter leider echt unrhythmisch sind mit ihren Arbeiten. Also mit unrhythmisch meine ich sie haben kein Taktgefühl, Tagesrhythmus haben die Jungs definitiv und eigentlich ist es auch ganz schön, häufiger mal so gegen 8 aufzustehen. Da kommt einem der Tag gleich viel länger vor, und die Nacht viel kürzer.&lt;/p&gt;
-
-&lt;p&gt;Naja, noch nicht ganz wieder gesundet geht es also in die Berge, ein Leadership-Training von AEGEE. Nach ungefähr 5 Minuten habe ich festgestellt dass ich der einzige bin, der auf diesem Event kein rumänisch versteht, nach 3 Tagen hatten die anderen das immernoch nicht so ganz raus. Aber die Workshops waren auf englisch und ich habe das Gefühl dass dieses Wochenende meinem Rumänisch einen ziemlichen boost gegeben hat. Pulla! War auch relativ witzig, obwohl ich ursprünglich als Teilnehmer angemeldet war habe ich am zweiten Tag spontan einen 1,5-stündigen Workshop über Fundraising gehalten. Das hat riesig Spaß gemacht generell war es ein großartiges Wochenende. Highlights waren sehr vielfältig, aber meine Lernerfahrung war eher mittelmäßig. Ich glaube ich habe mittlerweile das meiste in AEGEE durch, was Teilnehmer sein betrifft. Das heißt in Zukunft werde ich wahrscheinlich nur noch als Organizer oder Trainer unterwegs sein.&lt;/p&gt;
-
-&lt;h2 id=&#34;budapest&#34;&gt;Budapest&lt;/h2&gt;
-
-&lt;p&gt;Naja, direkt nach den Apuseni Mountains also Richtung Budapest, Filine abholen die mich besuchen kommt. Die Stadt ist sehr interessant und es gibt überall was zu essen. Das ist mir das letzte Mal, als ich da war gar nicht so aufgefallen.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://nico-westerbeck.de/travels/ordnung/budapest_telefon.jpg&#34; alt=&#34;Budapest Telefon&#34; /&gt;]
-&lt;img src=&#34;https://nico-westerbeck.de/travels/ordnung/budapest.jpg&#34; alt=&#34;Budapest&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Das Bild ist aus einem Restaurant in dem man das Essen per Telefon bestellt, das große Hindernis dabei: Dieses Telefon hat eine Wählscheibe! Mir ist aufgefallen wir 2000er Kind ich doch bin, ich hatte keine Ahnung wie man das bedient, aber ERASMUS-Learning Experience! Gehostet wurden wir von Balint, einem total netten Ungarn der immer mal wieder Leute bei sich aufnimmt und uns einen echt schönen Aufenthalt beschert hat, aber leider mussten wir die letzte Nacht in einem Hostel verbringen. Am Donnerstag früh sind wir also bei Balint ausgezogen und wollten in das Hostel einziehen, der Aufseher war ein wenig verpeilt aber wir konnten unsere Sachen dort unterstellen. Wir haben dann den ganzen Tag in der Stadt verbracht, dabei zwei nette Mädels aus München kennen gelernt die hergetrampt sind um das Frühlingsfest zu sehen und sind mit denen schön Pizza futtern gegangen. Des nachts zurück im Hostel, wir vollkommen fertig und nur nach einem Bett bestrebt begrüßt uns der Aufseher etwas verpeilt mit der Nachricht, dass ebenjenes ein wenig schwierig wird&amp;hellip; Die Betten die er für uns reserviert hat hat er danach leider für jemand anderem reserviert. Immerhin wurden wir nicht zusammengeschlagen und aus einem überbuchten Flugzeug gezerrt. Nach ein bisschen lockerem quatschen hat er uns dann aber das 2er-Zimmer für den Preis des 8er-Zimmers überlassen und wir hatten eine richtig entspannte Nacht.&lt;/p&gt;
-
-&lt;p&gt;Auf dem Rückweg mal wieder der Beweis dass Trampen in Osteuropa einfach das überlegenste Verkehrsmittel ist. Wartezeiten um die 1 Minute, kostenlos, schnell, man lernt Leute kennen. Wieder in Cluj kommen wir in eine Geisterstadt&amp;hellip; also für Cluj-Verhältnisse Geisterstadt. In Paderborn würde das Volksfest heißen, also nur wenige Straßenkünstler, ein paar Parties, wenig interessante Events. Die locals waren leider alle mit Eier aneinander schlagen beschäftigt - man braucht Prioritäten im Leben. Vielleicht sollte man das in Paderborn auch mal vorschlagen, ich denke die Stadt würde ganz gut aufleben damit&amp;hellip;&lt;/p&gt;
-
-&lt;h1 id=&#34;geordnete-überschrift&#34;&gt;Geordnete Überschrift&lt;/h1&gt;
-
-&lt;p&gt;Und in der ganzen Zeit habe ich nebenbei noch einen Webseitenauftrag durchgeführt, an Projekten gearbeitet und ganz viel Bouzouki gelernt. Also im Prinzip wie immer. Ich finde das interessant, so eine Reise erlaubt es festzustellen, was der tiefe, fest verankerte Teil seiner Persönlichkeit ist. Das was immer wieder kommt, egal wo man ist. Und welche Art Freunde man hat, und welche Aktivitäten man besucht. Ich habe sehr stark den Verdacht, dass dieser Aufenthalt so viel mehr ein Lernerlebnis ist als es Universität, Dresden, Deutschland je sein könnte. Selbst in diesen zwei Monaten, zurückgeguckt auf den Menschen der damals Dresden verlassen hat habe ich das Gefühl, gewachsen und erwachsen zu sein und das ist irgendwie interessant. Also nicht so richtig erwachsen, ich hab schon noch aus versehen meinen Schreibtisch angezündet als ich probieren wollte ob Palinka brennt (ja), ob man sie auf die Hand nehmen kann (ja, ist aber heiß) und ob sie aus geht wenn man sie abschüttelt (nein). Also, Welt, reise! Es ist einfach, günstig und gibt so viel zurück.&lt;/p&gt;
-
-&lt;p&gt;Jetzt gerade bin ich ein bisschen dabei, in der Uni wieder aufzuholen, habe mal wieder einiges verpasst. Schreibtisch-Bett-Kühlschrank. Aber während ich das tue habe hab ich einige Artikel darüber gelesen dass Vorlesungen eh ein sehr veraltetes Mittel sind um zu lernen, weshalb ich mich wahrscheinlich wieder in der Klausurenphase einschließen werde und versuche, ein ganzes Semester in einer einzigen Woche nachzuholen. Schön dass Wissenschaft hier meiner Meinung ist.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://nico-westerbeck.de/travels/ordnung/alright.jpg&#34; alt=&#34;alright&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;(Danke an Jorge für dieses grässliche Bild :D)&lt;/p&gt;
-
-&lt;p&gt;(Danke an die Welt für Welt sein)&lt;/p&gt;
-
-&lt;p&gt;(Danke an jeden den ich kenne für mich kennen)&lt;/p&gt;
-</description>
+      <description>Ich habe mich jetzt länger nicht gemeldet, es lag an zunehmender Reiselust. Ich war auf mehreren Trips.
+ Besuch aus Berlin Ausflug nach Moldavien Leadership training in den Apuseni Mountains Städtetrip Budapest, Besuch aus Dresden Wandern in den Apuseni Mountains Rundtrip Schreibtisch - Kühlschrank - Bett  Lange ungeordnete Überschrift Berlin, Moldavien Ich versuche mal halbwegs chronologisch vorzugehen. Also ganz am Anfang schuf Gott die Erde, dann kamen ein paar Berliner mit einer tragbaren Box auf der laut Peter Fox spielt und beschlossen, sie wohnen jetzt hier.</description>
     </item>
     
     <item>
@@ -98,62 +48,8 @@
       <pubDate>Thu, 23 Mar 2017 16:48:25 +0200</pubDate>
       
       <guid>https://nico-westerbeck.de/travel/dreams/</guid>
-      <description>
-
-&lt;p&gt;Ich bin jetzt einen ganzen Monat hier, und habe nächste Woche meinen Rekord für am-Stück-im-Ausland-sein gebrochen. Also mal wieder Zeit für einen Blogpost. Meine letzten Posts waren ja schon recht positiv, aber ich möchte hier vor allem auf das letzte Wochenende eingehen, deswegen zuerst das&lt;/p&gt;
-
-&lt;h1 id=&#34;startup-weekend-cluj&#34;&gt;Startup Weekend Cluj&lt;/h1&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://nico-westerbeck.de/travels/startup_team.jpg&#34; alt=&#34;Startup&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Das Wochenende war ich auf einem Startup-Weekend. Meine Erwartungen an dieses Wochenende waren eher zwiespältig, da es keine Workshops gab. Das Prinzip war, dass man 58 Stunden drauf verbringt, exemplarisch ein Startup zu gründen und dabei Unterstützung von Mentoren bekommt, die Erfahrung damit haben. Am Anfang ging es darum Ideen zu wählen. Schuhe die leuchten, ein Kneipen-Videolivestream zu einer anderen Kneipe, Mülleimer die einen fürs Recyclen belohnen und diverse andere nette Ideen hatten jeweils 60 Sekunden Zeit um sich vorzustellen. Ich bin mit einer Essensapp angetreten, wurde aber nicht in die besten 15 gewählt. Also bin ich dem Projekt Teenera beigetreten, was zu dem Zeitpunkt noch &amp;ldquo;Shape your Future&amp;rdquo; hieß. Oder genau genommen bin ich erst dem Team &amp;ldquo;Studmate&amp;rdquo; beigetreten, wie waren langweilig, dann dem Mülleimer-Team, die waren auch langweilig und dann Shape your Future. Im Gegensatz zu den anderen Teams hatten die keine klare Idee was sie eigentlich machen wollen und bestanden nicht zu 100% aus Informatikern. (&lt;em&gt;Schrecklich, die sind hier überall diese Informatiker. Wie Tauben in Venedig. Ich werd mich mal für ein Fütterungsverbot oder so einsetzen&amp;hellip;&lt;/em&gt;) Also die grobe Idee war dass wir irgendwas machen wollen, dass Schülern die Karrierewahl einfacher macht. Hier in Rumänien gibt es das Prinzip Praktikum nicht, dafür ist das Prinzip ich-hab-keine-Ahnung-was-ich-machen-soll ziemlich groß in Mode. Wir haben also irgendwann am Samstag dann tatsächlich einen Plan was wir wirklich tun wollen, nämlich Praktikumsplätze vermitteln (jetzt im Nachhinein weiß ich nicht so ganz was wir bis dahin gemacht haben) und verbringen den Rest der Zeit damit eine Demoversion eines Vermittlungsportals zu coden. Im Laufe der Zeit bekommen wir immer wieder Tipps von Mentoren, haben Lachflashs bis zum Abwinken beim Essen und am Ende präsentieren wir eine halbfertige Version von einem sehr sympatischen Team. Dieses Wochenende habe ich nicht viel gelernt, aber dafür sehr was realisiert&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;In einem Startup kommt der Erfolg zu 50% vom Team, zu 50% von der Umsetzung und zu 10% von der Idee.&lt;/li&gt;
-&lt;li&gt;Ich weiß schon alles was ich brauche um ein Startup zu gründen - Danke AEGEE!&lt;/li&gt;
-&lt;li&gt;Ich kann in diesem Leben genau das tun worauf ich Lust habe.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Das Projekt existiert noch, und vor allem Daniel hängt schwer dahinter. Vielleicht kommen wir ja tatsächlich irgendwann mal so weit dass wir Geld damit verdienen können. Es ist ein wenig ungewohnt Monetarisierung als Projektplanungspunkt zu betrachten, aber sonst ist das total einfach. Und je länger ich drüber nachdenke desto mehr Ideen kommen mir für neue kleine Firmen.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://nico-westerbeck.de/travels/startup_logo.png&#34; alt=&#34;Teenera&#34; /&gt;&lt;/p&gt;
-
-&lt;h1 id=&#34;genau-das-worauf-ich-lust-habe&#34;&gt;Genau das worauf ich Lust habe&lt;/h1&gt;
-
-&lt;p&gt;Habe ich schon erwähnt dass ich den Vibe dieser Stadt einsauge? Auch wenn nicht viele Grünflächen in dieser Stadt sind, die die existieren sind gespickt von jonglierenden Menschen, Hängematten, Kindern, und einfach toller Lebenslust. Ich weiß nicht woher die ganzen Menschen kommen, aber ich bin sehr fasziniert davon dass die auf einmal alle in Parks liegen. In Hasdeu, dem Areal um die Studentenwohnheime sind die Kneipen ab 12:00 morgens voll (ja, ich war Montag schon um 12 wach! Ich bitte um Anerkennung!) und irgendwer findet sich immer um sich zusammen in den Park zu pflanzen. Im &amp;ldquo;Education Studio&amp;rdquo;, so gesehen nicht mehr als ein Raum mit Teppich und ein paar EVS-Volunteers die Projekte organisieren, war ich auf verschiedenen Jamsessions, Theaterworkshops, Jonglierkursen und treffe mich auch so hin und wieder mit den Leuten. Generell bin ich absolut überwältigt wie schnell das hier geht. Ich bin jetzt schon an einem Punkt an dem ich zufällig Menschen in der Stadt treffe. Außerdem kann ich so ein bisschen Rumänisch! Also es reicht um dem Taxifahrer den Weg nach Hause zu beschreiben oder auf dem Farmers-market etwas Milch oder Käse zu kaufen.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;Douasuta grama di branza va rog... 
-[lkahsld, hakjsadli asllkjejbke?] 
-äh....?
-[Kassierer zeigt auf Feta]
-Nu nu branza grana, branza äh whole... what the fuck is whole... intreg oder so? 
-[Kassierer nimmt den Streichkäse raus]
-Nein nicht der! Nu, scuse, ca branza!
-[Kassierer zeigt auf den Stückkäse]
-Da! Daaaaa!
-[Alshdla, ksjdflkhe alishdljahsldka lei.]
-Ich halte eine zufällige Menge Geld hin
-[Er nimmt einen Teil davon, beide freuen sich]
-Multumesc, la revedere!
-[Cu placere, la revedere!]
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;I am boss! Außerdem fange ich an Gesprächsfetzen zu verstehen, ich weiß meistens so grob worum es geht. Also an alle, die planen in ein Land zu ziehen dessen Sprache sie nicht sprechen: keine Angst, auf dem Hinflug ein bisschen Duolingo tippen reicht völlig, der Rest kommt vor Ort. Selbst in Cluj, wo praktisch jeder Englisch sprechen kann, und fast alle von denen sogar so gut und akzentfrei dass es ihnen überhaupt nichts ausmacht den Rest des Abends komplett Englisch zu labern. Mit &amp;ldquo;fast alle&amp;rdquo; meine ich leider nicht meine Professoren, da haben es nur zwei drauf. Außerdem fühlt sich Rumänisch echt schön an, das hat viele Ähnlichkeiten zu Französisch und 5 verschiedene Arten, ein a zu schreiben: A, Â, Ă, Î, Ĭ. Die Is nutzt man am Satzanfang wenn man eigentlich ein a nutzen würde (because reasons) und je nach Stippen über dem a klingt es mehr oder weniger nach in den Bauch geboxt werden. Generell ist es hier voll Trend, irgendwelche Dinge an Buchstaben dran zu hängen damit sie anders klingen, Ţ ist &amp;lsquo;z&amp;rsquo; und Ş ist &amp;lsquo;sch&amp;rsquo;. All diese Schnörkel sind erstaunlich inkompatibel mit meiner Handschrift und ich bin zwischendurch am überlegen ob ich das mit dem Rumänisch schreiben einfach ganz sein lasse oder auf einem besonders dreckigen Zettel schreiben sollte, in der Hoffnung dass die Flecken an der richtigen Stelle sind. Ich find es auf jeden Fall großartig.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://nico-westerbeck.de/travels/hammock.jpg&#34; alt=&#34;Park&#34; /&gt;&lt;/p&gt;
-
-&lt;h1 id=&#34;akademisches-gezeug-die-zweite&#34;&gt;Akademisches gezeug, die zweite&lt;/h1&gt;
-
-&lt;p&gt;Und da ich ja in der Theorie zum Studieren hier bin meine Eindrücke vom Studium hier. Also, das Wetter ist super, ich besitze eine Hängematte, man darf im Park leider nicht trinken, die Polizei kommt kontrollieren, und hier sind viele tolle Menschen.&lt;/p&gt;
-
-&lt;p&gt;Also übersetzt: Bis auf Rumänisch und Knowledge Discovery nicht so interessant :D Dienstags habe ich ein Fach, dessen Prüfungsleistung aus 11 Projekten und einem Paper besteht. Ich habe schon 9 der Projekte fertig und das Paper angefangen, ich schätze dass ich nächste oder übernächste Woche meine ersten 8 Credits durch habe. =) Mittwochs habe ich ein Fach in dem der Professor selbst sagt dass das was er die ersten 6 Wochen unterrichtet nicht so wichtig für die Prüfung ist (nein, ich war natürlich nicht wieder da), und Montags der Typ spricht Rumänisch. Mit der Montagslektüre könnte ich noch Probleme bekommen, aber ich denke dass ich das irgendwie geregelt bekomme. Die lokalen Studenten werden mir schon helfen - hab ich schon von der Hilfsbereitschaft hier berichtet? -. Joa, und dann bleibt auch schon nur noch Knowledge Discovery und Rumänisch. Aber eigentlich bin ich auch ziemlich glücklich drüber, ich mache dafür mehr an meinen eigenen Projekten oder halt eben das worauf ich gerade Lust habe. Hab ich schon erwähnt dass ich so ein bisschen mit 4 Bällen jonglieren kann? Und meine Bouzouki-Skills werden auch immer besser!&lt;/p&gt;
-
-&lt;h1 id=&#34;unternehmungen&#34;&gt;Unternehmungen&lt;/h1&gt;
-
-&lt;p&gt;Worauf ich Lust habe ist erstaunlicher Weise ziemlich viel in Cluj - ich habe es seit 4 Wochen nicht aus der Stadt rausgeschafft. Ich kann mich nicht erinnern wann ich das letzte Mal freiwillig vier Wochen am Stück in einer Stadt war. Also ich muss zugeben, übernächstes Wochenende bin ich in den Bergen und danach bekomme ich Besuch aus Dresden und werd sehr wahrscheinlich auch nicht die ganze Zeit in Cluj hängen, aber hey, das sind trotzdem 5 Wochen! Der Lärm und der Verkehr geht mir zwar schon manchmal auf den Geist, aber da ich ja auch regelmäßig 2 Lei in den lokalen Busverkehr investiere kann ich mich da nicht so ganz rausnehmen. Samstag hab ich Zeit mir endlich ein Fahrrad zu kaufen. Aber ich bin sehr entschlossen noch einiges an Zeit in den lokalen Wäldern zu verbringen&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://nico-westerbeck.de/travels/Lukas_first_jam.jpg&#34; alt=&#34;Instagram&#34; /&gt;&lt;/p&gt;
-</description>
+      <description>Ich bin jetzt einen ganzen Monat hier, und habe nächste Woche meinen Rekord für am-Stück-im-Ausland-sein gebrochen. Also mal wieder Zeit für einen Blogpost. Meine letzten Posts waren ja schon recht positiv, aber ich möchte hier vor allem auf das letzte Wochenende eingehen, deswegen zuerst das
+Startup Weekend Cluj Das Wochenende war ich auf einem Startup-Weekend. Meine Erwartungen an dieses Wochenende waren eher zwiespältig, da es keine Workshops gab. Das Prinzip war, dass man 58 Stunden drauf verbringt, exemplarisch ein Startup zu gründen und dabei Unterstützung von Mentoren bekommt, die Erfahrung damit haben.</description>
     </item>
     
     <item>
@@ -162,77 +58,8 @@ Multumesc, la revedere!
       <pubDate>Tue, 07 Mar 2017 18:11:50 +0200</pubDate>
       
       <guid>https://nico-westerbeck.de/travel/first_week/</guid>
-      <description>
-
-&lt;p&gt;Ich habe mich jetzt eine Woche nicht gemeldet, dafür habe ich umso mehr zu berichten. Ich weiß noch so gar nicht wo ich anfangen soll, deswegen mal das was bei den anderen Posts immer ganz hinten stand&lt;/p&gt;
-
-&lt;h1 id=&#34;akademische-erfüllung&#34;&gt;Akademische Erfüllung&lt;/h1&gt;
-
-&lt;p&gt;Der Master den ich hier belege, High Performance Computing and Big Data Analysis ist tatsächlich verdammt spannend. Hier gibt es einige echt komplexe Themen bei denen ich zur Abwechslung mal das Gefühl habe gefordert zu sein! Alle meine Stunden sind Nachmittags zwischen 16:00 und 20:00, manchmal fangen sie aber effektiv sogar noch später an (wie heute, wo ich eine Stunde ziemlich alleine auf den Professor gewartet habe). Ankündigungen passieren hier hochoffiziell über Facebook, also wer sich dieser Platform verweigern möchte oder halt noch nicht in den richtigen Gruppen ist muss damit rechnen, manchmal ohne Professor die Vorlesungen genießen zu können. Hat aber auch irgendwie was, ist entspannender, ruhiger. Ich denke da werd ich mich dran gewöhnen können. Ich bin mir noch nicht so ganz 100% sicher was ich nehmen werde, aber irgendwann diese Woche sollte ich mein zweites Learning Agreement unterschreiben und bis dahin werd ich mich entschlossen haben. Die Wahl ist auch nur für Montags, Big Data Analysis vs Grid Computing. Eigentlich wäre ich ja voll für letzteres gewesen, aber eu no vorbat limba engleza, scuse, aici limba romana! Oui, je suis un baguette. Generell, in den anderen Vorlesungen sind meistens nur zwischen 6 und 15 Menschen anwesend, und die Professoren haben kein Problem damit auf englisch zu sprechen. Trotzdem startet jeder die Vorlesung in Rumänisch bis dann ein einzelner leicht verwirrter Erasmus-Student es geschafft hat, auf sich aufmerksam zu machen und den Professor überzeugt doch auf Englisch zu sprechen. Irgendwie fühle ich mich immer total schlecht damit, der einzige zu sein, für den die Leute wechseln müssen, aber anders rum selbst schuld wenn man den Master auf Englisch anbietet.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://nico-westerbeck.de/travels/lecture.jpg&#34; alt=&#34;Scuse?&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Also, mein Stundenplan sieht etwa so aus:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Montag 12-14:00&lt;/strong&gt; Rumänisch mit einer Lehrerin der man ansieht dass Montag ist&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Montag 16-20:00&lt;/strong&gt; Cursa di Grid, Cluster si Cloud Computing&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Dienstag 16-20:00&lt;/strong&gt; Parallel Programming - ich glaube ich würde die Klausur jetzt schon bestehen&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Mittwoch 16-20:00&lt;/strong&gt; Data Visualization - war noch nicht da, keine Ahnung. Hört sich aber interessant an&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Donnerstag 16-20:00&lt;/strong&gt; FCA - im Prinzip Logik, und ich hab mich schon mit dem Professorsliebling angefreundet&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Freitag 14-16:00&lt;/strong&gt; Rumänisch mit einer Lehrerin der man ansieht dass Freitag ist&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Freitag 18-22:00&lt;/strong&gt; High performance hop consumption systems&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Samstag 16-20:00&lt;/strong&gt; Interunit communication and location analysis&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Außerdem eine total interessante Beobachtung: Hier ist das Geschlechterverhältnis in der Informatik ausgeglichen. Das hat mich total erstaunt, nachdem in Dresden die Verteilung doch ziemlich einseitig war. Die Gesellschaft ist hier in einigen Punkten echt weiter als die in Deutschland (oder die Leute wählen einfach eher nach Lohn als nach Interesse). Naja,&lt;/p&gt;
-
-&lt;p&gt;Und das nächste, was ein eigenes Kapitel verdient hat&lt;/p&gt;
-
-&lt;h1 id=&#34;hilfsbereitschaft&#34;&gt;Hilfsbereitschaft&lt;/h1&gt;
-
-&lt;p&gt;Ich bin ja schon häufiger durch Osteuropa gereist und habe mich drüber gefreut wie hilfsbereit die Leute hier sind, aber um das dem Durchschnittsdeutschen der in einer Welt lebt in der jeder so sein Ding macht (ja, du!) mal etwas klarzumachen ein paar Beispiele:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Montag, nach der erstern Vorlesung, ein Lorand lädt mich auf einen Salat in der nahe gelegenen Iulius-Mall ein. Ich hab es nicht geschafft ihn zu überzeugen dass ich selbst zahlen würde und eher ich ihn einladen wolle, da er mir total mit der Uni geholfen hat. Wir sind nach einem Streit in klischeekanadischen Dimensionen zu dem Einvernommen gekommen dass ich ihn das nächste Mal einladen darf (juchuu!) und er mir bei allen Fragen mit dem Projekt hilft, und wenn ich etwas in der Stadt nicht finde, und brauchst du noch Hilfe beim Raum finden, ich kann dich rumführen, und außerdem der Professor ist ziemlich gut das kann ich empfehlen&amp;hellip;. &amp;lt;3&lt;/li&gt;
-&lt;li&gt;Dienstag, nach der zweiten Vorlesung. Ein &amp;ldquo;Ba&amp;rdquo; (ich bin mir fast sicher dass das nicht sein richtiger Name ist) fragt wo ich wohne und bietet dann an mich nach Hause zu fahren. Ich nehme an, frage aber ob das auf seinem Weg liegt, Antwort &amp;ldquo;well, kind of, but anyways it&amp;rsquo;s not like I am carrying you on my back, the car drives on gas and I just have to push that pedal&amp;rdquo;. Er wohnt ganz am anderen Ende der Stadt.&lt;/li&gt;
-&lt;li&gt;Ich mal wieder ziemlich verloren im Supermarkt drücke die falsche Taste beim Obst abwiegen. Die Kassiererin kann kein Englisch aber gut gestikulieren, nicht dass ich verstanden hätte was sie wollte aber es sah enorm anmutig aus. Der Typ hinter mir sagt mir ich solle kurz warten, nimmt mein Obst und hinterlässt mich ohne Obst, mit noch weniger Plan und einer verdammt anmutigen Kassiererin. Irgendwann dann hat es mir so langsam gedämmert was ich falsch gemacht habe&amp;hellip; Nach der Story hält er mich noch kurz auf und bietet mir an diverse Nahrungsmittel zu übersetzen, und möchte mir seine Nummer geben falls ich nochmal Hilfe brauche. Ich finde heraus was Sahne ist (denke ich) und habe nun eine Nummer ohne Namen in meinem Telefon gespeichert mit dem Eintrag &amp;ldquo;Translates food for you&amp;rdquo;. Ich hoffe bloß dass ich diese Nummer nicht irgendwann mal angeheitert nachts nach um 4 auf einer von diesen eskalierenden WG-Parties anrufe.&lt;/li&gt;
-&lt;li&gt;Ich versuche mein Ticket aufzuladen (hier hat man so Karten auf die man Tickets draufladen kann). Ein Rumäne hinter mir hilft mir mit dem Automaten bis wir gemeinsam feststellen das selbiger defekt ist, added mich bei Facebook und lädt mich auf ein Bier ein.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://nico-westerbeck.de/travels/phi18.jpg&#34; alt=&#34;Phi18&#34; /&gt;&lt;/p&gt;
-
-&lt;h1 id=&#34;wg-leben&#34;&gt;WG Leben&lt;/h1&gt;
-
-&lt;p&gt;Die WG ist echt super, ich komme total gut mit Nathan und Stefania klar! Ich habe sogar schon Nathans Freundin kennen gelernt, Mitte letzter Woche kam sie morgens total verstrahlt und unten ohne aus dem Bad getorkelt als ich mir gerade ein Sandwich gemacht habe, total sympatisches Mädchen! Generell ist das Kochen hier ein echtes Abenteuer. Letzten Freitag (03.02.) hatten wir ein International Dinner, bei dem jeder eine lokale Spezialität mitbringen sollte. Ich hab es geschafft, ohne Waage, Messbecher, Spätzlesieb und Ahnung Käsespätzle zu machen, ich habe sie durch eine Schöpfkelle geschabt und mit einer kaputten Aluschüssel die nach einem Unfall zum Nudelsieb wurde wieder rausgeschöpft. Außerdem ist es auf einem Gasherd möglich Nudeln anbrennen zu lassen. So viel Zeit verbringe ich hier allerdings nicht weil ich so unglaublich hipster bin und ganz gerne in Lokals arbeite oder halt irgendwo bin, aber das tägliche Kochen hab ich mittlerweile geschafft unterzubringen.&lt;/p&gt;
-
-&lt;p&gt;Dazu noch eine kleine Story - letzte Woche Donnerstag wollte ich Spaghetti Carbonara machen und habe deshalb Sahne gekauft, &amp;ldquo;Sana&amp;rdquo;. Ich komme also zuhause an, setze Wasser auf schnippel und brate eine Zwiebel und ein paar Nüsse und lösche alles mit der vermeindlichen Sahne ab. Diese kommt erstaunlich zähflüssig aus der Verpackung und stellt sich nach etwas bestürztem probieren als Joghurt heraus. Naja, immerhin war sie nicht schlecht, und Spaghetti Jogunara ist gar nicht mal so übel. Aber so ein bisschen übel halt schon. Also zweiter Versuch am Sonntag, diesmal bin ich vorsichtiger und nutze google translate um &amp;ldquo;Smântâna&amp;rdquo; zu kaufen. Noch etwas beeindruckt von der Verkäuferin mache ich zuhause die Verpackung auf und stelle fest dass es heute Spaghetti mit Sour Cream gibt. Wir kommen der Sache näher! Ich hab mich dann aber doch dazu entschlossen die saure Sahne noch etwas im Kühlschrank reifen zu lassen, schließlich war meine Erinnerung an Spaghetti Jogunara noch recht lebhaft und man möchte sich sowas ja nicht verderben. Ich futtere Smantana jetzt gerade mit einem Kilo Kartoffeln (welches ich eben für 40 cent im Supermarkt erworben habe), sau lecker! Mein weiterer Plan ist der folgende, jedesmal wenn ich in den Supermarkt gehe kaufe ich einen zufälligen Becher aus dem Kühlregal, Spaghetti, Kartoffeln und Dosenpfirsiche. Wenn der Becher Joghurt ist mache ich Pfirsichjoghurt draus, wenn es saure Sahne ist mache ich Kartoffeln dazu und wenn es normale Sahne ist dann werde ich mir eine richtig geile Carbonara machen, mit Mehlschwitze und einem richtig schön kalten Bier, und den nächsten Blogpost schreiben. Wenn du vor August noch was von mir hören möchtest musst du mich anrufen.&lt;/p&gt;
-
-&lt;h1 id=&#34;cool-garlic-kids&#34;&gt;Cool Garlic Kids&lt;/h1&gt;
-
-&lt;p&gt;Erasmus ist Freunde finden, bei mir sind das Freunde die aus irgendeinem Grunde jeder eine Knoblauchpresse besitzen und diese auch liebend gerne nutzen. Anders formuliert identifizieren wir uns also dadurch miteinander, dass wir allesamt Mundgeruch haben. Eine Garlic Kids bestehenen aus 7 Leuten die sich irgendwie so zusammen gefunden haben und von denen ich jeden einzelnen total gern hab! Wir haben ein ähnliches Party-Verhalten (eher Konzerte oder anspruchsvollere Musik als mit den anderen Erasmusmenschen zu Popmusik und billigen Cocktails abzustürzen) und helfen uns bei organisatorischem Zeugs total viel gegenseitig. Letzten Samstag waren wir auf einem Flohmarkt, oder wenn man das in deutsche Kategorien umrechnet auf circa 22 Flohmärkten. Ein riesen Areal vollgestellt mit Decken auf denen alles liegt was man sich vorstellen kann. Dieser Flohmarkt ist aber leider nur räumlich größer, nicht zeitlich - aber sollte ich irgendwann dieses Jahr einen Freitag haben, bei dem ich vor 2 ins Bett gehe werde ich definitiv am Samstag richtig früh dort hin gehen und mich einmal durch die ersten hundert Stände durchstöbern. Der Rest der Garlic-Crew hat sich dort Fahrräder gekauft, ich hab aber leider verpeilt dass ich kein Bargeld dabei hatte, also hab ich mir einen Gemüsespieß geleistet.
-Um die Konstellation kurz vorzustellen:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Anja ist ein total selbsterfahrener Mensch und man hat immer das Gefühl sie tut genau das was für sie richtig ist&lt;/li&gt;
-&lt;li&gt;Lisa ist Naturfreund, Entdeckerin und mit mir die einzige Nichtraucherin in diesem Kreis.&lt;/li&gt;
-&lt;li&gt;Chloé (mit accent!) lässt sich total durch ihr Umfeld treiben und ist sonst auch unglaublich umtrieben. Einer von diesen Menschen die man nicht fragt &amp;ldquo;wie geht es dir&amp;rdquo; sondern &amp;ldquo;wo bist du gerade&amp;rdquo;&lt;/li&gt;
-&lt;li&gt;Lukas, auch ein Musiker! Naja, er spielt Bass. Aber in Ermangelung an richtigen Musikern hab ich beschlossen ihn mal so zu nennen.&lt;/li&gt;
-&lt;li&gt;Hannah tanzt und performt und sieht auf den ersten Blick gar nicht so außergewöhnlich aus wie sie wirklich ist&lt;/li&gt;
-&lt;li&gt;Nathan mein Mitbewohner, hat schon seinen Platz in diesem Blog gefunden&lt;/li&gt;
-&lt;li&gt;Nico ein unfrisierter und unrasierter Deutscher. Das Volk geht echt gar nicht&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Und wenn ich schon dabei bin großartige Menschen zu erwähnen, du! Ich finde es total gut wie viel Liebe und Aufmerksamkeit ich noch aus Deutschland hinterhergeschickt bekomme! Ich möchte das alles zurückgeben, und mich ganz ganz lieb bedanken und meine Erlebnisse teilen - hier passieren so viele tolle Dinge dass ich kaum Zeit zum Schlafen finde. Wisse: ich hab dich lieb! Ganz doll.&lt;/p&gt;
-
-&lt;h1 id=&#34;aegee-events&#34;&gt;AEGEE, Events&lt;/h1&gt;
-
-&lt;p&gt;Und nebenbei gehe ich noch voll aufs OMS steil. WTF ist das OMS? Die zukünftige Mitgliederverwaltung von AEGEE, die ich zusammen mit noch ein paar anderen Leuten gerade versuche auf die Beine zu stellen, und wobei wir immer mehr merken dass wir gar nicht so weit weg sind von dem was Netflix macht. Total die geile Vorbereitung auf alles was ich irgendwann mal professionell machen werde. Und hab versucht AEGEE-Cluj Napoca mit ihrem financial report zu helfen. Und werde auf deren Regional Training Course teilnehmen. Und werd zur Agora Enschede im Mai fliegen. Und wir werden einen Hackathon in Cluj organisieren. Und hab durch sie von einem Startup-Weekend erfahren, nächste Woche erfahre ich wie man ein Startup gründet. Ich bin also praktisch nicht mehr aktiv in dieser Organisation, aber es ist auch echt großartig auf einmal so viel Zeit zu haben, um Dinge zu tun!&lt;/p&gt;
-
-&lt;p&gt;Außerdem passiert hier lokal auch echt ganz gut was, diesen Samstag bin ich bei einem Jonglierworkshop, es gibt einiges an Konzerten und zur Not gehe ich einfach in das Erasmus-Wohnheim und trete irgendwelchen lebensmüden Saufeskapaden bei. Diese Stadt lebt! Und manchmal fühle ich mich ein wenig zu langsam für all das, aber irgendwie gefällt es mir auch, das hier ist echt ein lebenswerter Ort. Was übrigens auch die Meinung von restlos jedem ist, mit dem ich hier gesprochen habe. Cluj sei die schönste Stadt Rumäniens, was Leben angeht, und ich glaube das gerne. Du bist herzlich eingeladen auf Spaghetti mit Ayran, oder Buttermilch, oder was auch immer!&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://nico-westerbeck.de/travels/belvedere.jpg&#34; alt=&#34;Sicht von Belvedere&#34; /&gt;&lt;/p&gt;
-</description>
+      <description>Ich habe mich jetzt eine Woche nicht gemeldet, dafür habe ich umso mehr zu berichten. Ich weiß noch so gar nicht wo ich anfangen soll, deswegen mal das was bei den anderen Posts immer ganz hinten stand
+Akademische Erfüllung Der Master den ich hier belege, High Performance Computing and Big Data Analysis ist tatsächlich verdammt spannend. Hier gibt es einige echt komplexe Themen bei denen ich zur Abwechslung mal das Gefühl habe gefordert zu sein!</description>
     </item>
     
     <item>
@@ -241,52 +68,7 @@ Um die Konstellation kurz vorzustellen:&lt;/p&gt;
       <pubDate>Mon, 27 Feb 2017 03:49:55 +0200</pubDate>
       
       <guid>https://nico-westerbeck.de/travel/bierpong/</guid>
-      <description>
-
-&lt;h1 id=&#34;check&#34;&gt;Check&lt;/h1&gt;
-
-&lt;p&gt;Planpunkt Instrument abgeschlossen, ich habe mir eine &lt;a href=&#34;https://nico-westerbeck.de/travels/romanian_traditional_kids.aac&#34;&gt;Bouzouki&lt;/a&gt; gegönnt, oder wie ich sie häufiger bezeichne: &amp;ldquo;not-a-fucking-guitar&amp;rdquo;. Ich hab das Wochenende hauptsächlich damit verbracht, Tunes und Akkorde auf diesem Instrument zu lernen, und es ist total genial wie alles in diesem Instrument schreit spiel ein D! Wirklich, du möchtest ein D spielen! Ja ich weiß dass der Tune in F ist aber D! Und dann quetscht man ihm den Hals ab und auf einmal G! Spiel ein G! Ich glaube das ist mein erster Seelenfreund hier. Ich werde auf jeden Fall viel Spaß damit haben, und in der Facebook-Gruppe haben sich auch schon andere Jampartner angedeutet.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://nico-westerbeck.de/travels/not_a_guitar.jpg&#34; alt=&#34;Not a guitar&#34; /&gt;&lt;/p&gt;
-
-&lt;h1 id=&#34;aegeerasmus&#34;&gt;AEGEErasmus&lt;/h1&gt;
-
-&lt;p&gt;Irgendwie fängt hier alles so an wie in AEGEE, hunderte Menschen aus dutzenden Ländern kennen gelernt, wenig geschlafen, viel umher gekommen. Ich prognostiziere aber, dass ich mich mit dem Alkoholkonsum hier für Erasmus-Begriffe zurückhalten kann, denn ich bin mit meiner Liste aus nicht schmeckenden Biersorten weiter gekommen&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Ursus&lt;/li&gt;
-&lt;li&gt;Timisoreana&lt;/li&gt;
-&lt;li&gt;Ciuc&lt;/li&gt;
-&lt;li&gt;Holsten (Biergeschmack ist also wenig abhängig vom Ort der Einnahme, es sei denn es handelt sich um eine Sauna)&lt;/li&gt;
-&lt;li&gt;Stejar&lt;/li&gt;
-&lt;li&gt;Silva&lt;/li&gt;
-&lt;li&gt;Egal was aus 2,5l Plastikflaschen&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Vielleicht machen die das aber auch extra, um den lokalen Palinka-Markt anzukurbeln. Palinka. Eine lokale Spezialität, und enorm vielseitig: man kann es anzünden, Wunden damit desinfizieren, das Bad reinigen und aus irgendeinem Grunde trinken die Leute das hier sogar. Kann man von Allzweckreiniger nicht behaupten!&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://nico-westerbeck.de/travels/beerpong.jpg&#34; alt=&#34;Beerpong&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Naja, also ich war also gestern Bierpong spielen, im Hasdeu, dem größten Studentengehege der Uni. Die waren total clever bei der Ausstattung dieser Gebäude, sie haben einfach in der Küche Herd, Kühlschrank, Spüle, Esstisch, Regale und Kochutensilien weggelassen und jetzt haben die Studierenden Küchen, die sie aber gleichzeitig als Arbeitsraum verwenden können! Halt nicht mehr zum kochen, aber für 40€ Miete im Monat kann man auch mal ins Restaurant gehen. Auf dem Bild stehe ich übrigens an der Wand, links neben der Kamera ist noch ein Bett, und rechts davon die &amp;ldquo;Küche&amp;rdquo;. Zwar winzig dieses Studentenwohnheim, dafür herrscht eine großartige Stimmung, aus ursprünglich 7 Leuten wurden relativ schnell etwa 20. So wie Motten ins Licht zieht es Erasmus-Studenten irgendwie zu lauter Musik aus Wohnheimszimmern, was zu noch viel lauterer Musik aus diesen Zimmern führt, was zu noch mehr Erasmus-Studenten&amp;hellip; naja, der Abend war super und irgendwann hat uns der Wächter dann ein gutes Lokal empfohlen - glaub ich, er hat Rumänisch gesprochen, aber er hat es sehr stark gestikulierend angepriesen und wenn jemand eine Kneipe so emotional und begeistert empfiehlt kann man nicht nein sagen. Aber obwohl er von mindestens sechs verschiedenen Leuten eingeladen wurde ließ er sich nicht dazu überreden mitzukommen. Was vielleicht sonst zum Zerstreuen der Gruppe geführt hätte funktioniert bei Erasmus-Studenten anders, denn wenn die laute Musik sich über einen Flur bewegt bekommen das sogar die Bewohner am anderen Ende des Wohnheims und in den Nachbargebäuden auf der anderen Straßenseite mit. Ich glaube nicht dass das das letzte mal Hasdeu für mich war.&lt;/p&gt;
-
-&lt;h1 id=&#34;nicht-drinnen-pfeifen&#34;&gt;Nicht drinnen pfeifen&lt;/h1&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://nico-westerbeck.de/travels/romanian_kids.jpg&#34; alt=&#34;Kinder&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Wie der aufmerksame Zuhörer vielleicht gemerkt hat war der Link dort oben keine Bouzouki sondern singende Kinder auf dem Marktplatz. &lt;a href=&#34;https://nico-westerbeck.de/travels/rocky_road_to_dublin.aac&#34;&gt;Das hier&lt;/a&gt; ist eine Bouzouki. Eine Gruppe aus etwa 10 traditionell angezogenen Teenagern steht auf der Bühne und macht zwei Schritte nach rechts und dann wieder zwei nach links, sie halten sich dabei an den Händen. Übermalt von mittelmäßig aufgenommener Playback-Musik muss jeder auf der Bühne für ein Lied nach vorne und bekommt das einzige Mikrofon, welches in unglaublicher Lautstärke über den Kirchenplatz schallt. Zwischendurch war sogar jemand an der Reihe der nicht so aussah als würde er am liebsten gerade nicht an der Reihe sein, oder noch besser nicht auf dieser Bühne sondern auf irgendeiner Südseeinsel, oder in der russischen Tundra, egal, halt irgendwo anders. Generell ist Tradition hier etwas sehr viel wichtigeres als in Deutschland. Es wird jeder Feiertag groß angelegt, und wenn gerade kein Feiertag in der Nähe ist wird auf Aberglaube ausgewichen. Es bringt Unglück im Haus zu pfeifen! Draußen ist okay, aber drinnen nicht, singen geht auch klar. Vielleicht ein natürlich gewachsener Schutzmechanismus um unbeachteten Teekesseln vorzubeugen, aber so intensiv ist die Teekultur hier gar nicht. Vielleicht werde ich ja noch irgendwann erleuchtet. Am 24. Februar ist hier der lokale Valentinstag gewesen und überall waren Menschen die einander Rosen geschenkt haben. Ich hätte auch gerne irgendeinem Menschen eine Rose geschenkt, aber zum einen wusste ich davon bis 22:00 Uhr nichts und hab mich bloß etwas gewundert wie viel Liebe in dieser Stadt passiert und zum anderen kommt das manchmal falsch an wenn man sich erst seit zwei Tagen kennt.&lt;/p&gt;
-
-&lt;h1 id=&#34;schlafrhytmus&#34;&gt;Schlafrhytmus&lt;/h1&gt;
-
-&lt;p&gt;Ich war ja nie so gut darin sowas wie einen Tages oder gar Wochenrhythmus aufrecht zu erhalten, aber meine drei Mahlzeiten schaffe ich eigentlich immer. Hier habe ich jetzt ein Problem, es gibt überall nonstop shops (&amp;ldquo;Späti&amp;rdquo;), die Supermärkte haben auch Sonntags auf und manche Supermärkte sind sogar &lt;sup&gt;24&lt;/sup&gt;&amp;frasl;&lt;sub&gt;7&lt;/sub&gt; offen. Man kann also zu jedem Zeitpunkt auch nachher noch einkaufen gehen. Aus dem ich-gehe-gleich wird dann irgendwann ein werd-langsam-hungrig bis zum Magen-knurrt, und wenn ich mich dann in Bewegung setze ist der Hunger so groß dass ich mir einfach irgendetwas Fertiges aus der nächsten Pizzeria, Dönermann oder ähnlichem kaufe. Kostet ja nichts, und man kann die Sachen sogar essen. Leider wiederholt sich die selbe Situation dann bei der nächsten Mahlzeit. Heute nach der Kneipentour (um 4 an einem Montag morgen) hab ich mich dann aus einer Laune heraus aber endlich entschlossen, jetzt doch einen Grundstock an Lebensmitteln einzukaufen und besitze jetzt Nüsse, Früchte, noch mehr Käse und alles was das Herz oder vielmehr der Magen begehrt. Außerdem ist auf einem Gasherd kochen großartig - man dreht den Knopf und fast augenblicklich sind es in der Pfanne 150 und im Raum 15 Grad mehr. Die andere Richtung funktioniert nur bei der Pfanne.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://nico-westerbeck.de/travels/cluj_bei_nacht.jpg&#34; alt=&#34;Cluj bei Nacht&#34; /&gt;&lt;/p&gt;
-
-&lt;h1 id=&#34;studium&#34;&gt;Studium&lt;/h1&gt;
-
-&lt;p&gt;Theoretisch bin ich ja hier zum studieren, und heute ist tatsächlich der Plan, damit anzufangen! Ich habe soetwas wie einen &lt;a href=&#34;http://www.cs.ubbcluj.ro/files/orar/2016-2/tabelar/index.html&#34;&gt;Stundenplan&lt;/a&gt; gefunden - auch verdächtig rumänisch für einen englischen Studiengang - und werde heute Abend mal das funktionale Programmierung Modul besuchen. Die Fakultät ist leider doch ganz gut entfernt, ca eine Stunde Fußweg. Aber ich hab ja sonst nichts vor, also werde ich denke ich zu angenehmen Verkehrslärm und Autogeruch eine kleine Wanderung einlegen. Ich überlege noch ob ich mir hier ein Fahrrad zulegen soll, ich habe aber immernoch keinen einzigen Fahrradfahrer gesehen. Unterricht in dem Master ist ausschließlich von 16:00 - 20:00 Uhr und nur Montags bis Donnerstags. Ich glaube da könnte ich mich dran gewöhnen&amp;hellip;  Ich werde nachher mal versuchen meine Erasmus-Koordinatorin der Fakultät zu treffen und alles ein wenig mit ihr zu bequatschen. Mehr Updates folgen!&lt;/p&gt;
-
-&lt;p&gt;Ach und weil ich den Artikel so benannt habe, hier ein &lt;a href=&#34;https://nico-westerbeck.de/travels/crows.aac&#34;&gt;paar Krähen im Park&lt;/a&gt;&lt;/p&gt;
-</description>
+      <description>Check Planpunkt Instrument abgeschlossen, ich habe mir eine Bouzouki gegönnt, oder wie ich sie häufiger bezeichne: &amp;ldquo;not-a-fucking-guitar&amp;rdquo;. Ich hab das Wochenende hauptsächlich damit verbracht, Tunes und Akkorde auf diesem Instrument zu lernen, und es ist total genial wie alles in diesem Instrument schreit spiel ein D! Wirklich, du möchtest ein D spielen! Ja ich weiß dass der Tune in F ist aber D! Und dann quetscht man ihm den Hals ab und auf einmal G!</description>
     </item>
     
     <item>
@@ -295,44 +77,8 @@ Um die Konstellation kurz vorzustellen:&lt;/p&gt;
       <pubDate>Thu, 23 Feb 2017 22:19:46 +0200</pubDate>
       
       <guid>https://nico-westerbeck.de/travel/ankunft/</guid>
-      <description>
-
-&lt;h1 id=&#34;klausenburg&#34;&gt;Klausenburg&lt;/h1&gt;
-
-&lt;p&gt;Angekommen! Der &lt;a href=&#34;https://nico-westerbeck.de/travels/flight_boarding.aac&#34;&gt;Flug&lt;/a&gt; hatte zwar dreißig Minuten Verspätung, aber verlief sonst problemlos. Glaub ich. Hab geschlafen. In Cluj hat mich mein lokaler Buddy, die nicht Danila sondern Andrea heißt abgeholt - in Rumänien schreibt man den Nachnamen an erster Stelle, also in der Form &amp;ldquo;Hallo, ich bin Westerbeck Nico&amp;rdquo;. Die erste Blamage innerhalb der ersten fünf Minuten in dieser Stadt, for many more to come!&lt;/p&gt;
-
-&lt;p&gt;Mit dem Taxi also zu mir (hier kosten Taxis so viel wie in Deutschland die Busse, und die Busse so viel wie in Deutschland die Straßenmusiker) und ich betrete einen Plattenbau im Kommunismus-Stil. Ich erfreue mich sehr an unglaublich schiefen Wänden und sehr weltoffen angelegten Versorgungsleitungen (vor jeder Wohnungstür hängt ein Gaszähler, im Hausflur soetwas wie ein Zählerkasten der wahrscheinlich seit dem Beitritt der EU keine offenen 230V Klemmen mehr hat aber noch so anmutet als würde man trotzdem direkt sterben wenn man ihm zu nahe tritt, die Telefonkabel sind durch den Putz neben den Haustüren verlegt). Im ganzen Land sehen die Straßenlaternen aus wie mit Lametta behangen, und unter den ganzen mit Spannschellen befestigten Kabeln findet man manchmal auch eins das an einem Isolator hängt. Ich wundere mich wieso hier nicht ständig der Strom ausfällt, dazu mehr in zwei Absätzen&amp;hellip;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://nico-westerbeck.de/travels/Zimmer.jpg&#34; alt=&#34;Zimmer&#34; /&gt;&lt;/p&gt;
-
-&lt;h1 id=&#34;der-erste-abend&#34;&gt;Der erste Abend&lt;/h1&gt;
-
-&lt;p&gt;Zuhause grüßt mich eine total sympatische, hilfsbereite Mitbewohnerin, die genau wie Andrea alles tut dass mein Aufenthalt großartig beginnt. Nach ungefähr zweihundert Wegbeschreibungen zu Supermärkten, Tankstellen, Kiosken, Bushaltestellen, &amp;hellip; hab ich es geschafft ihr zu vermitteln dass das alles schon vergessen habe bevor sie es zuende ausgesprochen hat. Also meine Kultur-enzyklopädien heißen Andrea und Stefanie (es sollen nicht die einzigen bleiben :D). Ich bin froh eine eigene Wohnung zu haben, vor allem weil die lokalen Dorms zwei bis fünf Betten pro Zimmer haben. Zwar bekommen die Erasmus-Studenten bevorzugt die guten Hostels, äh Dorms, mit nur zwei Betten, aber so ein eigenes Zimmer ist doch was gutes.&lt;/p&gt;
-
-&lt;p&gt;Mit Andrea bin ich nach etwas quatschen in ein traditionelles Restaurant gepilgert, welches sogar zwei! vegetarische Gerichte hatte. Für zusammen 12€ haben wir also richtig lecker gegessen, was nach 13 Stunden auf lediglich einer viertel Tafel Milka (danke @Oertmänner, ihr habt mir das Leben gerettet!) doch ganz gut nötig war. Die Nacht bin ich dann sofort ins Koma gefallen.&lt;/p&gt;
-
-&lt;h1 id=&#34;der-erste-tag&#34;&gt;Der erste Tag&lt;/h1&gt;
-
-&lt;p&gt;Den nächsten Morgen hat mein Rücken dann einen Deal mit mir ausgehandelt - ich kaufe ein Kopfkissen statt zusammengelegter Tshirts und schlafe alle paar Tage mal auf der Luftmatratze und dafür tut er nur mäßig weh. Es ist doch immer schön eine konstruktive Diskussion zu führen. Ich also erstmal los, etwas fürs Frühstück besorgen. Ich weiß nicht ob das jetzt meine Auslandsverblendung ist, aber die Lebensmittel hier sind göttlich! Der Käse schmeckt nach Ziege, die Milch nach Kuh und das Wasser nach Chlor. Voll gut!&lt;/p&gt;
-
-&lt;p&gt;Nach dem Frühstück und Zimmer einräumen mache ich mich auf, ein Kissen zu finden. Es sind etwa 40 Minuten zu Fuß in die Innenstadt von mir aus, aber es geht nur bergab. Anstatt Kopfkissen habe ich ein vegetarisches Restaurant gefunden und mir direkt erstmal den besten Salat dieses Jahres reingepfiffen. Auf der Straße sehe ich fast nur junge Menschen, total viele mit interessanten Kleidern oder Frisuren, irgendwie ist hier alles alternativ und wunderbar. Ein arabisch anmutender, um die 25 Jahre alter Bartwuchsweltmeister lächelt mich an während ich an ihm vorbei gehe. Ich freue mich darüber wie wunderschön diese Stadt ist und falle ins nächste Schlagloch. Ich bin sehr zuversichtlich mich hier richtig wohl zu fühlen!&lt;/p&gt;
-
-&lt;p&gt;Am Nachmittag treffe ich Marina, die Präsidentin von AEGEE-Cluj Napoca, auf eine Limonade in einer Szenebar, die ich vermutlich nicht das letzte mal betreten habe. Sie konnte mir das finale Indiz auf meiner Fahndung nach einem Kopfkissen geben, gegen 18:00 halte ich das Wunderwerk in Händen. Es stellt sich außerdem heraus, dass sie nur zwei Minuten von mir entfernt wohnt, und ich lade sie spontan zum Kochen bei mir zuhause ein. Den Plan muss ich aber leider verwerfen, als ich zuhause ankomme ist leider das Gas abgestellt - in Wohnung 1 ist ein Leck. Wer hätte es gedacht&amp;hellip; Aber Cluj hat Lieferservices für Pizza, umgerechnet etwas weniger als 3€ inklusive Lieferung bringen mir eine super leckere Pizza nach Hause - I&amp;rsquo;m a rich bitch now!&lt;/p&gt;
-
-&lt;p&gt;Dafür konnte ich meinen zweiten Mitbewohner, Nathan, kennen lernen. Ein total lieber Niederländer und wie Stefania ein Raucher. Ich bin demokratisch in der Minderheit, aber zummindest sind die beiden so tolerant zum Fenster auszuweichen. Ich glaube auch das wird ganz okay, das ist der einzige Punkt der mir vielleicht noch problematisch vorkommt. Ich weiß noch nicht so genau was ich die nächsten Tage mache, aber der Punkt Instrument kaufen steht noch auf der Liste. Ich hab auf meiner Tour auch schon einen Musikladen erspäht, mal sehen ob ich da morgen Zeit für habe.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://nico-westerbeck.de/travels/Nico_at_Romania.jpg&#34; alt=&#34;Nico @ Romania&#34; /&gt;
-(Credits to Ingo - danke für dieses großartige Mashup!)&lt;/p&gt;
-
-&lt;h1 id=&#34;universität&#34;&gt;Universität&lt;/h1&gt;
-
-&lt;p&gt;Außerdem ist ja auch noch die Frage nach dem hier studieren. Heute haben die lokalen Studierenden ihre Stundenpläne bekommen, ich und die beiden Erasmus-Studenten die ich kenne haben jedoch noch keinen Plan. Nächsten Dienstag habe ich einen Termin mit der Erasmus-Koordinationsstelle hier, ich hoffe dass sich dann alles klärt. Gute Nachrichten: es gibt keine Anwesenheitspflicht, schlechte Nachrichten: bei Seminaren schon. Vielleicht hab ich ja keine :D Naja aber ich hab meine lokale Erasmus-Koordinatorin angeschrieben ob ich ein Treffen mit ihr vereinbaren kann, um zu klären was ich jetzt eigentlich genau mache. Mal sehen wann Rückmeldung kommt.&lt;/p&gt;
-
-&lt;p&gt;Generell bin ich sehr gespannt über die nächste Woche, wenn die Uni anfängt. Bis dahin hab ich voraussichtlich Zeit mich durch die lokalen Biersorten zu trinken, in der Hoffnung dass irgendeine Brauerei hier versehentlich etwas leckeres zusammengeschüttet hat und die Stadt ein wenig mehr kennen zu lernen. Sofern ich mich bei diesem Vorhaben nicht vergifte werde ich Rückmeldung geben! =) Ganz liebe Grüße aus Cluj-Napoca!&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://nico-westerbeck.de/travels/Hund_auf_Dach.jpg&#34; alt=&#34;Hund auf Dach&#34; /&gt;
-&lt;img src=&#34;https://nico-westerbeck.de/travels/Selfie.jpg&#34; alt=&#34;Selfie&#34; /&gt;&lt;/p&gt;
-</description>
+      <description>Klausenburg Angekommen! Der Flug hatte zwar dreißig Minuten Verspätung, aber verlief sonst problemlos. Glaub ich. Hab geschlafen. In Cluj hat mich mein lokaler Buddy, die nicht Danila sondern Andrea heißt abgeholt - in Rumänien schreibt man den Nachnamen an erster Stelle, also in der Form &amp;ldquo;Hallo, ich bin Westerbeck Nico&amp;rdquo;. Die erste Blamage innerhalb der ersten fünf Minuten in dieser Stadt, for many more to come!
+Mit dem Taxi also zu mir (hier kosten Taxis so viel wie in Deutschland die Busse, und die Busse so viel wie in Deutschland die Straßenmusiker) und ich betrete einen Plattenbau im Kommunismus-Stil.</description>
     </item>
     
     <item>
@@ -341,40 +87,7 @@ Um die Konstellation kurz vorzustellen:&lt;/p&gt;
       <pubDate>Wed, 22 Feb 2017 12:54:12 +0100</pubDate>
       
       <guid>https://nico-westerbeck.de/travel/aufbruch/</guid>
-      <description>
-
-&lt;h1 id=&#34;willkommen&#34;&gt;Willkommen&lt;/h1&gt;
-
-&lt;p&gt;Wer auch immer du bist, dass du hierher gefunden hast freut mich! Ich bin mir fast sicher dass du mich kennst, weil ich den Link zu diesem Blogpost nur Freunden verschickt habe und argwöhnisch die Access logs auf Crawler untersuche (wat?). Alle Menschen haben mir gesagt dass ich ganz viele großartige Erfahrungen auf diesem Auslandstrip machen werde, und falls das wirklich so ist möchte ich sie teilen. Natürlich am liebsten persönlich, du bist auf einen Tee in Cluj eingeladen, oder wo auch immer ich gerade bin. Aber da 1000km zu reisen doch bedeutend mehr Zeit braucht als eine Webseite aufzurufen hast du hier die Gelegenheit, in 40ms Zugriffszeit meinen Reiseblog zu erreichen.&lt;/p&gt;
-
-&lt;p&gt;Jetzt gerade sitze ich hier in Berlin Schönefeld am Flughafen und schlage die zwei Stunden bis zum Boarding tot. Ich wollte den ersten Post noch in Deutschland schreiben, um das letzte bisschen Heimatgefühl einzufangen. Außerdem habe ich mir ein kleines Mikrofon für mein Handy gekauft, da ich diesen Blog in einem etwas anderen Format gestalten möchte. Ich möchte meine Reise mit Klängen begleiten. Auch wenn ich erst seit gestern (21.2.) wirklich unterwegs bin, begonnen hat diese Reise schon vorher.&lt;/p&gt;
-
-&lt;h1 id=&#34;erasmus-bewerbung&#34;&gt;Erasmus-Bewerbung&lt;/h1&gt;
-
-&lt;p&gt;Letzten Sommer (August 2016) war ich in Cluj-Napoca auf einer Summer University, organisiert von AEGEE-Cluj Napoca. Nach nur 4 Tagen in Cluj habe ich mich in diese Stadt verliebt und beschlossen dass ich dort Erasmus machen möchte. Das erste was ich, wieder zuhause, tue ist also meinen Erasmus-Koordinator anzuschreiben wie ich nach Cluj kann. Da die Fakultät Informatik keinen Austauschvertrag mit der Fakultät Mathe-Informatik in Cluj hat, hat der mich also an die uniweite Erasmus-Koordinatorin weitergeleitet welche mich an die Fakultät Germanistik vermittelt hat. Die hatten noch Austauschplätze frei. Ich fange also an, diverse Leute zu kontaktieren, weil ich ja in Cluj nicht Germanistik sondern Informatik studieren wollte. Die Dresdner Germanistik-Koordinatorin hat zugestimmt, die Cluj Germanistik-Koordinatorin hat zugestimmt, fehlt also nur noch jemand von der Fakultät Mathe-Informatik in Cluj. Das war auch der Punkt an dem ich festgestellt habe dass die Informatik &lt;em&gt;doch&lt;/em&gt; eine Austauschvereinbarung hatte, nämlich zusammen mit der Fakultät Mathematik. &amp;ldquo;Ahhh ja stimmt wir hatten hier in irgendeinem Ordner so ein Dokument, richtig!&amp;rdquo;. Und die in Cluj haben sich schon gewundert wieso noch keine Studenten aus Dresden gekommen sind.&lt;/p&gt;
-
-&lt;p&gt;Ich darf also nun offiziell diesen Erasmus-Vertrag entjungfern! Yipeee!&lt;/p&gt;
-
-&lt;p&gt;Anrechnen lassen kann ich mir das ganze als Berufspraktikum, ein Modul im Diplom Informatik welches etwa den Wortlaut &amp;ldquo;Verbringen Sie 900 Stunden in einem Praktikum oder Auslandsstudium&amp;rdquo; hat. 150 Stunden hab ich schon gutgeschrieben bekommen für den Organistionsaufwand - wenn alle meine Reisen so fürs Studium anrechenbar wären hätte ich jetzt einen PhD.&lt;/p&gt;
-
-&lt;h1 id=&#34;auszug&#34;&gt;Auszug&lt;/h1&gt;
-
-&lt;p&gt;Und wenn ich für alle meine Reisen aus meiner Wohnung hätte ausziehen müssen, dann würde jetzt keine Schraube an irgendeinem Möbelstück mehr greifen. Kumuliert etwas mehr als zwei Tage habe ich dafür gebraucht, mein Zimmer leer zu räumen, ganz vielen Dank an die liebe Hilfe von meinen Eltern und Luisa, Felix, Caro und Antonia! Am Sonntag den 19.02. hab ich meine Möbel in einen Lagerraum in Bannewitz gebracht, und dann noch zwei Nächte in diesem sehr kargen Zimmer verbracht. Es war irgendwie ein komisches Gefühl, den Schlüssel einzuschließen. Auf jeden Fall hoffe ich, dass meine WG-Genossen ohne mich eine schöne Zeit haben.&lt;/p&gt;
-
-&lt;p&gt;In Cluj wartet auch eine WG auf mich, bestehend aus einem Erasmus-Studenten aus den Niederlanden Nathan und einer Stefania, die die rumänische Minderheit in dieser Wohnung repräsentiert. Ich habe die beiden noch nie gesehen, bin aber aus den Facebook-Chats zuversichtlich dass es sympatische Menschen sind! Mehr dazu in einem zukünftigen Blogpost.&lt;/p&gt;
-
-&lt;h1 id=&#34;ganz-viel-musik&#34;&gt;Ganz viel Musik&lt;/h1&gt;
-
-&lt;p&gt;Wenn ich so auf die letzten Wochen Dresden zurückgucke, dann war da erst eine Klausurenphase mit vollständiger Isolation und dann ganz viel Musik. Meine Klausuren sind gut gelaufen, das Lernen hat sich ausgezahlt, aber war sehr anstrengend. Und dann folgte eine Jamsession auf die nächste.
-&lt;a href=&#34;https://nico-westerbeck.de/travels/devil_is_dead.aac&#34;&gt;Sehr sehr geil.&lt;/a&gt;
-Ich möchte mich bei allen Menschen, die mir in diesen letzten Tagen begegnet sind für die tollen Eindrücke, Klänge und Gedanken bedanken, ganz besonders bei Filine (du weißt warum). Das war echt ein schöner Abschied aus dieser Stadt, und ich freue mich dass es nicht die Nazis sind, an die ich mich erinnern muss!&lt;/p&gt;
-
-&lt;h1 id=&#34;vorfreude-pläne&#34;&gt;Vorfreude, Pläne&lt;/h1&gt;
-
-&lt;p&gt;Naja, jetzt also die Frage was ich da eigentlich machen soll. Ehrlich gesagt, keinen Plan ^^ ich habe ein paar Dinge die ich in jedem Fall tun möchte, unter anderem ein Instrument kaufen, alle in Cluj lebenden Freunde treffen und wenn das Wetter es erlaubt eine erste kleine Tour in die Berge starten. Aber vielleicht überrascht mich Cluj ja noch mit anderen Plänen. Von der lokalen ESN Gruppe habe ich einen Buddy bekommen, Danila hat versprochen mich vom Flughafen abzuholen und ich freue mich total über diese Gastfreundschaft! Schön mal selber einen Buddy zu bekommen, nachdem ich jetzt 3 Semester selbst einer in Dresden war und 2 Semester das lokale Buddy Program organisiert habe.&lt;/p&gt;
-
-&lt;p&gt;Naja, aber zu viele Pläne sind eh nicht so mein bevorzugter Reisestil, also werde ich sehen was auf mich zukommt, ich habe auf jeden Fall viele Ideen!&lt;/p&gt;
-</description>
+      <description>Willkommen Wer auch immer du bist, dass du hierher gefunden hast freut mich! Ich bin mir fast sicher dass du mich kennst, weil ich den Link zu diesem Blogpost nur Freunden verschickt habe und argwöhnisch die Access logs auf Crawler untersuche (wat?). Alle Menschen haben mir gesagt dass ich ganz viele großartige Erfahrungen auf diesem Auslandstrip machen werde, und falls das wirklich so ist möchte ich sie teilen. Natürlich am liebsten persönlich, du bist auf einen Tee in Cluj eingeladen, oder wo auch immer ich gerade bin.</description>
     </item>
     
     <item>
@@ -383,106 +96,8 @@ Ich möchte mich bei allen Menschen, die mir in diesen letzten Tagen begegnet si
       <pubDate>Tue, 15 Nov 2016 17:00:00 +0000</pubDate>
       
       <guid>https://nico-westerbeck.de/blog/docker-compose/</guid>
-      <description>
-
-&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
-
-&lt;p&gt;At first I used this file only as a help for myself, but I thought I could also share my thoughts. The project was to set up a docker environment for a microservice architecture consisting of the following parts. This was specifically done for the &lt;a href=&#34;https://oms-project.atlassian.net/wiki/display/GENERAL/Project+description&#34;&gt;OMS&lt;/a&gt;&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;OMS-Core, consisting of
-
-&lt;ul&gt;
-&lt;li&gt;nginx&lt;/li&gt;
-&lt;li&gt;php-fpm&lt;/li&gt;
-&lt;li&gt;A workspace container with php artisan, composer, etc&lt;/li&gt;
-&lt;li&gt;postgres&lt;/li&gt;
-&lt;li&gt;A data container for the whole repo&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;OMS-Events, consisting of
-
-&lt;ul&gt;
-&lt;li&gt;node.js backend&lt;/li&gt;
-&lt;li&gt;nginx frontend for static serving and reverse proxy&lt;/li&gt;
-&lt;li&gt;mongodb&lt;/li&gt;
-&lt;li&gt;(Not yet) A data container for media files&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h1 id=&#34;design-decisions&#34;&gt;Design decisions&lt;/h1&gt;
-
-&lt;p&gt;I had to do some design decisions in setting this up, most importantly&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;How to get the code into the container&lt;/li&gt;
-&lt;li&gt;How to get the configuration into the container&lt;/li&gt;
-&lt;li&gt;How to link up the containers&lt;/li&gt;
-&lt;li&gt;How far can/should I split everything&lt;/li&gt;
-&lt;li&gt;Sharing API-Keys&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&#34;how-to-get-the-code-into-the-container&#34;&gt;How to get the code into the container&lt;/h2&gt;
-
-&lt;p&gt;This seemed to be my first real task. I wanted to have it set up in a way that you ideally just run docker-compose up and everything is set up, AND the code from each of the modules is linked via a volume mapping to the host so you can just edit the files on the host with a text editor and it will end up iin the container right away. However, now is the question on when the code for oms-core and oms-events will be pulled and how it can be moved into the container. There were basically 3 possibilities&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Create a git repo with the docker-compose.yml (and some other files) and add oms-neo-core and oms-events as submodules, then COPY the files into the containers.&lt;/li&gt;
-&lt;li&gt;Create a git repo with the docker-compose.yml (and some other files) and add oms-neo-core and oms-events as submodules, then mount the files as volumes into the containers.&lt;/li&gt;
-&lt;li&gt;Git clone inside the Dockerfiles, but still mount the volumes to harddisk during run.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;At first I read &lt;a href=&#34;https://forums.docker.com/t/best-practices-for-getting-code-into-a-container-git-clone-vs-copy-vs-data-container/4077&#34;&gt;this&lt;/a&gt; article, which basically has the same 3 options, and where the majority pledged for option 2. The advantages which were described there were better CI integration and more lightweight containers. Especially the last argument is strong, as replicating the container wouldn&amp;rsquo;t really work, as the code would be cloned twice. However, I also had some points for option 3. It would make setting up everything a lot more transparent, as the configuration files (which definetely needed to be changed) could have been added in the docker build process. However, I trusted that forum post and went for number 2 - number 1 was never really an option.&lt;/p&gt;
-
-&lt;p&gt;The file-system now looks like this:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;.
-├── docker
-├── oms-core
-├── oms-events
-└── oms-events-frontend
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Whereas the docker folder holds the docker-compose.yml and some dockerfiles.&lt;/p&gt;
-
-&lt;h2 id=&#34;how-to-get-the-configuration-into-the-container&#34;&gt;How to get the configuration into the container&lt;/h2&gt;
-
-&lt;p&gt;As I decided for number 2 in the above question, I was expecting some new problems with this one. The common way to mount configuration files into a docker container is to just use the -v switch (or on docker-compose the volumes: list). However, I already have a volume mount to the whole codebase, including the configuration file and that would mean intersecting mounts. I personnally had no idea if that actually was something bad, so I tried it aaaand it worked! =) It actually left the file in &lt;code&gt;oms-events/lib/config/configFile.json&lt;/code&gt; intact but to the container the contents of &lt;code&gt;docker/omsevents/configFile.json&lt;/code&gt; (which I added via volume mounts) were visible. Great!&lt;/p&gt;
-
-&lt;p&gt;However, not so easy. The configuration might be in there, but what about bootstrapping the apps? The problem is that the volume mounts are not there during docker build, and there is no way to get them there.&lt;/p&gt;
-
-&lt;p&gt;For &lt;strong&gt;oms-events&lt;/strong&gt; I would have to run &lt;code&gt;npm install&lt;/code&gt; at some point in time, as it&amp;rsquo;s based on nodejs. This would have been nice to run in the docker build process, so I checked on how this &lt;a href=&#34;https://nodejs.org/en/docs/guides/nodejs-docker-webapp/&#34;&gt;should be done&lt;/a&gt; - copying the package.json file in advance enables npm install to run and it doesn&amp;rsquo;t need any app code for that. However currently the package.json file lives outside of the build context, in the git repo with the other code and docker doesn&amp;rsquo;t allow copying that. My fix for this was putting the raw url from github for that specific file into the container:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;ADD https://raw.githubusercontent.com/AEGEE/oms-events/dev/package.json /usr/app/package.json
-RUN npm install
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Great, node works. However the &lt;strong&gt;omscore&lt;/strong&gt; seemed to have far more heavy dependencies and I personally didn&amp;rsquo;t know so much about how the bootstrapping works and if it could actually do something before having the codebase present. The laradock image also didn&amp;rsquo;t give many hints on this, as they seem to leave this as something the user can do by hand. I thought it might be neat to have a configuration container, which starts, does the configuration work and then exits again. I believe that this also was the concept behind the workspace container, that laradock introduced. However, that container would have to be designed in a way that it can be run every time on a startup, as having optional containers is &lt;a href=&#34;https://github.com/docker/compose/issues/1896&#34;&gt;not yet&lt;/a&gt; implemented in docker-compose. I decided to use the workspace for just that purpose and tried to set something up which can be run any time without breaking app. However, in the middle of the process I noticed that I need a working db connection, which made it impossible to set this up during the docker build process. Resultingly, I decided to place a small bootstrap script inside the workspace container and tell the user to manually run it when he runs the app the first time. Not beautiful, but for omsevents I need the same, see &lt;a href=&#34;#sharing-api-keys&#34;&gt;Sharing API-Keys&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;how-to-link-up-the-containers&#34;&gt;How to link up the containers&lt;/h2&gt;
-
-&lt;p&gt;&amp;ldquo;Linking up&amp;rdquo; actually is a pretty vague term, we need to differentiate between linking in &lt;strong&gt;network&lt;/strong&gt; terms and linking in &lt;strong&gt;volume&lt;/strong&gt; terms.&lt;/p&gt;
-
-&lt;p&gt;Regarding the &lt;strong&gt;volumes&lt;/strong&gt;, there basically only was the design decision to have a data container or not. Some services, like the nginx and the workspace of omscore need the same data, so we need to distribute that somehow. A dirty version which could be thinkable would be to copy all the data into all the containers, but that would go against our requirement of having a volume mount for live code-reloading. The &lt;a href=&#34;https://docs.docker.com/engine/tutorials/dockervolumes/&#34;&gt;docker tutorial&lt;/a&gt; recommends to insert data containers, meaning images like the &lt;code&gt;tianon/true&lt;/code&gt; image on dockerhub with a volume mount linked up to them. Another possibility would be to link the folders with a volume switch everywhere and not put up a data container. That would also be thinkable and actually work, just with the problem that the services might spam up our development folders, which we want to keep as clean as possible. In the end I actually went this way with the omsevents module, however planning to change that in the future. For the omscore it was already set up with the laradock configuration, so I kept it.&lt;/p&gt;
-
-&lt;p&gt;The &lt;strong&gt;network&lt;/strong&gt;-linking can be pretty straightforward, but might still be worth a thought. Docker supports multiple networks between the containers, which would in this case be a really good idea as the omsevents and omscore service are relatively independent and could be linked up with just a proxy. However, docker also supports mashing all of them into the same network. Let&amp;rsquo;s not do this in production, but for development I think this is fine, and I decided I&amp;rsquo;d rather spend that time making dinner than trying to seperate the networks.&lt;/p&gt;
-
-&lt;h2 id=&#34;how-far-should-can-i-split-everything&#34;&gt;How far should/can I split everything&lt;/h2&gt;
-
-&lt;p&gt;If you read any article about microservices, you will find the word &amp;ldquo;split&amp;rdquo; or a synonym in every second sentence. Splitting things is good, as it provides isolation so faults or exploits can&amp;rsquo;t propagate too easy, allows easier scaling, better fault tolerance and much more. The major reason why we actually need it in this size is splitting the teams working on different parts of the application. The core can be developed completely independent of the events module, and the events module frontend is almost independent of the backend, and so on. This is just pretty flexible. When I started setting up the docker for oms-events, I found that I would have to create a container with both node and nginx, as that module uses node for the backend and nginx for statically serving the frontend. At the beginning of the development, I had the node backend also serving the frontend files, but I discarted that solution for any production use, as serving frontend files would put unnecessary load on the backend. So at this point, I decided to fully split the two, and have two different containers for frontend and backend. That also meant introducing a new github repo for the frontend, as it felt just wrong having them in the same. Fancy extra: it looks super cool starting up 9 containers and seeing them appear after another :D&lt;/p&gt;
-
-&lt;h2 id=&#34;sharing-api-keys&#34;&gt;Sharing API-Keys&lt;/h2&gt;
-
-&lt;p&gt;This is actually a difficult question, as the API-Keys should not get leaked but need to be distributed to the containers. In development this might be of less danger, but we should get this one straight from the beginning on, so we don&amp;rsquo;t mess up in production. The talk &lt;a href=&#34;https://www.youtube.com/watch?v=A32Yjizt2_s&#34;&gt;Docker Security&lt;/a&gt; by Adrian Mouat addressed that issue, and pointed out 4 possibilities how to solve it.&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Hardwire the secret into the images&lt;/li&gt;
-&lt;li&gt;Pass it via command-line parameters/environment variables&lt;/li&gt;
-&lt;li&gt;Create a file containing the secret and mount it everywhere needed&lt;/li&gt;
-&lt;li&gt;Use a secret key/value store like &lt;a href=&#34;https://www.hashicorp.com/blog/vault.html&#34;&gt;vault&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;1 and 2 are obviously flawed, also because in our setup the omscore generates the token itself, so I found that 3 could be a good option. I don&amp;rsquo;t yet have experience with vault or other secure key/value stores, but maybe I will try to implement that in the future. The rest then was pretty straight forward. Create a named volume, mount it read-only into the omsevents module (and have the service read from the file) and mount it into the omscore-nginx (and have the service write to it). Well, actually both things in bracket meant code changes, so this took a while, but the idea is straight forward. Remember you don&amp;rsquo;t even need to specify a host folder for this, a named volume should be enough as it is written by omscore during runtime. Like this, only the necessary containers have access to the api-key, so the chance of it getting leaked is pretty low. One could also think of introducing a data-container for persistence.&lt;/p&gt;
-</description>
+      <description>Introduction At first I used this file only as a help for myself, but I thought I could also share my thoughts. The project was to set up a docker environment for a microservice architecture consisting of the following parts. This was specifically done for the OMS
+ OMS-Core, consisting of  nginx php-fpm A workspace container with php artisan, composer, etc postgres A data container for the whole repo  OMS-Events, consisting of  node.</description>
     </item>
     
     <item>
@@ -491,34 +106,8 @@ RUN npm install
       <pubDate>Mon, 10 Oct 2016 20:00:00 +0000</pubDate>
       
       <guid>https://nico-westerbeck.de/blog/notification-pipeline/</guid>
-      <description>
-
-&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
-
-&lt;p&gt;In this post I will share some thoughts upon implementing a notification pipeline in a microservice architecture. It should be said though that I don&amp;rsquo;t yet have much practical experiences, this post is rather designed as a discussion about the topic. While working on the OMS for AEGEE, I found that this topic is actually quite a tough point when developing a distributed application.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;A lot of microservices will want to generate notifications for different things, resulting in a high number of notifications and a high diversity&lt;/li&gt;
-&lt;li&gt;Users want to control how and which notifications they want&lt;/li&gt;
-&lt;li&gt;Notifications need to be managed centrally, as it would get inconsistend having the notification settings everywhere&lt;/li&gt;
-&lt;li&gt;Certain events could potentially trigger a high notification throughput (a huge event gets canceled, popular news post)&lt;/li&gt;
-&lt;li&gt;There are several channels how notifications can be distributed: Mail, Pop-up notification, Push-notifications, Chat integration, &amp;hellip;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;The good thing is that this topic is not necessarily time-critical. Noone will notice if the notification for an event creation is fired 30 seconds late, so it would be a good candidate for async execution and we don&amp;rsquo;t need to be too careful on how long the job takes as soon as it is dispatched to a background task. Also, the notification object is quite simple, often just consisting of a recipient, message text, title, category and some information about the importance. The latter could be used to implement smart notifications like facebook, outputting a relatively constant number of pop-up notifications as long as the user is on the site but lowering the output when he leaves.&lt;/p&gt;
-
-&lt;h2 id=&#34;design-ideas&#34;&gt;Design ideas&lt;/h2&gt;
-
-&lt;p&gt;The first idea that came up when we discussed the topic &lt;strong&gt;just an endpoint&lt;/strong&gt; on the service which also deals with user data. Just an API call that would immediately send an email to the user. It would be super-easy to implement and could potentially accept a big number of recipients. However we quickly noticed some drawbacks with this approach. It would be difficult adding or removing channels (mail/push/etc), as everything is concentrated in one endpoint. Also this could put some quite high load on the machine managing that endpoint - especially if the service is not replicable this could be problematic. However it would make it easy setting preferences, as the central management requirement would be fulfilled.&lt;/p&gt;
-
-&lt;p&gt;So we went on from this approach to a pub-sub idea, some kind of &lt;strong&gt;observer-pattern&lt;/strong&gt;. We would still have the endpoint to send notifications, however we would also offer a hook for services to register with the core to get a copy of each notification sent by anyone. Those hooked microservices could be responsible for spreading the messages about one specific channel. This is a fairly easy to implement service and would keep the codebase small, ideal for newcomers in the project. However we still encountered a problem. We could not possibly maintain a centralized list of all possible notification categories. The services would grow constantly and would rapidly develop new classes of notifications, updating them into a centralized database would be a pain.&lt;/p&gt;
-
-&lt;p&gt;We came up with the idea of &lt;strong&gt;tree-based categories&lt;/strong&gt;. There is a limited, predefined set of toplevel notifications, like &amp;ldquo;eventrelated&amp;rdquo;, &amp;ldquo;userrelated&amp;rdquo;, etc. This level is managed centrally and only updated rarely. Whenever a service wants to dispatch a notification, it has to fit it in one of the toplevel categories. However it also has the possibility to set an arbitrary amount of subtrees. This would allow us to firstly have very course-grained controls int he development process, but as the more finegrained category information is not lost, it would be easily possible to set up more finegrained controls later.&lt;/p&gt;
-
-&lt;h2 id=&#34;implementation&#34;&gt;Implementation&lt;/h2&gt;
-
-&lt;p&gt;Well, right now there is no implementation, as this post is about ideas. I will update this as soon as we brought our ideas into practice.&lt;/p&gt;
-</description>
+      <description>Introduction In this post I will share some thoughts upon implementing a notification pipeline in a microservice architecture. It should be said though that I don&amp;rsquo;t yet have much practical experiences, this post is rather designed as a discussion about the topic. While working on the OMS for AEGEE, I found that this topic is actually quite a tough point when developing a distributed application.
+ A lot of microservices will want to generate notifications for different things, resulting in a high number of notifications and a high diversity Users want to control how and which notifications they want Notifications need to be managed centrally, as it would get inconsistend having the notification settings everywhere Certain events could potentially trigger a high notification throughput (a huge event gets canceled, popular news post) There are several channels how notifications can be distributed: Mail, Pop-up notification, Push-notifications, Chat integration, &amp;hellip;  The good thing is that this topic is not necessarily time-critical.</description>
     </item>
     
     <item>
@@ -527,59 +116,9 @@ RUN npm install
       <pubDate>Sun, 25 Sep 2016 23:00:00 +0000</pubDate>
       
       <guid>https://nico-westerbeck.de/blog/easy-passwords/</guid>
-      <description>
-
-&lt;p&gt;Though this is not really a too groundbreaking article, I noticed that quite a lot of my friends didn&amp;rsquo;t know the trick, so I thought I could share it.&lt;/p&gt;
-
-&lt;h2 id=&#34;intro&#34;&gt;Intro&lt;/h2&gt;
-
-&lt;p&gt;Nowadays there are some requirements to a good password, most people know them&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Entropy&lt;/strong&gt; - Mixed case, special characters, no natural language words&amp;hellip; I personally think this is not too important and makes passwords &lt;a href=&#34;https://xkcd.com/936/&#34;&gt;harder to remember&lt;/a&gt; while not increasing strength too much.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Length&lt;/strong&gt; &lt;a href=&#34;http://imgur.com/gallery/zFyBtyA&#34;&gt;Size matters&lt;/a&gt;! With every additional letter you theoretically multiply the effort needed to crack your password by 256 (practically maybe factor 60).&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Uniqueness&lt;/strong&gt; From time to time, companies screw up &lt;a href=&#34;http://zed0.co.uk/crossword/&#34;&gt;badly&lt;/a&gt;, so you should use a different password on each site and a password other users are unlikely to choose aswell. No &amp;ldquo;qwerty&amp;rdquo; is not innovative, you should go for &lt;a href=&#34;http://www.der-postillon.com/2014/04/it-experten-kuren-mb2r5ohf-0t-zum.html&#34;&gt;Mb2.r5oHf-0t&lt;/a&gt; ;-).&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Lifetime&lt;/strong&gt; You should change your password from time to time, as all passwords can be cracked with just enough patience&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Yes, nice dude, who can remember those? I mean I just went to the basement and forgot on the way there why I went there, how should I remember like 20 passwords, each 16 characters long? One way, maybe the most secure one, to achieve these goals is &lt;a href=&#34;https://www.random.org/passwords/&#34;&gt;randomly generate&lt;/a&gt; passwords and store them in a &lt;a href=&#34;http://keepass.info/&#34;&gt;password manager&lt;/a&gt;. However, there are few easy-to-use implementations out there and it gets difficult if you need your passwords at a place where you can&amp;rsquo;t access the keyfile (like if you try to log into your mail from an internet-cafe on holidays (which you should try to avoid for so many reasons, only one of them being the better weather outside (I like nested brackets))).&lt;/p&gt;
-
-&lt;h2 id=&#34;idea&#34;&gt;Idea&lt;/h2&gt;
-
-&lt;p&gt;However, there is a simple trick to have a different, strong password for each site/account you hold, yet still just having to remember one. So, what about this:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;&amp;lt;mypassword&amp;gt;-google
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;You generate the &lt;code&gt;mypassword&lt;/code&gt;-fraction yourself and memorize it, then you append the name of the website wherever you use it. This has some nice advantages&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;You will have a &lt;strong&gt;different password&lt;/strong&gt; for each site. Simple password crack bots won&amp;rsquo;t recognize the similarity and you have a fairly low chance to get your password guessed by a bruteforce attack.&lt;/li&gt;
-&lt;li&gt;Your password will be even longer through the additional website name (remember, size matters!)&lt;/li&gt;
-&lt;li&gt;You just need to &lt;strong&gt;remember one&lt;/strong&gt; password! Even if you struggle with your mom&amp;rsquo;s birthday, I believe in you!&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;em&gt;Please, as this is the only password you have to remember, choose something more sophisticated than &amp;ldquo;asdfgh&amp;rdquo;!&lt;/em&gt; Doing that would also make it easier to use the password on sites that require your password to fulfill ceratin criterias, like &amp;ldquo;at least one uppercase letter&amp;rdquo; or &amp;ldquo;at least 8 letters&amp;rdquo;. It is a pain when there is one single site using a password policy which doesn&amp;rsquo;t match and you have to think of something new (and forget that seconds after (I could nest another pair of brackets here)).&lt;/p&gt;
-
-&lt;h2 id=&#34;critics&#34;&gt;Critics&lt;/h2&gt;
-
-&lt;p&gt;There are still two drawbacks to this.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;If you just append the name, a slighly more sohpisticated passwort-bot could still guess the password and crack it. Especially if more people are starting to do this, it will eventually end up being a standard-method to crack passwords. To overcome this, you could obfuscate the website name a little. Be creative!&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;&amp;lt;mypassword&amp;gt;-elgoog
-go&amp;lt;mypassword&amp;gt;le
-&amp;lt;my&amp;gt;go&amp;lt;pass&amp;gt;og&amp;lt;word&amp;gt;le
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;If a human sees some of your passwords, it might figure out the algorithm you build them with and instantly crack all your passwords. This approach does not protect against that. Though it is unlikely someone will manually read through all the passwords in a password leak, you could still be disclosed when typing it. I personally decided to take the risk and have the comfort of not using a password manager, but you may decide differently. In case of a disclosure I will have to change a lot of passwords in contrast to one single one with the password manager.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;And finally, if you still, after being warned this whole article long, choose asd-google, you will not gain much.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;But all in all I think of this as a nice way to memorize passwords, and you could think of switching your password policy to this. Also try to use two-factor authentication if the website offers that.&lt;/p&gt;
-</description>
+      <description>Though this is not really a too groundbreaking article, I noticed that quite a lot of my friends didn&amp;rsquo;t know the trick, so I thought I could share it.
+Intro Nowadays there are some requirements to a good password, most people know them
+ Entropy - Mixed case, special characters, no natural language words&amp;hellip; I personally think this is not too important and makes passwords harder to remember while not increasing strength too much.</description>
     </item>
     
     <item>
@@ -588,66 +127,7 @@ go&amp;lt;mypassword&amp;gt;le
       <pubDate>Sun, 25 Sep 2016 17:00:00 +0000</pubDate>
       
       <guid>https://nico-westerbeck.de/blog/microservice-testing/</guid>
-      <description>
-
-&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
-
-&lt;p&gt;I assume you are generally familiar with microservices, otherwise I can recommend &lt;a href=&#34;http://martinfowler.com/articles/microservices.html&#34;&gt;this&lt;/a&gt; article for further reading. Lets also assume we have a basic microservice architecture set up. So, why and how do we test it? Why: I won&amp;rsquo;t even start preaching about tests, just write a bigger project without testing. I guess every programmer has to do that at some point of his life. How: Most of the tests, and for some services all of the tests will be very straight-forward. On method-level we can apply unit-tests and for API-routes we can use Behavior-Tests. If you are using node.js, I can recommend &lt;a href=&#34;https://mochajs.org/&#34;&gt;mocha&lt;/a&gt; in combination with &lt;a href=&#34;http://chaijs.com/&#34;&gt;chai&lt;/a&gt; (I am more of the tea person&amp;hellip;). The problem are integration tests.&lt;/p&gt;
-
-&lt;h2 id=&#34;depending-microservices&#34;&gt;Depending microservices&lt;/h2&gt;
-
-&lt;p&gt;In a normal web-app, there is at max one microservice which can be tested standalone and that&amp;rsquo;s the user management. Even at that point you will typically depend on some kind of database, and other microservices will have other dependencies within the application. So, what are ideas to test a dependant service&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Ignore dependencies&lt;/strong&gt; Without having other microservices available, you will still be able to test quite a big portion of your code. Especially all the unit-tests will run, and there might aswell be a couple of requests that you can blackbox-test without having other services interfer. Typically public GETs are a good example of requests, that you can test without the need of other services. If you can run stuff without dependencies, don&amp;rsquo;t pull in further dependencies and stick to the barebones version. This will also enforce more separation and independence of your service, allowing for better failure tolerance and easier scaling. (That&amp;rsquo;s why we&amp;rsquo;re building microservices, right?)&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Full testing-environment&lt;/strong&gt; The optimal case is if you can provide a full system, with all services running in a testing environment, to get &amp;ldquo;real&amp;rdquo; replies to your requests. This will allow for most realistic testings, but has the major drawback of feasibility. It&amp;rsquo;s not easily possible to set up a full architecture, possibly consisting of dozens of different service tiers, just to test basic requests. This setup will be necessary to run integration tests on the whole system, but for lower-level tests it would be nice to have something lightweigt, which might aswell integrate into common CI-frameworks&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Mock services&lt;/strong&gt; What I found would be the best way to test is using a mock-server. We anyways drafted out APIs with &lt;a href=&#34;https://apiary.io&#34;&gt;Apiary&lt;/a&gt;, so why not using this? Apiary offers the nice feature of an automatically set up mock-server, which will respond to requests with the data you have defined in the API-blueprint-markdown. Though that interface will of course not behave as the original service, it is at least a nice intermediate step towards a full testing environment.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;injecting-new-configs-in-js&#34;&gt;Injecting new configs in JS&lt;/h2&gt;
-
-&lt;p&gt;This example uses node.js and a configuration read from a config.json. I assume you are doing &lt;a href=&#34;https://www.nginx.com/blog/service-discovery-in-a-microservices-architecture/&#34;&gt;service discovery&lt;/a&gt; by DNS, it doesn&amp;rsquo;t matter if you plug a loadbalancer to the dns address or if you just write the other service&amp;rsquo;s ip to your /etc/hosts-file. The idea is to overwrite this address in case we are in a testing environment&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;{
-	&amp;quot;dev&amp;quot;: {
-		&amp;quot;user-management&amp;quot;: &amp;quot;http://some-dns-name&amp;quot;,
-		...
-	},
-
-	&amp;quot;test&amp;quot;: {
-		&amp;quot;user-management&amp;quot;: &amp;quot;http://yourproject.apiary-mock.com&amp;quot;,
-		...
-	}
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Now you will have to read this out, just, wherever you used to include config.json switch to a parseconfig.js including this snippet:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;var exp = config.dev;
-if(process.env.NODE_ENV == &#39;test&#39;) {
-	for (var attr in config.test) {
-		exp[attr] = config.test[attr];
-	}
-}
-
-module.exports = exp;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Now, if your service was started with the environment-variable test set, you will load the test configuration, otherwise you will go for the usual dev-configuration. You can even extend this to switch between development and production configuration. Setting that environment-variable is easily possible by using&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;process.env.NODE_ENV = &#39;test&#39;;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;in the first line of every test.&lt;/p&gt;
-
-&lt;p&gt;Now you can test against a simplified mock of the other services. The good thing is that this mock will always reply with the same data, so you can hardcode these assumptions into your code (and e.g. assume the logged-in user is always named Günther, and thus check if the post you just created in the test holds the author Günther (I recommend to always go for Günther as a testing-user, he is very experienced))&lt;/p&gt;
-
-&lt;h2 id=&#34;dynamic-behavior&#34;&gt;Dynamic behavior&lt;/h2&gt;
-
-&lt;p&gt;The problem with this approach is of course the flexibility of the mock-server. It is possible to draft different responses based on different requests in Apiary-blueprint, however it gets difficult if you want to differentiate based on headers. One Cookie/Auth-Token/Whatever-you-use-for-auth may be valid, for the other one you get a 403. I must admit that I also didn&amp;rsquo;t yet find the holy grail of almost-integration-testing here, but I will update this post as soon as I find something. If you really need it, just set up a full testing-environment.&lt;/p&gt;
-</description>
+      <description>Introduction I assume you are generally familiar with microservices, otherwise I can recommend this article for further reading. Lets also assume we have a basic microservice architecture set up. So, why and how do we test it? Why: I won&amp;rsquo;t even start preaching about tests, just write a bigger project without testing. I guess every programmer has to do that at some point of his life. How: Most of the tests, and for some services all of the tests will be very straight-forward.</description>
     </item>
     
     <item>
@@ -656,28 +136,8 @@ module.exports = exp;
       <pubDate>Sat, 24 Sep 2016 17:00:00 +0000</pubDate>
       
       <guid>https://nico-westerbeck.de/blog/setting-up-website/</guid>
-      <description>
-
-&lt;p&gt;As this was my today&amp;rsquo;s project, I will lose some words about how I set up this site.&lt;/p&gt;
-
-&lt;h2 id=&#34;hosting&#34;&gt;Hosting&lt;/h2&gt;
-
-&lt;p&gt;I am hosting at &lt;a href=&#34;https://uberspace.de/&#34;&gt;uberspace&lt;/a&gt;, a very hipster shared hoster, which let&amp;rsquo;s you choose your price yourself. Their hosting principle is a multi-user linux environment, where you automatically get a user assigned and some stuff provisioned. It relies on linux unprivileged users as the only isolation from other users on the same machine, so I would not recommend using the space for anything critical. However, I like the setup and how everything is documented, so I chose it as a hoster. I will just hope no other user on my machine uses a privilege escalation to put a dickbutt on my page&amp;hellip;&lt;/p&gt;
-
-&lt;p&gt;But everything was up to date, so I would rate the risk as pretty low.&lt;/p&gt;
-
-&lt;h2 id=&#34;website-generation&#34;&gt;Website generation&lt;/h2&gt;
-
-&lt;p&gt;This website is generated by &lt;a href=&#34;https://gohugo.io/&#34;&gt;hugo&lt;/a&gt;, a really easy to dive in static-website generator. It creates your site by using Markdown and predefined (or self-modified) themes, putting out a ready-to-use website. It took me roughly 30 minutes to get into it, and I am really considering to use this for my next website-projects aswell. I don&amp;rsquo;t really like wordpress and other, full-blown competitors, as hacking down some markdown is just faster and more intuitive to me than using a fully fledged WYSIWYMPG-editor (What You See Is What You Might Possibly Get). Also it features a nice way to locally host a draft of the site (with live-codereloading and millisecond build times)&lt;/p&gt;
-
-&lt;h2 id=&#34;deployment&#34;&gt;Deployment&lt;/h2&gt;
-
-&lt;p&gt;I build the files locally with &lt;code&gt;hugo&lt;/code&gt; and transfer them, including the /public folder, to my webserver via git. I found that would be the easiest way to keep my local instance and the remote git up to date.&lt;/p&gt;
-
-&lt;h2 id=&#34;dns&#34;&gt;DNS&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://namecheap.com&#34;&gt;namecheap&lt;/a&gt;, despite having a dubious name, turned out to be quite a good DNS registrar. So far I am pleased.&lt;/p&gt;
-</description>
+      <description>As this was my today&amp;rsquo;s project, I will lose some words about how I set up this site.
+Hosting I am hosting at uberspace, a very hipster shared hoster, which let&amp;rsquo;s you choose your price yourself. Their hosting principle is a multi-user linux environment, where you automatically get a user assigned and some stuff provisioned. It relies on linux unprivileged users as the only isolation from other users on the same machine, so I would not recommend using the space for anything critical.</description>
     </item>
     
     <item>
@@ -686,8 +146,7 @@ module.exports = exp;
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
       
       <guid>https://nico-westerbeck.de/projects/oms-events/</guid>
-      <description>&lt;p&gt;I&amp;rsquo;ve recently started working on a events-managing platform that can be used in the new Intranet of AEGEE, the OMS.&lt;/p&gt;
-</description>
+      <description>I&amp;rsquo;ve recently started working on a events-managing platform that can be used in the new Intranet of AEGEE, the OMS.</description>
     </item>
     
     <item>
@@ -696,8 +155,7 @@ module.exports = exp;
       <pubDate>Tue, 27 Oct 2015 00:00:00 +0000</pubDate>
       
       <guid>https://nico-westerbeck.de/projects/alastair/</guid>
-      <description>&lt;p&gt;Alastair is a webapp to plan food for bigger events, calculating a shopping list and estimated costs based on the number of people you want to feed.&lt;/p&gt;
-</description>
+      <description>Alastair is a webapp to plan food for bigger events, calculating a shopping list and estimated costs based on the number of people you want to feed.</description>
     </item>
     
     <item>
@@ -706,19 +164,8 @@ module.exports = exp;
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://nico-westerbeck.de/about/</guid>
-      <description>
-
-&lt;h1 id=&#34;hey-there&#34;&gt;Hey there!&lt;/h1&gt;
-
-&lt;p&gt;Nice you made it to my page! I am a student of computer sciences on the TU-Dresden (in Dresden), interested in these topics:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Cloud Computing&lt;/strong&gt; My favourite. Basically everything involving more than one computer: Microservices, Big Data, Fault-tolerance, Distributed (insert anything). I know C++, Rust, Go, Elixir&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Backend Development&lt;/strong&gt; I have worked with the MEAN-Stack and python-django but am willing to learn something new&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Websites&lt;/strong&gt; Have been creating websites for 6 years now, am familiar with several CMS and modern frontend frameworks (Angular, Bootstrap, JQuery).&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Software development&lt;/strong&gt; If I should get very desperate, maybe also classical non-web monolithic year 2000 Java standalones. But actually&amp;hellip; no.&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+      <description>Hey there! Nice you made it to my page! I am a student of computer sciences on the TU-Dresden (in Dresden), interested in these topics:
+ Cloud Computing My favourite. Basically everything involving more than one computer: Microservices, Big Data, Fault-tolerance, Distributed (insert anything). I know C++, Rust, Go, Elixir Backend Development I have worked with the MEAN-Stack and python-django but am willing to learn something new Websites Have been creating websites for 6 years now, am familiar with several CMS and modern frontend frameworks (Angular, Bootstrap, JQuery).</description>
     </item>
     
   </channel>
