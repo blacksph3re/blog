@@ -164,10 +164,10 @@ body {
   font-size: 18px;
 }
 
-.blogpost img{
+.blogpost img {
   display: block;
- height: auto;
- max-width: 100%;
+  height: auto;
+  max-width: 100%;
 }
 
 /* Footer 
