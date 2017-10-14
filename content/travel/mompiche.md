@@ -53,7 +53,14 @@ Okay, ich versuche mal eine Aufzählung an Früchten hier. Generell essen wir fa
 * **Guanavana** Oder so. Nicht so lecker, und fast nur Kerne drin.
 * **Bananen** Nomnomnom. Ich wusste nicht was man alles aus Bananen machen kann. Wobei die meisten Gerichte sind
 * **Platanas** Eine Art von Banane, die echt nicht lecker so zum Essen ist, aber gegrillt, frittiert, gebacken oder irgendwie verarbeitet aber richtig gut wird. Außerdem auch ganz gut gesund
+* **Rote Bananen** Auch echt gut!
 * **Kakao** Ne nicht verarbeitet, direkt vom Baum. Die Bohne an sich ist da noch nicht so lecker, aber um die Bohne ist ein super leckeres Fruchtfleisch, welches bei der Verarbeitung fermentiert wird um der Bohne mehr Geschmack zu geben. Isst sich aber auch gut so.
+* **Papaya** Nachdem man ein Kilo Kerne vergraben hat, richtig großartig. Super zum zwischendurch weglöffeln
+* **Mango** Haben hier noch nicht Saison, entsprechend unlecker
+* **Kleine grüne Dinger** Super sauer und voll viel Kern pro Frucht, verkaufen sie auf den Märkten überall.
+* **Maracuja** Geben einen super Saft, man muss sie dafür nicht mal pressen
+* **Tomato de arbol** Super gut, schmeckt null nach Tomate, eher ein bisschen wie Kiwi
+* **Gelbe tomatenähnliche Dinger** Sehen aus wie Tomaten, sind gelb, man muss sie pellen und danach sind sie nicht besonders lecker.
 
 Okay, diese Liste ist definitiv unvollständig, vielleicht komplettiere ich sie in der Zukunft. Das erstaunliche ist dass das Gemüse hier fast das selbe ist wie bei uns. Ich hab noch keines gefunden dass wir nicht haben, und auch wenig vermisst bisher. Lauch wächst hier wohl nicht so gut.
 
