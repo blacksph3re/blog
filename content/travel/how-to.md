@@ -1,0 +1,50 @@
++++
+title = "How To"
+date = "2017-10-20T12:59:06-05:00"
+description = ""
+private = true
++++
+
+Es ist jetzt genau ein Monat seit Aufbruch, Jubiläum. Dieser Post ist weniger ein Post über Erlebnisse als einer darüber, wie Reisen eigentlich funktioniert. Es ist nämlich immer wieder möglich, Sachen zu vergeigen, und ich möchte mit diesem Blog auch Leute ermutigen, selber einen Trip wie diesen zu starten und selbst diese Erfahrungen zu machen. Und diese Sache hier ist ziemlich anders als alles was ich vorher gemacht habe. 
+
+# Sprachbarriere
+
+Ohne ein Wort Spanisch zu können in einen Kontinent zu reisen der nur Spanisch spricht ist schwierig, aber möglich. Y tambien es la mehor solucion por apprender una idioma nuevo. Nach 4 Wochen kann ich in philosophischen Diskussionen teilnehmen, alles nötige in den Tiendas erfragen und habe alles, was man zum Leben braucht, aber die ersten paar Wochen waren hart. Ein kleines bisschen Vorwissen hätte nicht geschadet, aber so geht es auch - und ich merke täglich wie ich mehr und mehr verstehe, vor allem auf dieser Farm hier wo jeder Spanisch spricht. Es war nicht so gut, eine Woche mit Roni zu verbringen, die muttersprachlich Englisch spricht, da ich dort einfach viel zu gut mit Englisch zurecht kam, aber hier. Und das großartigste ist vielleicht die Gedult der anderen Freiwilligen hier, die mir jedes Wort erklären und mir ganz viel helfen. Danke! Tal vez en una dia yo puedo hablar con todos los algos que yo no puedo expresar en esta momento y compartir todos mis pensamientos. Mal wieder, diese Welt hat echt großartige Bewohner, wenn man weiß wo man suchen soll =)
+
+# Die Sache mit dem Geld
+
+Und dann gibt es noch solche, die denken man bräuchte Geld zum Reisen. Wir haben Buch geführt, mit 2 Leuten brauchen wir 210$ pro Woche, also etwa 90€ pP - mit 400€ pro Monat kommt man also super zurecht. Wenn es trotzdem nicht reicht haben wir viele Leute kennen gelernt, die während des Reisens arbeiten und so im Prinzip unendlich lange Reisen können. Hier auf der Farm lebt Edir, welcher Kunsthandwerk verkauft und Straßenmusik macht, was schon die beiden Haupteinnahmequellen für Reisende zusammenfasst. Kunst. Irgentwie passt Kunst und Reisen wie die Faust aufs Auge. Dann haben wir einen Argentiner kennen gelernt, der als freier Journalist Geschichten publiziert und diese an einen Verlag verkauft. Dafür geht er in Vorleistung und schreibt seine Artikel, die er nachher versucht einer Zeitschrift zu verkaufen. Einziges Problem: Man braucht die Kontakte zu Zeitschriften. Dann bin da ich, der die Idee hat Webseiten von irgentwo zu machen, einziges Problem: Man muss an die Aufträge rankommen. Also man braucht Kontakte
+
+# Kontakte
+
+Und irgentwie ist es dann dieses worauf alles hinausläuft. Kontakte. Für die interessanten Orte, für die günstigen Hostels, alles ist einfacher wenn man wen kennt der wen kennt oder der was weiß. Zum Beispiel soll es in Quito Hostels für 3$ die Nacht geben, wenn man weiß wo man suchen muss. Oder jegliche Art von Reisetipps, die man am besten von Leuten erfährt, die schon da waren. Und dann gibt es diese Art Reisetipps wie "geht nach Otavallo, dort ist ein riesen Flohmarkt", welcher sich als ein Touristen-Ausbeutungs-Hauptquartier herausstellt. Tausende Stände die alle das selbe verkaufen und alles zu Touristenpreisen. Touristen. Generell ist es immer gut, nicht in diese Kategorie zu fallen, weil man dann zwar nette Dinge sieht, aber unglaublich viel Geld loswird und nicht so wirklich das Land kennen lernt. Tourist sein ist ein bisschen so wie Fotoalbum gucken, nur in real life. Die Sachen an die ich mich wirklich erinnere ist nicht so wirklich das Bier für 4$, oder der überfüllte Strand, sondern eher die einsame abgelegende Bucht (Playa Escondita in Mompiche!) und das traditionelle Essen mit 3 Gängen für 2$. Und diese sehr lokaltypischen Dinge findet man, indem man lokaltypische Leute anspricht (oder andere Reisende die effektiv das selbe getan haben). Mittlerweile habe ich glaube ich einen ganz guten Instinkt entwickelt, Touristentipps von einheimischen Tipps zu unterscheiden. Hier hat sich irgentwie vor allem die Polizei als super hilfreich herausgestellt, was solche Tipps angeht... Okay ich bastel schon eine Geschichte aus dem Puyo post hier rein, obwohl ich mit Puyo noch nicht durch bin.
+
+Gestern kam die Grenzpolizei zur Farm und hat nach Ausweisen gefragt. Die haben irgentwie Wind davon bekommen dass ganz viele Ausländer hier sind (genau gesagt 7) und wollten die Pässe prüfen. Was sie dann wirklich getan haben ist 
+
+* jeden Pass einmal angucken (2 min), 
+* Selfies und Photos mit uns, mit den Hunden, mit den Hühnern, mit Schaufeln, ... (10 min)
+* darüber berichten wie toll doch die Gegend ist und was man alles in Puyo sehen sollte, inclusive alles für uns aufschreiben (10 min)
+* Das Auto versuchen zu starten (3 min).
+
+Alles in allem eine sehr wilkommene Pause während der doch recht harten Arbeit in der ecuatorischen Sonne.
+
+# Menschenkenntnis
+
+Ich glaube es gibt nicht viele Situationen in denen Menschenkenntnis so viel gefragt ist wie auf Reisen. Zum einen lernt man tausende verschiedene Arten von Leuten kennen, die irgentwie durchweg interessante Charaktere sind, zum anderen braucht man diesen siebten Sinn auch, um eventuell unangenehme Situationen abzuwenden. Wie einer der lokalen, der uns unbedingt zum Playa Negra fahren wollte, und wo sich nachher herausgestellt hat dass dieser im Dorf als Dieb bekannt ist. Auch wenn diese Welt voll ist von tollen Menschen, manchmal ist es ganz gut seinem Sinn zu folgen und auch mal nein zu sagen. Ich glaube dass jeder so ein Bauchgefühl hat, nur dass im Stadtalltag dieses nicht so oft gefragt ist. Im Zweifel wieder: lokale fragen, die wissen meist gut Bescheid.
+
+# Packliste
+
+Dann gibt es einige Sachen, bei denen man leider nicht Leute fragen kann. Ich bin super glücklich dass ich diese Reise so ziemlich ohne Plan begonnen habe, weil sich viele Sachen doch anders herausgestellt haben und wir sehr spontan unseren Reisestil anpassen konnten und auch noch können. Aber die Packsache ist irgentwie etwas anderes. Generell ist die Regel: if in doubt, leave it out. Jedes Gram macht sich ziemlich deutlich bemerkbar auf dem Rücken wenn man den Rucksack trägt. Außerdem haben Rucksäcke die nette Eigenschaft, nicht allzu viel Stauraum zu besitzen, so dass man eh nicht in die Versuchung kommt mehr mitzunehmen als man braucht. Eine sehr geschickte Sache war dass ich mit Natalia einen Waschzeitraum abgesprochen habe, so dass wir immer gleichzeitig waschen müssen, nämlich 8 Tage. Letztenendes haben sich dann aber meine Hygiene-Standarts etwas gesenkt und ich kann ca 12 ohne Waschen ;) Ich möchte vor allem die Dinge aufzählen, die ich nicht wieder mitnehmen würde oder die ich vermisse:
+
+* Pullover. Aus irgenteinem Grund habe ich 2 Pullover und eine warme Jacke. Die sind riesig, und mein anfänglicher Gedanke dass ich wenn ich einen wasche ich noch den anderen habe war gar nicht so gut. Letztenendes wiegt das Ding super viel und nimmt Platz weg, wenn ich einen brauche während ich den einen Wasche würde ich einfach die Jacke tragen. Oder ganz viele Shirts. Irgentwas. Aber der ist definitiv zu groß und schwer.
+* Schuhe. Ich habe zwei Paar geschlossene Schuhe mit, nämlich meine Chucks und die Wanderschuhe, aber irgentwie wünsche ich ich hätte die Chucks zuhause gelassen und stattdessen Sandalen mitgenommen. Abgesehen von der Tatsache dass ich keine Sandalen besitze wären die leichter, praktischer und einfach besser. Hingegen, ohne die Wanderschuhe in denen ich komfortabel einen ganzen Tag laufen kann wäre ich echt aufgeschmissen. Ich kann die immer tragen wenn ich auch die Chucks tragen könnte, also warum Chucks...?
+* Zelt: Sooo gut. Ein portables Zuhause zu haben ist ein komfort den ich nicht missen möchte. Auch wenn wir es effektiv noch nicht genutzt haben, morgen wollen wir mit den anderen Volunteers eine Nacht im Dschungel verbringen, wir können die günstigeren Zeltplätze anstatt der Hostels nutzen und dann, Nächte im Zelt haben irgentwie eine Romantik...
+* Messer: Immer dabei haben. Total praktisch die Früchte nicht mit den Zähnen öffnen zu müssen.
+* Kaffeemaschine: Ich brauche die nicht, aber ich hab für und mit Natalia unzählige Stunden auf der Suche nach Kaffee verbracht, es wäre sehr viel einfacher den einfach selber machen zu können.
+* Langes Shirt: Ich hab zwar sieben TShirts mitgenommen, aber keines mit langen Ärmeln. Dabei sind lange Ärmel mit der Sonne und den Mücken hier eine super Kombination. Ich hätte lieber weniges TShirts und ein oder zwei langärmlige (aber nicht warme) um in der Sonne arbeiten zu können. 
+
+Generell bedeutet reisen auf gewisse Luxusartikel zu verzichten (ich hatte keine einzige warme Dusche seit ich in Quito gelandet bin...) und man passt sich relativ schnell an. Und diese schöne Sache, all sein Hab und Gut tragen zu können und innerhalb von 15 Minuten einen Umzug durchführen zu können ist super. Nur das Schlagzeug fehlt mir irgentwie, aber in Peru wo es deutlich günstiger ist als hier in Ecuador werde ich mir ein Instrument zulegen, vielleicht eine Ukulele oder etwas ähnliches.
+
+# Die großartigen Dinge
+
+Und am Ende kommt man irgentwie verändert wieder, oder kommt einfach gar nicht wieder. Ich bin mir noch nicht so richtig sicher, was genau dieser Trip mit mir macht aber es fühlt sich intensiv an. Da waren ein paar Dinge die mir nicht so gut gefallen haben wie die Straßen in Quito und der Kulturschock den ich zunächst durchlebt habe, aber irgentwie ist das abgeflacht und ich sehe mehr und mehr die Schönheit dieses Landes und der Leute. Und dann war es auch irgentwie gut durch diesen Kulturschock zu leben (in Rumänien hatte ich das irgentwie nicht) weil ich jetzt die Leute mehr verstehe die selbst in ein anderes Land gehen und selbst einen solchen Schock durchleben, wie anders andere Kulturen ticken und wie auch meine eigene Kultur mich hier beeinflusst und bewegt. Ich glaube dass diese Dinge nicht erlernbar sind wenn man nicht reist, und ich bin gespannt was noch so alles auf mich wartet...
