@@ -52,7 +52,7 @@ Ein Wildschwein. Ich sehe wie Rauls Machete in dem Tier steckt, und es fühlt si
 ![Jagd](/travels/ecuador/jagt5.jpg)
 ![Jagd](/travels/ecuador/jagt6.jpg)
 
-Mein Rücken freut sich als wir endlich da sind, so ein Wilschwein ist nochmal bedeutend schwerer als ein Korb Pflanzen. Die Familie beginnt das Tier auszunehmen, und die Hunde bekommen ihre Belohnung in Form von Eingeweiden die für Menschen nicht so lecker sind.
+Mein Rücken freut sich als wir endlich da sind, so ein Wilschwein ist nochmal bedeutend schwerer als ein Korb Pflanzen. Die Familie beginnt das Tier auszunehmen, und die Hunde bekommen ihre Belohnung in Form von Eingeweiden die für Menschen nicht so lecker sind. Wir helfen natürlich auch mit und ich habe insgeheim eine Biologie-Stunde (ich hätte nicht gedacht dass der Magen so groß ist...)
 
 ![Jagd](/travels/ecuador/jagt7.jpg)
 ![Jagd](/travels/ecuador/jagt8.jpg)
