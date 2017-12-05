@@ -23,7 +23,7 @@ Nach ca 10 Minuten ist dann endlich alles raus, und ich fühle mich etwas besser
 ![Guayusa](/travels/ecuador/guayusa2.jpg)
 
 
-Großartig, hat irgentwie was von LSD Microdosing, was die Leute im Silicon Valley machen, nur dass das hier schon länger existiert. Ich frage mich ob in ein paar Jahren, so gegen 4 Uhr morgens, ich zu den Klängen von kotzenden IT-Menschen aufwache... Übrigens, 2 Tage später hatten wir noch einen Versuch, diesmal um 3 Uhr morgens, und es lief eindeutig besser.
+Großartig, hat irgentwie was von LSD Microdosing, was die Leute im Silicon Valley machen, nur dass das hier schon länger existiert. Ich frage mich ob in ein paar Jahren, so gegen 4 Uhr morgens, ich zu den Klängen von kotzenden IT-Menschen aufwache... Übrigens, 2 Tage später hatten wir noch einen Versuch, diesmal um 3 Uhr morgens, und es lief eindeutig besser. Oder noch etwas später als Natalia und ich nur eine Taschenlampe hatten und im Pair-Puking den Tag eingeleutet haben.
 
 # Barbasco
 
